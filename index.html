@@ -3,55 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACG Designs</title>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>ACG Design</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>ACG Designs</h1>
-            <ul class="primary-nav">
-                <a href="#"><li>Home</li></a>
-                <div id="shop">
-                    <a href="#">
-                        <li>
-                            Shop
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ5JREFUSEvtk8ENgCAQBJdOtBMtxUq0E+3EVixFN4HkQoA7HiQ+zo8ajxnc1YDBRxjMhwvUhD2i/0d0ALgAPJWtTgCWOFMcaZVM+B7ha0FC+BkFW03SEhBwfwt55htIiYTz2VwrQ/tMSxKy0s6bcA5qAs7kEkKZuwq3CnIJ703wHoGU8Lqaed6FJSK5JhWu/mBpoFdgBrvAHJV3oEb1ArjkGRmgoH6GAAAAAElFTkSuQmCC"/>
-                        </li>
-                    </a>
-                    <div class="dropdown-category">
-                        <ul class="categories">
-                            <a href="#"><li>Blog</li></a>
-                            <a href="#"><li>Business</li></a>
-                            <a href="#"><li>E-Commerce</li></a>
-                            <a href="#"><li>News</li></a>
-                            <a href="#"><li>Non-Profit</li></a>
-                            <a href="#"><li>Personal</li></a>
-                        </ul>
-                    </div>
+    <nav>
+        <h1><a href="#">ACG Design</a></h1>
+        <ul class="primaryNav">
+            <a href="#"><li>Home</li></a>
+            <div class="shopLink">
+                <a href="#">
+                    <li>
+                        Shop
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvtk8ENwyAMRY1vCIZIN0lH6STtJs0mXYUlECfjylUjIQqBVIrUSnAE85//Nyg4eKmD9WEAmgmPiH48Iu/9DREXrbUrtRpCmIhottYuNSvVIYs4AFwBwCHiOYe8xe9KqZmZLzVIFSACMcYHAEw5JBWXM2PMabcDuVCCyD4RvTpviUtt8x/kEGZ2veJdgIIT2dqMJY2r6WAtTpzAVub5LLoBq5Pak/1qyM1v2lGwy0GH3kfJADRT+/+InqtfWxlV/MtZAAAAAElFTkSuQmCC"/>
+                    </li>
+                </a>
+                <div class="dropDownShop">
+                    <ul>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Business</li></a>
+                        <a href="#"><li>E-Commerce</li></a>
+                        <a href="#"><li>News</li></a>
+                        <a href="#"><li>Non-Profit</li></a>
+                        <a href="#"><li>Personal</li></a>
+                    </ul>
                 </div>
-                <a href="#"><li>Contact</li></a>
-                <a href="#"><li>FAQS</li></a>
-            </ul>
-            <ul class="header-icons">
-                <a href="#">
-                    <li>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASlJREFUSEvVlVESATEMhv+9CSfBSXASnAQnwUlwEvabSWaCtttZ9SAvtbttvvxJGp1+bN2P/asEmEhaSZpJmve/b/16lnSXdLDnwfhygK2kTeE0sGP/nX1FSwFOFjEHdxY1kaMIJawO5/2iRHgHkJK9yV+b89R5IATCShBZJRHA5qt5IyqiKxlqgJCubDAR4HmngByoMdSiOqsiAnwzzoHUmKvI1iICSA9pmta2oO3nHGni3Id9C8Dhw7wmWz6+9PasKbBH6l2XrVurIlcBxrYparJ1G3vRvHv8tlddNM+rtyvPSL+ES+fjIs4pOoi6sRa7KH4cGnYe+dJaNQsZGtekwsc1TnGEIk9JnElJSIs/nCKkBQBlEfIyaloBHEJKX+ZYS0ByOP4/4AkPvk0Z2oqyOwAAAABJRU5ErkJggg=="/>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR5JREFUSEvVlF0OATEUhe/shJVgJ6wEK8FKsBJ2wnzJbdKp256GzIMmHkzT8537O9jMZ5hZ33oBCzM7mdnazJ7+O47/b8pgD2Dr4qUWoMv48dCCKACOry6AY8SIBujeI9m1IlEA0oJYEs/NpshI06YWhQI83PHS3eY6RMI9qeI+PL8AEHy5alVHAcg/dYhSRD2ow9nMqMNXEeRpSB2TFxlR8l9tVxUBAslp5BDnRFA9PQAezzpoalib9yoC0rPyQkeTTIveW9NcA9A5DBmp6TmAwomOAPl6qD50OAZoVd6EHRUB0vQ2+zsLq9xNk6kuAV37JchZ3mWToSwBabnJ/g4gKbWT5VcCWstNFTtcfiVALi9B+Xiv5kC5lvf/D3gDooFEGQmY59EAAAAASUVORK5CYII="/>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPNJREFUSEvNlFsSATEQRc/shJ2wE35ZBBbBL1bCTtgJ0yo9FTN5tIko/TVVmdzTtx9pqBxNZX1+Cng4N3fg3H5vv+HOd6AA1Z0D11JIqEQL4OjEBVIUIcAEuDnVYhexJosDcTI2pI9TuRwD+C7GQLIAEb20fZgBS+BkpKjznU5hag+02V02BohOopRH7iUX7dNma0LiVly/IrfJsmwbV6LuUsRJsKQ5gLqwlEnL86aZA/jN7hoXcBB1agHIJIl9SwwW0wIQYc0wBZF3a/C0WAGW7IP/WAF7YAUcgHVPKXWWHVPV8p/yflKpMzOguoPqPfhfwBO48TIZLGqDdgAAAABJRU5ErkJggg=="/>
-                    </li>
-                </a>
-            </ul>
-        </nav>
-    </header>
+            </div>
+            <a href="#"><li>Contact</li></a>
+            <a href="#"><li>FAQS</li></a>
+        </ul>
+        <ul class="secondaryNav">
+            <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW1JREFUSEvVldFxgzAMhiXzxBl2IJMEJmmYpM0kpZOETFI6A3C8gNWKszmXYsMF8lC/5EKwPumX9AfhyQefHB+cgK7rEqXUhYjOiJgCQAUAJQB8CSGKMAz5++pZBLRt+wYAr57bHPxDSsnvec8fQNM0N50xX7wqpco4jkuuaBiGFBETAyeiMoqizEf4BWia5oKI7yyHUirnwEuXtXw3AGDY1VfJBNCXPjmgUipzBTfAuq5TIQRDvMlMAEv3QkqZr2nLv7dty9VefFXYgPFlIsqjKCq2AEwVvl7YAJYnEUKcto6gJWslpTwtJbULoGUi/pRSLo789NCM55YGm0ytqXP27agmrwN2jCn4+vbQolk7MG77pkUzulqzzY8KIroHQTBudN/3PGVsfLZPVUKIzDV5j5rdmDkAvGi7cEK8dq3N7fxj05w1EFGFiHcjycyTFiG7/3DWILsBXJkNmVvNIQADYUnnPnYYwGWO/x/wDZ17+BlkzZ8NAAAAAElFTkSuQmCC"/></li></a>
+            <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvFVNuNg0AM9C5fyEsPSSWXdBIquUsluU6OTkJqgBV/ds5RLgovew8FxRISiGUGj8fjYOVyK+NDEkHXdRsi+gSAw+9VA0DlvT/meS73apkETdPsvPc/Eyg1EZVFUVQag0kQYzwDwGYGpEbE7WKCtm0PzrmTBkBEe60LtYMY4xcAiPZaHRFRzk2WSqDo/wBj5jKE8L2I4O4eGfA6M5C/0rqw9JfvTRfJoac92MkzM9dZlpUv2QNrkaz3SR1YIIv3QGzKzB/OuZs0g7pFBgBc/m3T+2BlwebcMyKbi42RRCnen5NkylUjAiN7rHGMsqlHkBgNFkkvOoYEortk/uJi5iqEsP8DGBJo0ZxK2pNpSMCpKNo5RHzgvnfRXtHN6h1cAYZnfxmmGHFPAAAAAElFTkSuQmCC"/></li></a>
+            <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvNlc1xwjAQhZ9086zcQ+gEOoErFAEpIrlCKoFOoAdrxzcJlIk8wrEkG2wGX+Xd7739kQQm/sTE+fE6ADPbPzcXAD9EtBvDXeMgAPzmNcYsyrI8PQv5VyKt9VIIsbfWnpRSi9EBdV1/GGPOY7nobDIz7wEsn1B/IaKZi+8EhC4ehKQBLqnW+iiEmFtrV0qpQx9Q4PzTT2F0D3yzb6Vq1OQgfhKllLOiKNy4xxdtaLMDQQciWnkxyU1mZrdsWwB3QV1OYiVNAgIX2TL58hDRXc7sXeSV3crZNK7tIOU0C6iqai6lPOYaHFvMLMAFBgqjnNjV0gvQR33sn14AZv4CsAbwTUSbMFnqLLkHrST+rUB7SsJrvn02BDCtg8l78NaAK2pipBmik2uYAAAAAElFTkSuQmCC"/></li></a>
+        </ul>
+    </nav>
 </body>
 </html>
