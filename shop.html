@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACG Design</title>
+    <link rel="icon" href="/icons/programmer.png" type="image/icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav>
+        <h1><a href="index.html">ACG Design</a></h1>
+        <ul class="primaryNav">
+            <a href="index.html"><li>Home</li></a>
+            <div class="shopLink">
+                <a href="#">
+                    <li>
+                        Shop
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvtk8ENwyAMRY1vCIZIN0lH6STtJs0mXYUlECfjylUjIQqBVIrUSnAE85//Nyg4eKmD9WEAmgmPiH48Iu/9DREXrbUrtRpCmIhottYuNSvVIYs4AFwBwCHiOYe8xe9KqZmZLzVIFSACMcYHAEw5JBWXM2PMabcDuVCCyD4RvTpviUtt8x/kEGZ2veJdgIIT2dqMJY2r6WAtTpzAVub5LLoBq5Pak/1qyM1v2lGwy0GH3kfJADRT+/+InqtfWxlV/MtZAAAAAElFTkSuQmCC"/>
+                    </li>
+                </a>
+                <div class="dropDownShop">
+                    <ul>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Business</li></a>
+                        <a href="#"><li>E-Commerce</li></a>
+                        <a href="#"><li>News</li></a>
+                        <a href="#"><li>Non-Profit</li></a>
+                        <a href="#"><li>Personal</li></a>
+                    </ul>
+                </div>
+            </div>
+            <a href="#"><li>About Us</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="#"><li>FAQS</li></a>
+        </ul>
+        <ul class="secondaryNav">
+            <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW1JREFUSEvVldFxgzAMhiXzxBl2IJMEJmmYpM0kpZOETFI6A3C8gNWKszmXYsMF8lC/5EKwPumX9AfhyQefHB+cgK7rEqXUhYjOiJgCQAUAJQB8CSGKMAz5++pZBLRt+wYAr57bHPxDSsnvec8fQNM0N50xX7wqpco4jkuuaBiGFBETAyeiMoqizEf4BWia5oKI7yyHUirnwEuXtXw3AGDY1VfJBNCXPjmgUipzBTfAuq5TIQRDvMlMAEv3QkqZr2nLv7dty9VefFXYgPFlIsqjKCq2AEwVvl7YAJYnEUKcto6gJWslpTwtJbULoGUi/pRSLo789NCM55YGm0ytqXP27agmrwN2jCn4+vbQolk7MG77pkUzulqzzY8KIroHQTBudN/3PGVsfLZPVUKIzDV5j5rdmDkAvGi7cEK8dq3N7fxj05w1EFGFiHcjycyTFiG7/3DWILsBXJkNmVvNIQADYUnnPnYYwGWO/x/wDZ17+BlkzZ8NAAAAAElFTkSuQmCC"/></li></a>
+            <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvFVNuNg0AM9C5fyEsPSSWXdBIquUsluU6OTkJqgBV/ds5RLgovew8FxRISiGUGj8fjYOVyK+NDEkHXdRsi+gSAw+9VA0DlvT/meS73apkETdPsvPc/Eyg1EZVFUVQag0kQYzwDwGYGpEbE7WKCtm0PzrmTBkBEe60LtYMY4xcAiPZaHRFRzk2WSqDo/wBj5jKE8L2I4O4eGfA6M5C/0rqw9JfvTRfJoac92MkzM9dZlpUv2QNrkaz3SR1YIIv3QGzKzB/OuZs0g7pFBgBc/m3T+2BlwebcMyKbi42RRCnen5NkylUjAiN7rHGMsqlHkBgNFkkvOoYEortk/uJi5iqEsP8DGBJo0ZxK2pNpSMCpKNo5RHzgvnfRXtHN6h1cAYZnfxmmGHFPAAAAAElFTkSuQmCC"/></li></a>
+            <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvNlc1xwjAQhZ9086zcQ+gEOoErFAEpIrlCKoFOoAdrxzcJlIk8wrEkG2wGX+Xd7739kQQm/sTE+fE6ADPbPzcXAD9EtBvDXeMgAPzmNcYsyrI8PQv5VyKt9VIIsbfWnpRSi9EBdV1/GGPOY7nobDIz7wEsn1B/IaKZi+8EhC4ehKQBLqnW+iiEmFtrV0qpQx9Q4PzTT2F0D3yzb6Vq1OQgfhKllLOiKNy4xxdtaLMDQQciWnkxyU1mZrdsWwB3QV1OYiVNAgIX2TL58hDRXc7sXeSV3crZNK7tIOU0C6iqai6lPOYaHFvMLMAFBgqjnNjV0gvQR33sn14AZv4CsAbwTUSbMFnqLLkHrST+rUB7SsJrvn02BDCtg8l78NaAK2pipBmik2uYAAAAAElFTkSuQmCC"/></li></a>
+        </ul>
+    </nav>
+    <main class="shop">
+        <div class="heroSection">
+            <div class="heroBg"></div>
+            <h1>SHOP</h1>
+        </div>
+
+        <div class="productsSection">
+            <div class="categoryFilter">
+                <label for="category">Categories: </label>
+                <select name="categories" id="category">
+                    <option value="all">All</option>
+                    <option value="blog">Blog</option>
+                    <option value="business">Business</option>
+                    <option value="ecommerce">E-Commerce</option>
+                    <option value="news">News</option>
+                    <option value="nonProfit">Non-Profit</option>
+                    <option value="personal">Personal</option>
+                </select>
+            </div>
+            <div class="sortItems">
+                <label for="sorter">Sort By:</label>
+                <select name="sortBy" id="sorter">
+                    <option value="default">Default</option>
+                    <option value="priceLH">Price(Low - High)</option>
+                    <option value="priceHL">Price(High - Low)</option>
+                </select>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/Kana Arima.jpg" alt="">
+                <div class="productInfo">
+                    <h1>Website Template Name</h1>
+                    <h2>$100.00</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <nav class="footerNav">
+                <h1 class="logo"><a href="index.html">ACG<h3>Designs</h3></a></h1>
+                <ul class="primaryNav">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#"><li>Shop</li></a>
+                    <a href="#"><li>About Us</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>FAQS</li></a>
+                </ul>
+                <div class="footerContact">
+                    <h5>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR1JREFUSEvdldERgjAMhpu8cYEdcBJlE51EmcRzEt1EdqA9nki9eKRXOeUK6gt9LEm+5E9SwPz5wJ/jmxUB2rbdIeLZGFN+KVvDzIeiKG4SJ0hkrb0CwO7L4OreENHmBeCc83KBiJssy5oloK7rSma+iy8RPZMPFSjAGCPBL0R0mgMZJL6qzxRAbepUiHNOkjnGCU0B6si4QcTqk2QiSd/356h3wfcjQD4MWkq5MlEvU6FZjiQJNir1JECCDBApez/uSyyJ9/6W53ml4GRABBGA6lt777exJOM+zQJoVtbaPQDIEobDzJUuU3y/CKDVDA2VWQ+bOh7lxYDUnVgx4JePXTy64S2SxQGA4w9e1PfPdWoT59qt6Jc5t/RU+wdf5dIZxrlJ1QAAAABJRU5ErkJggg=="/>
+                        acgdesigns@gmail.com
+                    </h5>
+                    <h5>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYFJREFUSEvVlcFthDAQRWcsLsjQA1tJoJIslWxSyUIlSyehB7A4Md4dZCMDhgDRHsIJWdZ/M3/8bYQ3f/hmffACuq5L+r6/I2IihMjCMKzPFrIAOOKpEa3/ApkAZuK26gQATkMmAKXU/SV2ZUEp5YWBRPQAgNOQOUCzLVLKcX0OYfCRecwBP1ytEOJiB+vaprWuoijKTgPatn0gYkpEWRzHFQvZNWvbEXHeO+/gCwBur/VvKSX/g1Jq6MqFHoFMAE3TpEIIHuowZAOwgy+klPkR8UUH7kBtxWaNu6iJKLfW7QUtgqaUGmxyB2rX5nnYk3hvkomIKwatdR5FUeEJYEVEJSLe+FBsJd57F7Vte0VE9n5MsLGKQ8iHwP02E796m27ZQkQW9GviVwEeW0p7dH0DXkv85nvgsaVg730naS3xux4cxy5bPPteElEVBMEwA/N+8MDHDC1ysHW2nW4+ze3q2z4RPwSwasaKFBE/tNYJv3oGOF4vLnmXRXtT69v3/wFPcA4hKBJWHXsAAAAASUVORK5CYII="/>
+                        +639123456789
+                    </h5>
+                </div>
+            </nav>
+            <div class="copyright">
+                <span>&copy; 2024. ACGDESIGNS. All Rights Reserved</span>
+                <span style="display: block; margin-left: auto;">Terms of Services</span>
+                <span style="margin-left: 100px;">Privacy Policy</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

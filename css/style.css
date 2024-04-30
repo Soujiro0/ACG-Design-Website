@@ -1,0 +1,234 @@
+:root {
+    --text-color-black: #050505;
+    --text-color-white: #f5f5f5;
+    --accent-color: #142D4C;
+    --bg-color-light: #dddddd;
+    --bg-color-dark: #727272;
+    --bg-color-light-accent: #002d64;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none; 
+    color: var(--text-color-white);
+}
+/* Navigation CSS */
+nav {
+    background-color: var(--accent-color);
+    color: var(--text-color-white);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 100px;
+    position: fixed;
+    z-index: 999;
+}
+nav h1 {
+    margin-right: auto;
+    font-size: 2rem;
+    font-family: monospace;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    font-size: 1.5rem;
+    font-family: Arial;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li:hover{
+    background-color: #002d64;
+    border-bottom: var(--text-color-white) solid 5px;
+}
+nav .dropDownShop{
+    background-color: var(--accent-color);
+    height: 0;
+    width: 300px;
+    min-width: 300px;
+    position: absolute;
+    overflow-y: hidden;
+    transition: height 1s ease;
+    z-index: 999;
+}
+nav .dropDownShop > ul {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .dropDownShop > ul li:hover {
+    width: 300px;
+    border-bottom: #f5f5f5 solid 0px;
+    background-color: #0f1c2c;
+}
+nav .shopLink:hover .dropDownShop {
+    height: 450px;
+}
+nav ul.primaryNav {
+    margin-right: 100px;
+}
+nav ul.secondaryNav {
+    margin-left: auto;
+}
+/* Hero Section CSS */
+main .heroSection {
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+main .heroSection .heroBg{
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/about_hero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .7;
+    filter: brightness(.8);
+    position: absolute;
+    color: white;
+    z-index: -1;
+}
+main .heroSection h1 {
+    height: 100%;
+    font-size: 7rem;
+    font-weight: 900;
+    font-family: Arial;
+    color: var(--accent-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Footer CSS */
+footer .footer-content {
+    position: relative;
+    bottom: 0;
+}
+footer .footer-content nav.footerNav {
+    height: 120px;
+    position: relative;
+    bottom: 0;
+}
+footer .footer-content nav.footerNav > .logo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+footer .footer-content nav.footerNav h3 {
+    font-size: 1.2rem;
+}
+footer .footer-content nav.footerNav .footerContact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer .footer-content nav.footerNav .footerContact h5 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1rem;
+    font-family: Arial;
+    font-weight: 100;
+    letter-spacing: .5px;
+}
+footer .footer-content nav.footerNav .footerContact h5 img {
+    margin-right: 10px;
+}
+footer .footer-content .copyright {
+    height: 70px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 100px;
+    border-top: 3px white solid;
+    background-color: #142D4C;
+    color: #F5F5F5;
+}
+
+
+
+
+
+/* Shop CSS */
+main.shop .productsSection {
+    height: fit-content;
+    width: 95%;
+    margin-inline: auto;
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 50px;
+    place-items: center;
+    padding-block: 20px;
+}
+main.shop .productsSection label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-family: Arial, monospace;
+}
+main.shop .productsSection select {
+    background-color: var(--bg-color-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+main.shop .productsSection select * {
+    background-color: var(--bg-color-light);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color-black);
+    border: 0;
+}
+main.shop .productsSection .categoryFilter {
+    grid-column-start: span 2;
+    place-self: start;
+}
+main.shop .productsSection .sortItems {
+    place-self: end;
+}
+/* Card Product CSS */
+main.shop .productsSection .product {
+    height: fit-content;
+    width: 85%;
+    background-color: var(--bg-color-light);
+    border-radius: 20px;
+    padding: 20px;
+}
+main.shop .productsSection .product img {
+    width: 100%;
+}
+main.shop .productsSection .product .productInfo {
+    height: fit-content;
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+}
+main.shop .productsSection .product .productInfo h2 {
+    font-weight: bold;
+}
+main.shop .productsSection .product .productInfo h1, h2 {
+    font-size: 1rem;
+    padding-block: 5px;
+    font-family: Arial, monospace;
+    color: var(--text-color-black);
+}
