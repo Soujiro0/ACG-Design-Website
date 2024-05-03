@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Ecommerce 1",
+        "price": 10.99,
+        "description": "Description for Item 1",
+        "category": "e-commerce",
+        "thumbnail": "/images/products/E-commerce/ecommerce1.png",
+        "image": "/images/products/E-commerce/ecommercetimg1.png"
+    },
+    {
+        "name": "Ecommerce 2",
+        "price": 15.99,
+        "description": "Description for Item 2",
+        "category": "e-commerce",
+        "thumbnail": "/images/products/E-commerce/ecommerce2.png",
+        "image": "/images/products/E-commerce/ecommercetimg2.png"
+    },
+    {
+        "name": "Ecommerce 3",
+        "price": 20.99,
+        "description": "Description for Item 3",
+        "category": "e-commerce",
+        "thumbnail": "/images/products/E-commerce/ecommerce3.png",
+        "image": "/images/products/E-commerce/ecommercetimg3.png"
+    }
+]

@@ -8,14 +8,15 @@
 }
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 a {
     text-decoration: none; 
     color: var(--text-color-white);
 }
-/* Navigation CSS */
+
+/* Navigation Container CSS */
 nav {
     background-color: var(--accent-color);
     color: var(--text-color-white);
@@ -47,11 +48,12 @@ nav ul li {
     justify-content: center;
     align-items: center;
 }
-nav ul li:hover{
+nav ul li:hover {
     background-color: #002d64;
     border-bottom: var(--text-color-white) solid 5px;
 }
-nav .dropDownShop{
+/* Navigation Dropdown Component CSS */
+nav .dropDownShop {
     background-color: var(--accent-color);
     height: 0;
     width: 300px;
@@ -81,9 +83,11 @@ nav ul.primaryNav {
 nav ul.secondaryNav {
     margin-left: auto;
 }
-/* Hero Section CSS */
+
+/* Hero Section Container CSS */
 main .heroSection {
-    height: 600px;
+    padding-top: 100px;
+    height: 450px;
     width: 100%;
     position: relative;
 }
@@ -112,23 +116,82 @@ main .heroSection h1 {
     align-items: center;
     justify-content: center;
 }
-/* Footer CSS */
+
+/* Product Section Container CSS */
+main .productsSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+main .productsSection .productList {
+    height: fit-content;
+    width: 95%;
+    margin-inline: auto;
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-start: span 2;
+    gap: 50px;
+    place-items: center;
+}
+
+/* Card Product Component CSS */
+main .productsSection .productList .product {
+    /* Adjust this 2 (height & width) measurement for product card */
+    height: 600px;
+    width: 90%;
+    background-color: var(--bg-color-light);
+    border-radius: 20px;
+    padding: 20px;
+}
+main .productsSection .productList .product img {
+    height: 85%;
+    width: 100%;
+    object-fit: contain;
+}
+main .productsSection .productList .product .productInfo {
+    height: 15%;
+    width: 100%;
+    padding-inline: 5px;
+    padding-block: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+main .productsSection .productList .product .productInfo h2 {
+    font-weight: bold;
+    grid-row-start: span 2;
+    place-self: center;
+    justify-self: end;
+}
+main .productsSection .productList .product .productInfo > h1, h2, h3 {
+    font-size: 1rem;
+    padding-block: 5px;
+    font-family: Arial, monospace;
+    color: var(--text-color-black);
+}
+
+/* Footer Component CSS */
 footer .footer-content {
     position: relative;
     bottom: 0;
 }
 footer .footer-content nav.footerNav {
-    height: 120px;
+    height: 100px;
     position: relative;
     bottom: 0;
 }
 footer .footer-content nav.footerNav > .logo {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 footer .footer-content nav.footerNav h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: var(--text-color-white);
 }
 footer .footer-content nav.footerNav .footerContact {
     height: 100%;
@@ -149,7 +212,7 @@ footer .footer-content nav.footerNav .footerContact h5 img {
     margin-right: 10px;
 }
 footer .footer-content .copyright {
-    height: 70px;
+    height: 50px;
     width: 100%; 
     display: flex;
     justify-content: center;
@@ -164,19 +227,154 @@ footer .footer-content .copyright {
 
 
 
-/* Shop CSS */
-main.shop .productsSection {
-    height: fit-content;
-    width: 95%;
-    margin-inline: auto;
-    margin-block: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    gap: 50px;
-    place-items: center;
-    padding-block: 20px;
+
+
+
+
+
+/* Home Page CSS*/
+main.home .homeHeroSection {
+    padding-top: 100px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 50px;
 }
+main.home .homeHeroSection .left {
+    height: 100%;
+    width: 50%;
+    padding-inline-start: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+main.home .homeHeroSection .left h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: Arial;
+    margin-block: 50px;
+    color: var(--accent-color);
+}
+main.home .homeHeroSection .left button {
+    background-color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial;
+    border: none;
+    border-radius: 100px;
+    padding: 20px 30px;
+    color: var(--text-color-white);
+}
+main.home .homeHeroSection .right {
+    height: 100%;
+    width: 50%;
+    padding-inline-end: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main.home .homeHeroSection .right img {
+    height: 70%;
+    width: 100%;
+}
+main.home .categoriesSection {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+    place-items: center;
+    padding-inline: 50px;
+    margin-block: 50px;
+}
+main.home .categoriesSection h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial;
+    margin-block: 20px;
+    place-self: start;
+    grid-column-start: span 6;
+}
+main.home .categoriesSection .category {
+    height: 170px;
+    width: 100%;
+    background-color: #727272;
+    border-radius: 50px;
+    position: relative;
+}
+main.home .categoriesSection .category img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    filter: brightness(.5) blur(1px);
+    transition: all 500ms ease;
+}
+main.home .categoriesSection .category span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial;
+    color: var(--text-color-white);
+    text-align: center;
+    transition: all 500ms ease-out;
+}
+main.home .categoriesSection .category:hover img {
+    scale: 110%;
+    filter: brightness(.8);
+    transform: rotate(5deg);
+}
+main.home .categoriesSection .category:hover span {
+    background-color: #dddddd9a;
+    border-radius: 50px;
+    padding: 20px 30px;
+    color: var(--text-color-black);
+}
+main.home .productsSection .productList > h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial;
+    grid-column-start: span 3;
+    place-self: start;
+    margin-left: 30px;
+}
+main.home .productsSection button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial;
+    background-color: var(--bg-color-light);
+    border: var(--text-color-black) solid 2px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    grid-column-start: span 2;
+    place-self: center;
+}
+main.home .productsSection button:hover {
+    background-color: #b6b6b6;
+}
+main.home .productsSection button:active {
+    background-color: #6e6e6e;
+    color: var(--text-color-white);
+}
+
+
+
+
+
+
+
+
+
+
+/* Shop Page CSS */
 main.shop .productsSection label {
     font-size: 1.5rem;
     font-weight: 700;
@@ -200,35 +398,94 @@ main.shop .productsSection select * {
     border: 0;
 }
 main.shop .productsSection .categoryFilter {
-    grid-column-start: span 2;
-    place-self: start;
+    place-self: center;
 }
 main.shop .productsSection .sortItems {
-    place-self: end;
+    place-self: center;
 }
-/* Card Product CSS */
-main.shop .productsSection .product {
+main.shop .productsSection {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Item Details Page CSS */
+main.itemProduct .product {
+    padding-top: 100px;
     height: fit-content;
-    width: 85%;
-    background-color: var(--bg-color-light);
-    border-radius: 20px;
-    padding: 20px;
-}
-main.shop .productsSection .product img {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-bottom: 30px;
 }
-main.shop .productsSection .product .productInfo {
-    height: fit-content;
+main.itemProduct .product #back {
+    margin-left: 20px;
+    grid-column-start: span 2;
+    place-self: start;
+    padding: 10px;
+}
+main.itemProduct .product #back img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+main.itemProduct .product .productImage {
+    height: 750px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main.itemProduct .product .productImage img {
+    height: 100%;
     width: 100%;
-    padding-inline: 5px;
-    padding-block: 10px;
+    object-fit: contain;
 }
-main.shop .productsSection .product .productInfo h2 {
+main.itemProduct .product .productDetails {
+    height: 750px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+main.itemProduct .product .productDetails h1 {
+    font-size: 2rem;
     font-weight: bold;
-}
-main.shop .productsSection .product .productInfo h1, h2 {
-    font-size: 1rem;
-    padding-block: 5px;
-    font-family: Arial, monospace;
+    font-family: Arial;
     color: var(--text-color-black);
+    margin-block: 20px;
+}
+main.itemProduct .product .productDetails p {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Arial;
+    color: var(--text-color-black);
+}
+main.itemProduct .product .productDetails h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Arial;
+    color: var(--text-color-black);
+    margin-top: 20px;
+}
+main.itemProduct .product .productDetails .actionButtons {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+main.itemProduct .product .productDetails .actionButtons button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial;
+    background-color: var(--bg-color-light);
+    border: var(--text-color-black) solid 2px;
+    border-radius: 10px;
+    padding: 20px 30px;
 }

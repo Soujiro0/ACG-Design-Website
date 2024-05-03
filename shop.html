@@ -13,6 +13,7 @@
         <h1><a href="index.html">ACG Design</a></h1>
         <ul class="primaryNav">
             <a href="index.html"><li>Home</li></a>
+            <a href="#"><li>About Us</li></a>
             <div class="shopLink">
                 <a href="#">
                     <li>
@@ -31,7 +32,6 @@
                     </ul>
                 </div>
             </div>
-            <a href="#"><li>About Us</li></a>
             <a href="#"><li>Contact</li></a>
             <a href="#"><li>FAQS</li></a>
         </ul>
@@ -48,7 +48,7 @@
         </div>
 
         <div class="productsSection">
-            <div class="categoryFilter">
+            <div class="categoryFilter filter">
                 <label for="category">Categories: </label>
                 <select name="categories" id="category">
                     <option value="all">All</option>
@@ -60,7 +60,7 @@
                     <option value="personal">Personal</option>
                 </select>
             </div>
-            <div class="sortItems">
+            <div class="sortItems filter">
                 <label for="sorter">Sort By:</label>
                 <select name="sortBy" id="sorter">
                     <option value="default">Default</option>
@@ -68,68 +68,22 @@
                     <option value="priceHL">Price(High - Low)</option>
                 </select>
             </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/Kana Arima.jpg" alt="">
-                <div class="productInfo">
-                    <h1>Website Template Name</h1>
-                    <h2>$100.00</h2>
-                </div>
+            <div class="productList">
+                <a href="item-details.html" class="product">
+                    <img src="/sample.jpg" alt="">
+                    <div class="productInfo">
+                        <h1>Website Template Name</h1>
+                        <h2>$100.00</h2>
+                    </div>
+                </a>
+                <div class="product" onclick="navigateToPage('item-details.html')">
+                    <img src="/sample.jpg" alt="">
+                    <div class="productInfo">
+                        <h1>Website Template Name</h1>
+                        <h2>$100.00</h2>
+                        <h3>Category</h3>
+                    </div>
+                </div> 
             </div>
         </div>
     </main>
@@ -139,8 +93,8 @@
                 <h1 class="logo"><a href="index.html">ACG<h3>Designs</h3></a></h1>
                 <ul class="primaryNav">
                     <a href="index.html"><li>Home</li></a>
-                    <a href="#"><li>Shop</li></a>
                     <a href="#"><li>About Us</li></a>
+                    <a href="#"><li>Shop</li></a>
                     <a href="#"><li>Contact</li></a>
                     <a href="#"><li>FAQS</li></a>
                 </ul>
@@ -162,5 +116,6 @@
             </div>
         </div>
     </footer>
+    <script src="/script/script.js"></script>
 </body>
 </html>

@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACG Design</title>
+    <title>Item Details</title>
     <link rel="icon" href="/icons/programmer.png" type="image/icon">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
+    <!--Navigation-->
     <nav>
-        <h1><a href="#">ACG Design</a></h1>
+        <h1><a href="index.html">ACG Design</a></h1>
         <ul class="primaryNav">
-            <a href="#"><li>Home</li></a>
+            <a href="index.html"><li>Home</li></a>
             <a href="#"><li>About Us</li></a>
             <div class="shopLink">
                 <a href="shop.html">
@@ -41,59 +42,25 @@
             <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvNlc1xwjAQhZ9086zcQ+gEOoErFAEpIrlCKoFOoAdrxzcJlIk8wrEkG2wGX+Xd7739kQQm/sTE+fE6ADPbPzcXAD9EtBvDXeMgAPzmNcYsyrI8PQv5VyKt9VIIsbfWnpRSi9EBdV1/GGPOY7nobDIz7wEsn1B/IaKZi+8EhC4ehKQBLqnW+iiEmFtrV0qpQx9Q4PzTT2F0D3yzb6Vq1OQgfhKllLOiKNy4xxdtaLMDQQciWnkxyU1mZrdsWwB3QV1OYiVNAgIX2TL58hDRXc7sXeSV3crZNK7tIOU0C6iqai6lPOYaHFvMLMAFBgqjnNjV0gvQR33sn14AZv4CsAbwTUSbMFnqLLkHrST+rUB7SsJrvn02BDCtg8l78NaAK2pipBmik2uYAAAAAElFTkSuQmCC"/></li></a>
         </ul>
     </nav>
-    <main class="home">
-        <!--Hero Section-->
-        <div class="homeHeroSection">
-            <div class="left">
-                <h1>Your Journey to a Beautiful Website Starts Here.</h1>
-                <button>Shop Now</button>
+    <!--Main Content-->
+    <main class="itemProduct">
+        <!--Product Details-->
+        <div class="product">
+            <a href="shop.html" id="back" style="color: black;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALNJREFUSEvllM0JhjAQREdySRl+nWgpVqad2ErKCAwBEYxojD9hN6fPkwd9z9ms06Dy1VTm408E1to2hNCRnEpH+jqiDT4C6AAMpZJHQQJ3JH9qCTTg68dkE2jBswJN+EWgDT8JEnjpWZ6eJ7mPfr/ZBDOAVkQHkBWs0ETijDG9995JhJct0pY8rWkclyjJ7Z+sleRLVYiSfC27KNEtu7g9VetasqK3ZSeFHt9/PQOprLpgAUk6gRmOe6LOAAAAAElFTkSuQmCC"/>
+            </a>
+            <div class="productImage">
+                <img src="/sample.jpg" alt="product image">
             </div>
-            <div class="right">
-                <img src="/images/home_hero.png" alt="home hero image">
+            <div class="productDetails">
+                <h1>Website Name Template</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, recusandae hic. Obcaecati odio est nostrum quod delectus molestiae tenetur atque error sint, culpa sed ratione ullam, sunt, ea temporibus quaerat!</p>
+                <h2>$100</h2>
+                <div class="actionButtons">
+                    <button>Buy Now</button>
+                    <button>Add to Cart</button>
+                </div>
             </div>
-        </div>
-        <!--Home Category Choices-->
-        <div class="categoriesSection">
-            <h2>Shop by Categories</h2>
-            <div class="category">
-                <img src="/Kana Arima.jpg" alt="">
-                <span>Blog</span>
-            </div>
-            <div class="category">
-                <img src="/Kana Arima.jpg" alt="">
-                <span>Business</span>
-            </div>
-            <div class="category">
-                <img src="/Kana Arima.jpg" alt="">
-                <span>E-Commerce</span>
-            </div>
-            <div class="category">
-                <img src="/Kana Arima.jpg" alt="">
-                <span>News</span>
-            </div>
-            <div class="category">
-                <img src="/Kana Arima.jpg" alt="">
-                <span>Non-Profit</span>
-            </div>
-            <div class="category">
-                <img src="/Kana Arima.jpg" alt="">
-                <span>Personal</span>
-            </div>
-        </div>
-        <!--Home Featured Product Section-->
-        <div class="productsSection">      
-            <div class="productList">
-                <h1>Featured Products:</h1>
-                <div class="product">
-                    <img src="/sample.jpg" alt="">
-                    <div class="productInfo">
-                        <h1>Website Template Name</h1>
-                        <h2>$100.00</h2>
-                        <h3>Category</h3>
-                    </div>
-                </div> 
-            </div>
-            <button>Show All</button>
         </div>
     </main>
     <footer>
@@ -125,6 +92,5 @@
             </div>
         </div>
     </footer>
-    <script src="script/script.js"></script>
 </body>
 </html>
