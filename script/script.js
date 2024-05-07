@@ -1,28 +1,33 @@
-fetchData();
+
+fetchDataAndRender();
 
 // Fetching data from JSON file
-async function loadAllItems(){
-    // Fetching data from JSON file
-    let response = await fetch('../data.json');
-    let data = await response.json();
-    console.log(data);
-    return data;
-}
+async function fetchDataAndRender() {
 
-async function fetchData() {
-    let jsonData = await loadAllItems();
-    console.log(jsonData);
-    const productListDiv = document.querySelector('.productList');
+    try {
+        const response = await fetch('../data.json');
+        const data = await response.json();
+        console.log(data);
 
-    jsonData.forEach(jsonData => {
-        const productHTML = createProductHTML(jsonData);
-        productListDiv.appendChild(productHTML);
-    });
+        const productListDiv = document.querySelector('.productList');
+        
+        data.forEach(item => {
+            // Create component and append to container
+            const productHTML = createProductHTML(item);
+            productListDiv.appendChild(productHTML);
+        });
+        return data;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        throw error;
+    }
+
 }
 
 
 // Create Component
 function createProductHTML(product) {
+
     // Create elements
     const productDiv = document.createElement('div');
     productDiv.classList.add('product');
@@ -52,54 +57,33 @@ function createProductHTML(product) {
     productDiv.appendChild(productInfoDiv);
 
     productDiv.addEventListener('click', () => {
-        clicked(h1, h2, h3);
-    })
-
+        clicked(h1.textContent);
+    });
     return productDiv;
+
 }
 
-// document.querySelectorAll('.producList > .product').forEach(product => {
-//     product.onclick = function () {
-//         // Update product details with clicked product's information
-//         const productName = product.querySelector('h1').textContent;
-//         const productPrice = product.querySelector('h2').textContent;
-//         const productDescription = product.querySelector('p').textContent;
-
-//         navigateToPage('item-details.html')
-//         productDetails.querySelector('.productDetails > h1').textContent = productName;
-//         productDetails.querySelector('.productDetails > h2').textContent = productPrice;
-//         productDetails.querySelector('.productDetails > p').textContent = productDescription;
-//     }
-// });
-
-function clicked(h1, h2, h3){
-    console.log(h1.textContent);
+async function clicked(itemName){
     console.log('item clicked');
+    console.log(itemName);
+    
+    // Parse JSON data into JavaScript object
+    try {
+        const response = await fetch('../data.json');
+        const data = await response.json();
+        console.log(data);
+    
+        data.forEach(item => {
+            if (item.name === itemName) {
+                item.isSelected = true;
+            }
+        });
+        console.log(data);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        throw error;
+    }
 
-    navigateToPage('item-details.html', h1, h2);
-    setTimeout(() => {
-        console.log('clicked method is finished');
-    }, 3000);
-    // const productCategory = product.querySelector('h3').textContent;
 }
 
-// function navigateToPage(url, h1, h2) {
-//     setTimeout(() => {
-//         const productName = document.querySelector('.productDetails > h1');
-//         const productPrice = document.querySelector('productDetails > h2');
-//         if (productName && productPrice) {
-//             productName.textContent = h1.textContent;
-//             productPrice.textContent = h2.textContent;
-//         } else {
-//             console.error("Product name or product price element not found in the DOM.");
-//         }
-//     }, 2000);
-//     window.location.href = url;
-// }
-
-// function seeDetail(item){
-//     const image = document.querySelector('.product > .productImage > img');
-//     image.src = item.image;
-// }
-// seeDetail();
 

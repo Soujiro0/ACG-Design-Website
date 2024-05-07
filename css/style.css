@@ -374,6 +374,80 @@ main.home .productsSection button:active {
 
 
 
+/* About Us Page CSS */
+main.about .infoAbout {
+    margin-top: 100px;
+    display: flex;
+    padding: 50px;
+}
+main.about .infoAbout div {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Arial;
+}
+main.about .infoAbout h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Arial;
+    color: var(--accent-color);
+}
+main.about .infoAbout p {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+main.about .aboutMission {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+main.about .aboutMission p {
+    padding: 50px;
+    font-size: 1.5rem;
+    font-family: Arial;
+}
+main.about .aboutMission .img {
+    background-color: #6e6e6e;
+    height: 500px;
+    width: 500px;
+}
+main.about .ourTeam h1 {
+    margin-block: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
+main.about .ourTeam p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.2;
+    font-family: Arial;
+    text-align: center;
+}
+main.about .teamImages {
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 20px;
+}
+main.about .teamImages .img {
+    background-color: #6e6e6e;
+    height: 500px;
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
 /* Shop Page CSS */
 main.shop .productsSection label {
     font-size: 1.5rem;
@@ -488,4 +562,69 @@ main.itemProduct .product .productDetails .actionButtons button {
     border: var(--text-color-black) solid 2px;
     border-radius: 10px;
     padding: 20px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Page CSS */
+main.contact .contactHeading {
+    margin-top: 100px;
+    padding: 50px;
+}
+main.contact .contactHeading h1 {
+    margin-block: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
+main.contact .contactHeading p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 1.2;
+    font-family: Arial;
+    text-align: center;
+}
+main.contact .contacts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+main.contact .contacts > div {
+    height: 300px;
+    width: 250px;
+    border: var(--bg-color-light-accent) solid 3px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+main.contact .contacts > div .iconContainer {
+    margin-inline: auto;
+    margin-top: 20%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--bg-color-light-accent);
+}
+main.contact .contacts > div h1 {
+    font-size: 1.5rem;
+}
+main.contact .contacts > div h2 {
+    font-size: 1.1rem;
+}
+main.contact .contacts > div h1, h2 {
+    padding-inline: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
 }

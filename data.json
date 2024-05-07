@@ -5,7 +5,8 @@
         "description": "Description for Item 1",
         "category": "e-commerce",
         "thumbnail": "/images/products/E-commerce/ecommerce1.png",
-        "image": "/images/products/E-commerce/ecommercetimg1.png"
+        "image": "/images/products/E-commerce/ecommercetimg1.png",
+        "isSelected": false
     },
     {
         "name": "Ecommerce 2",
@@ -13,7 +14,8 @@
         "description": "Description for Item 2",
         "category": "e-commerce",
         "thumbnail": "/images/products/E-commerce/ecommerce2.png",
-        "image": "/images/products/E-commerce/ecommercetimg2.png"
+        "image": "/images/products/E-commerce/ecommercetimg2.png",
+        "isSelected": true
     },
     {
         "name": "Ecommerce 3",
@@ -21,6 +23,7 @@
         "description": "Description for Item 3",
         "category": "e-commerce",
         "thumbnail": "/images/products/E-commerce/ecommerce3.png",
-        "image": "/images/products/E-commerce/ecommercetimg3.png"
+        "image": "/images/products/E-commerce/ecommercetimg3.png",
+        "isSelected": false
     }
 ]
