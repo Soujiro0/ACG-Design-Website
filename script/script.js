@@ -24,7 +24,6 @@ async function fetchDataAndRender() {
 
 }
 
-
 // Create Component
 function createProductHTML(product) {
 
@@ -63,6 +62,7 @@ function createProductHTML(product) {
 
 }
 
+// Open the item details window
 async function clicked(itemName){
     console.log('item clicked');
     console.log(itemName);

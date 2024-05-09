@@ -4,8 +4,8 @@
         "price": 10.99,
         "description": "Description for Item 1",
         "category": "e-commerce",
-        "thumbnail": "/images/products/E-commerce/ecommerce1.png",
-        "image": "/images/products/E-commerce/ecommercetimg1.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce1.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg1.png",
         "isSelected": false
     },
     {
@@ -13,17 +13,125 @@
         "price": 15.99,
         "description": "Description for Item 2",
         "category": "e-commerce",
-        "thumbnail": "/images/products/E-commerce/ecommerce2.png",
-        "image": "/images/products/E-commerce/ecommercetimg2.png",
-        "isSelected": true
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce2.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg2.png",
+        "isSelected": false
     },
     {
         "name": "Ecommerce 3",
         "price": 20.99,
         "description": "Description for Item 3",
         "category": "e-commerce",
-        "thumbnail": "/images/products/E-commerce/ecommerce3.png",
-        "image": "/images/products/E-commerce/ecommercetimg3.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce3.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg3.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 4",
+        "price": 25.99,
+        "description": "Description for Item 4",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce4.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg4.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 5",
+        "price": 30.99,
+        "description": "Description for Item 5",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce5.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg5.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 6",
+        "price": 35.99,
+        "description": "Description for Item 6",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce6.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg6.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 7",
+        "price": 40.99,
+        "description": "Description for Item 7",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce7.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg7.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 8",
+        "price": 45.99,
+        "description": "Description for Item 8",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce8.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg8.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 9",
+        "price": 50.99,
+        "description": "Description for Item 9",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce9.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg9.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 10",
+        "price": 55.99,
+        "description": "Description for Item 10",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce10.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg10.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 11",
+        "price": 60.99,
+        "description": "Description for Item 11",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce11.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg11.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 12",
+        "price": 65.99,
+        "description": "Description for Item 12",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce12.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg12.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 13",
+        "price": 70.99,
+        "description": "Description for Item 13",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce13.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg13.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 14",
+        "price": 75.99,
+        "description": "Description for Item 14",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce14.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg14.png",
+        "isSelected": false
+    },
+    {
+        "name": "Ecommerce 15",
+        "price": 80.99,
+        "description": "Description for Item 15",
+        "category": "e-commerce",
+        "thumbnail": "/assets/images/products/E-commerce/ecommerce15.png",
+        "image": "/assets/images/products/E-commerce/ecommercetimg15.png",
         "isSelected": false
     }
 ]

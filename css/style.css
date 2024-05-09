@@ -23,14 +23,14 @@ nav {
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-inline: 100px;
     position: fixed;
     z-index: 999;
 }
 nav h1 {
-    margin-right: auto;
+    /* margin-right: auto; */
     font-size: 2rem;
     font-family: monospace;
 }
@@ -78,11 +78,30 @@ nav .shopLink:hover .dropDownShop {
     height: 450px;
 }
 nav ul.primaryNav {
-    margin-right: 100px;
+    margin-right: auto;
+    margin-left: 100px;
 }
 nav ul.secondaryNav {
-    margin-left: auto;
+    /* null */
 }
+nav ul.secondaryNav li:hover {
+    background-color: var(--bg-color-light-accent);
+    border: none;
+    border-radius: 50px;
+}
+nav ul.secondaryNav li input {
+    display: block;
+    height: fit-content;
+    width: 300px;
+    font-size: 1rem;
+    font-family: Arial;
+    padding: 10px;
+    margin-right: 20px;
+    border: var(--bg-color-light) solid 3px;
+    border-radius: 50px;
+    transition: 40ms ease-in;
+}
+
 
 /* Hero Section Container CSS */
 main .heroSection {
@@ -94,7 +113,7 @@ main .heroSection {
 main .heroSection .heroBg{
     height: 100%;
     width: 100%;
-    background-image: url(/images/about_hero.png);
+    background-image: url(/assets/images/about_hero.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -376,9 +395,13 @@ main.home .productsSection button:active {
 
 /* About Us Page CSS */
 main.about .infoAbout {
-    margin-top: 100px;
+    height: fit-content;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 150px;
     display: flex;
     padding: 50px;
+    
 }
 main.about .infoAbout div {
     font-size: 2.5rem;
@@ -399,6 +422,9 @@ main.about .infoAbout p {
     text-align: justify;
 }
 main.about .aboutMission {
+    height: fit-content;
+    width: 80%;
+    margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -414,7 +440,8 @@ main.about .aboutMission .img {
     width: 500px;
 }
 main.about .ourTeam h1 {
-    margin-block: 20px;
+    margin-top: 150px;
+    margin-bottom: 20px;
     font-size: 2rem;
     font-weight: bold;
     font-family: Arial;
@@ -428,7 +455,7 @@ main.about .ourTeam p {
     text-align: center;
 }
 main.about .teamImages {
-    margin-block: 50px;
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
@@ -597,7 +624,7 @@ main.contact .contacts {
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 main.contact .contacts > div {
     height: 300px;
@@ -614,6 +641,14 @@ main.contact .contacts > div .iconContainer {
     width: 100px;
     border-radius: 50%;
     background-color: var(--bg-color-light-accent);
+    display: grid;
+    place-items: center;
+}
+main.contact .contacts > div .iconContainer img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+
 }
 main.contact .contacts > div h1 {
     font-size: 1.5rem;
@@ -627,4 +662,62 @@ main.contact .contacts > div h1, h2 {
     text-align: center;
     font-family: Arial;
     font-weight: bold;
+}
+main.contact form {
+    height: fit-content;
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    margin-block: 100px;
+}
+main.contact form h1, p {
+    text-align: center;
+    font-family: Arial;
+}
+main.contact form h1 {
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+main.contact form p {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+main.contact form input {
+    height: fit-content;
+    width: 80%;
+    font-size: 1.2rem;
+    padding-block: 10px;
+    padding-inline: 15px;
+    margin-block: 10px;
+    margin-inline: auto;
+    border: var(--accent-color) solid 3px;
+    border-radius: 50px;
+}
+main.contact form textarea {
+    height: 400px;
+    width: 80%;
+    border: var(--accent-color) solid 3px;
+    border-radius: 50px;
+    margin-block: 10px;
+    margin-inline: auto;
+    padding: 30px;
+    resize: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+main.contact form button {
+    height: fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color-white);
+    border: none;
+    margin-top: 50px;
 }
