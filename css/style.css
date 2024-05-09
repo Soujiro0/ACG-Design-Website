@@ -11,6 +11,9 @@
     padding: 0px;
     margin: 0px;
 }
+body {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none; 
     color: var(--text-color-white);
@@ -83,6 +86,7 @@ nav ul.primaryNav {
 }
 nav ul.secondaryNav {
     /* null */
+    background-color: transparent;
 }
 nav ul.secondaryNav li:hover {
     background-color: var(--bg-color-light-accent);
@@ -531,7 +535,8 @@ main.itemProduct .product #back {
     margin-left: 20px;
     grid-column-start: span 2;
     place-self: start;
-    padding: 10px;
+    padding: 20px;
+    border: none;
 }
 main.itemProduct .product #back img {
     height: 30px;

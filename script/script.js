@@ -1,5 +1,11 @@
+/**
+ *  script.js
+ * 
+ *  Author: Jerry Castrudes
+ */
 
-fetchDataAndRender();
+// Entry Point
+document.addEventListener('DOMContentLoaded', fetchDataAndRender);
 
 // Fetching data from JSON file
 async function fetchDataAndRender() {
@@ -7,7 +13,6 @@ async function fetchDataAndRender() {
     try {
         const response = await fetch('../data.json');
         const data = await response.json();
-        console.log(data);
 
         const productListDiv = document.querySelector('.productList');
         
@@ -30,6 +35,7 @@ function createProductHTML(product) {
     // Create elements
     const productDiv = document.createElement('div');
     productDiv.classList.add('product');
+    productDiv.id = 'item' + product.id.toString();
 
     const img = document.createElement('img');
     img.setAttribute('src', product.thumbnail);
@@ -56,33 +62,19 @@ function createProductHTML(product) {
     productDiv.appendChild(productInfoDiv);
 
     productDiv.addEventListener('click', () => {
-        clicked(h1.textContent);
+        itemSelect(product);
     });
     return productDiv;
 
 }
 
 // Open the item details window
-async function clicked(itemName){
-    console.log('item clicked');
-    console.log(itemName);
-    
-    // Parse JSON data into JavaScript object
-    try {
-        const response = await fetch('../data.json');
-        const data = await response.json();
-        console.log(data);
-    
-        data.forEach(item => {
-            if (item.name === itemName) {
-                item.isSelected = true;
-            }
-        });
-        console.log(data);
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        throw error;
-    }
+function itemSelect(item) {
+
+    // Store selected item in session storage
+    sessionStorage.setItem('selectedProduct', JSON.stringify(item));    
+    // Redirect to the item details page
+    window.location.href = '/pages/item-details.html';
 
 }
 
