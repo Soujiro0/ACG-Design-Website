@@ -34,7 +34,7 @@ function loadSelectedItem() {
     const backButton = document.getElementById('back');
     backButton.addEventListener('click', () => {
         // Redirect to the product list page with the hash of the selected item ID
-        window.location.href = '/shop.html#item' + id;
+        window.location.href = '/pages/shop.html#item' + id;
     });
 
     // Clear session storage

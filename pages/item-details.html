@@ -9,74 +9,80 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <!--Navigation-->
-    <nav>
-        <h1><a href="#">ACG Design</a></h1>
-        <ul class="primaryNav">
-            <a href="/index.html"><li>Home</li></a>
-            <a href="/pages/about.html"><li>About Us</li></a>
-            <div class="shopLink">
-                <a href="/pages/shop.html">
+    <header>
+        <!--Main Navigation-->
+        <nav class="navbar">
+            <div class="logo"><h1><a href="/index.html">ACG Designs</a></h1></div>
+            <ul>
+                <li><a href="/index.html"><span class="underline">Home</span></a></li>
+                <li><a href="/pages/about.html"><span class="underline">About Us</span></a></li>
+                <div class="shopLink">
                     <li>
-                        Shop
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvtk8ENwyAMRY1vCIZIN0lH6STtJs0mXYUlECfjylUjIQqBVIrUSnAE85//Nyg4eKmD9WEAmgmPiH48Iu/9DREXrbUrtRpCmIhottYuNSvVIYs4AFwBwCHiOYe8xe9KqZmZLzVIFSACMcYHAEw5JBWXM2PMabcDuVCCyD4RvTpviUtt8x/kEGZ2veJdgIIT2dqMJY2r6WAtTpzAVub5LLoBq5Pak/1qyM1v2lGwy0GH3kfJADRT+/+InqtfWxlV/MtZAAAAAElFTkSuQmCC"/>
+                        <a href="/pages/shop.html">
+                            <span class="underline">Shop</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvtk8ENwyAMRY1vCIZIN0lH6STtJs0mXYUlECfjylUjIQqBVIrUSnAE85//Nyg4eKmD9WEAmgmPiH48Iu/9DREXrbUrtRpCmIhottYuNSvVIYs4AFwBwCHiOYe8xe9KqZmZLzVIFSACMcYHAEw5JBWXM2PMabcDuVCCyD4RvTpviUtt8x/kEGZ2veJdgIIT2dqMJY2r6WAtTpzAVub5LLoBq5Pak/1qyM1v2lGwy0GH3kfJADRT+/+InqtfWxlV/MtZAAAAAElFTkSuQmCC"/>
+                        </a>
                     </li>
-                </a>
-                <div class="dropDownShop">
-                    <ul>
-                        <a href="#"><li>Blog</li></a>
-                        <a href="#"><li>Business</li></a>
-                        <a href="#"><li>E-Commerce</li></a>
-                        <a href="#"><li>News</li></a>
-                        <a href="#"><li>Non-Profit</li></a>
-                        <a href="#"><li>Personal</li></a>
-                    </ul>
+                    <div class="dropDownShop">
+                        <ul>
+                            <a href="#"><li>Blog</li></a>
+                            <a href="#"><li>Business</li></a>
+                            <a href="#"><li>E-Commerce</li></a>
+                            <a href="#"><li>News</li></a>
+                            <a href="#"><li>Non-Profit</li></a>
+                            <a href="#"><li>Personal</li></a>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <a href="/pages/contact.html"><li>Contact</li></a>
-            <a href="/pages/faqs.html"><li>FAQS</li></a>
-        </ul>
-        <ul class="secondaryNav">
-            <li>
-                <input type="text" id="searchbar">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW1JREFUSEvVldFxgzAMhiXzxBl2IJMEJmmYpM0kpZOETFI6A3C8gNWKszmXYsMF8lC/5EKwPumX9AfhyQefHB+cgK7rEqXUhYjOiJgCQAUAJQB8CSGKMAz5++pZBLRt+wYAr57bHPxDSsnvec8fQNM0N50xX7wqpco4jkuuaBiGFBETAyeiMoqizEf4BWia5oKI7yyHUirnwEuXtXw3AGDY1VfJBNCXPjmgUipzBTfAuq5TIQRDvMlMAEv3QkqZr2nLv7dty9VefFXYgPFlIsqjKCq2AEwVvl7YAJYnEUKcto6gJWslpTwtJbULoGUi/pRSLo789NCM55YGm0ytqXP27agmrwN2jCn4+vbQolk7MG77pkUzulqzzY8KIroHQTBudN/3PGVsfLZPVUKIzDV5j5rdmDkAvGi7cEK8dq3N7fxj05w1EFGFiHcjycyTFiG7/3DWILsBXJkNmVvNIQADYUnnPnYYwGWO/x/wDZ17+BlkzZ8NAAAAAElFTkSuQmCC"/>
-            </li>
-            <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvFVNuNg0AM9C5fyEsPSSWXdBIquUsluU6OTkJqgBV/ds5RLgovew8FxRISiGUGj8fjYOVyK+NDEkHXdRsi+gSAw+9VA0DlvT/meS73apkETdPsvPc/Eyg1EZVFUVQag0kQYzwDwGYGpEbE7WKCtm0PzrmTBkBEe60LtYMY4xcAiPZaHRFRzk2WSqDo/wBj5jKE8L2I4O4eGfA6M5C/0rqw9JfvTRfJoac92MkzM9dZlpUv2QNrkaz3SR1YIIv3QGzKzB/OuZs0g7pFBgBc/m3T+2BlwebcMyKbi42RRCnen5NkylUjAiN7rHGMsqlHkBgNFkkvOoYEortk/uJi5iqEsP8DGBJo0ZxK2pNpSMCpKNo5RHzgvnfRXtHN6h1cAYZnfxmmGHFPAAAAAElFTkSuQmCC"/></li></a>
-            <a href="#"><li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvNlc1xwjAQhZ9086zcQ+gEOoErFAEpIrlCKoFOoAdrxzcJlIk8wrEkG2wGX+Xd7739kQQm/sTE+fE6ADPbPzcXAD9EtBvDXeMgAPzmNcYsyrI8PQv5VyKt9VIIsbfWnpRSi9EBdV1/GGPOY7nobDIz7wEsn1B/IaKZi+8EhC4ehKQBLqnW+iiEmFtrV0qpQx9Q4PzTT2F0D3yzb6Vq1OQgfhKllLOiKNy4xxdtaLMDQQciWnkxyU1mZrdsWwB3QV1OYiVNAgIX2TL58hDRXc7sXeSV3crZNK7tIOU0C6iqai6lPOYaHFvMLMAFBgqjnNjV0gvQR33sn14AZv4CsAbwTUSbMFnqLLkHrST+rUB7SsJrvn02BDCtg8l78NaAK2pipBmik2uYAAAAAElFTkSuQmCC"/></li></a>
-        </ul>
-    </nav>
+                <li><a href="/pages/contact.html"><span class="underline">Contacts</span></a></li>
+                <li><a href="/pages/faqs.html"><span class="underline">FAQS</span></a></li>
+            </ul>
+            <ul>
+                <li class="search">
+                    <div class="searchBarContainer"><input type="text" id="searchBar" placeholder="Search here"></div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW1JREFUSEvVldFxgzAMhiXzxBl2IJMEJmmYpM0kpZOETFI6A3C8gNWKszmXYsMF8lC/5EKwPumX9AfhyQefHB+cgK7rEqXUhYjOiJgCQAUAJQB8CSGKMAz5++pZBLRt+wYAr57bHPxDSsnvec8fQNM0N50xX7wqpco4jkuuaBiGFBETAyeiMoqizEf4BWia5oKI7yyHUirnwEuXtXw3AGDY1VfJBNCXPjmgUipzBTfAuq5TIQRDvMlMAEv3QkqZr2nLv7dty9VefFXYgPFlIsqjKCq2AEwVvl7YAJYnEUKcto6gJWslpTwtJbULoGUi/pRSLo789NCM55YGm0ytqXP27agmrwN2jCn4+vbQolk7MG77pkUzulqzzY8KIroHQTBudN/3PGVsfLZPVUKIzDV5j5rdmDkAvGi7cEK8dq3N7fxj05w1EFGFiHcjycyTFiG7/3DWILsBXJkNmVvNIQADYUnnPnYYwGWO/x/wDZ17+BlkzZ8NAAAAAElFTkSuQmCC"/>
+                </li>
+                <li><a href="#"><span class="underline"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvFVNuNg0AM9C5fyEsPSSWXdBIquUsluU6OTkJqgBV/ds5RLgovew8FxRISiGUGj8fjYOVyK+NDEkHXdRsi+gSAw+9VA0DlvT/meS73apkETdPsvPc/Eyg1EZVFUVQag0kQYzwDwGYGpEbE7WKCtm0PzrmTBkBEe60LtYMY4xcAiPZaHRFRzk2WSqDo/wBj5jKE8L2I4O4eGfA6M5C/0rqw9JfvTRfJoac92MkzM9dZlpUv2QNrkaz3SR1YIIv3QGzKzB/OuZs0g7pFBgBc/m3T+2BlwebcMyKbi42RRCnen5NkylUjAiN7rHGMsqlHkBgNFkkvOoYEortk/uJi5iqEsP8DGBJo0ZxK2pNpSMCpKNo5RHzgvnfRXtHN6h1cAYZnfxmmGHFPAAAAAElFTkSuQmCC"/></span></a></li>
+                <li><a href="#"><span class="underline"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASVJREFUSEvNlc1xwjAQhZ9086zcQ+gEOoErFAEpIrlCKoFOoAdrxzcJlIk8wrEkG2wGX+Xd7739kQQm/sTE+fE6ADPbPzcXAD9EtBvDXeMgAPzmNcYsyrI8PQv5VyKt9VIIsbfWnpRSi9EBdV1/GGPOY7nobDIz7wEsn1B/IaKZi+8EhC4ehKQBLqnW+iiEmFtrV0qpQx9Q4PzTT2F0D3yzb6Vq1OQgfhKllLOiKNy4xxdtaLMDQQciWnkxyU1mZrdsWwB3QV1OYiVNAgIX2TL58hDRXc7sXeSV3crZNK7tIOU0C6iqai6lPOYaHFvMLMAFBgqjnNjV0gvQR33sn14AZv4CsAbwTUSbMFnqLLkHrST+rUB7SsJrvn02BDCtg8l78NaAK2pipBmik2uYAAAAAElFTkSuQmCC"/></span></a></li>
+            </ul>
+        </nav>
+        <div class="padding-top"></div>
+    </header>
     <!--Main Content-->
-    <main class="itemProduct">
+    <main>
         <!--Product Details-->
-        <div class="product">
-            <button id="back">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALNJREFUSEvllM0JhjAQREdySRl+nWgpVqad2ErKCAwBEYxojD9hN6fPkwd9z9ms06Dy1VTm408E1to2hNCRnEpH+jqiDT4C6AAMpZJHQQJ3JH9qCTTg68dkE2jBswJN+EWgDT8JEnjpWZ6eJ7mPfr/ZBDOAVkQHkBWs0ETijDG9995JhJct0pY8rWkclyjJ7Z+sleRLVYiSfC27KNEtu7g9VetasqK3ZSeFHt9/PQOprLpgAUk6gRmOe6LOAAAAAElFTkSuQmCC"/>
-            </button>
-            <div class="productImage">
-                <img src="/sample.jpg" alt="product image">
-            </div>
-            <div class="productDetails">
-                <h1>Website Name Template</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, recusandae hic. Obcaecati odio est nostrum quod delectus molestiae tenetur atque error sint, culpa sed ratione ullam, sunt, ea temporibus quaerat!</p>
-                <h2>$100</h2>
-                <div class="actionButtons">
-                    <button>Buy Now</button>
-                    <button>Add to Cart</button>
+        <div class="contentContainer itemDetails">
+            <div class="product">
+                <button id="back">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALNJREFUSEvllM0JhjAQREdySRl+nWgpVqad2ErKCAwBEYxojD9hN6fPkwd9z9ms06Dy1VTm408E1to2hNCRnEpH+jqiDT4C6AAMpZJHQQJ3JH9qCTTg68dkE2jBswJN+EWgDT8JEnjpWZ6eJ7mPfr/ZBDOAVkQHkBWs0ETijDG9995JhJct0pY8rWkclyjJ7Z+sleRLVYiSfC27KNEtu7g9VetasqK3ZSeFHt9/PQOprLpgAUk6gRmOe6LOAAAAAElFTkSuQmCC"/>
+                </button>
+                <div class="productImage">
+                    <img src="/sample.jpg" alt="product image">
+                </div>
+                <div class="productDetails">
+                    <h1>Website Name Template</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, recusandae hic. Obcaecati odio est nostrum quod delectus molestiae tenetur atque error sint, culpa sed ratione ullam, sunt, ea temporibus quaerat!</p>
+                    <h2>$100</h2>
+                    <div class="actionButtons">
+                        <button>Buy Now</button>
+                        <button>Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <!--Footer Content-->
     <footer>
-        <div class="footer-content">
-            <!--Footer Navigation-->
-            <nav class="footerNav">
-                <h1 class="logo"><a href="index.html">ACG<h3>Designs</h3></a></h1>
-                <ul class="primaryNav">
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="about.html"><li>About Us</li></a>
-                    <a href="shop.html"><li>Shop</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                    <a href="faqs.html"><li>FAQS</li></a>
+        <div class="footerContent" style="position: relative; bottom: 0;">
+            <nav class="navbar" style="position: relative; bottom: 0;">
+                <div class="logo">
+                    <h1>ACG Designs</h1>
+                </div>
+                <ul>
+                    <li><a href="/index.html"><span class="underline">Home</span></a></li>
+                    <li><a href="/pages/about.html"><span class="underline">About Us</span></a></li>
+                    <li><a href="/pages/shop.html"><span class="underline">Shop</span></a></li>
+                    <li><a href="/pages/contact.html"><span class="underline">Contacts</span></a></li>
+                    <li><a href="/pages/faqs.html"><span class="underline">FAQS</span></a></li>
                 </ul>
                 <!--Footer Contact-->
                 <div class="footerContact">
@@ -90,7 +96,6 @@
                     </h5>
                 </div>
             </nav>
-            <!--Copyright-->
             <div class="copyright">
                 <span>&copy; 2024. ACGDESIGNS. All Rights Reserved</span>
                 <span style="display: block; margin-left: auto;">Terms of Services</span>
@@ -98,6 +103,7 @@
             </div>
         </div>
     </footer>
+    <script src="/script/script-design.js"></script>
     <script src="/script/item-detail-script.js"></script>
 </body>
 </html>
