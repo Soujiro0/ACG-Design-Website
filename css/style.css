@@ -115,6 +115,7 @@ a {
     height: 420px;
     width: 250px;
     justify-content: space-between;
+    backdrop-filter: rgba(255, 192, 203, 0.39);
 }
 .navbar ul .shopLink > .dropDownShop ul {
     height: 100%;
@@ -271,6 +272,7 @@ footer .footerContent .copyright {
     font-size: 2rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
+    place-self: start;
 }
 .productsSection button {
     grid-column-start: 2 span;
