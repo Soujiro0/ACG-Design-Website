@@ -78,4 +78,31 @@ function itemSelect(item) {
 
 }
 
+// Filter Items by Category
+async function filterItems() {
+    const categoryFilter = document.getElementById('category');
+    console.log(categoryFilter.value);
+    let filterItems;
+    if (categoryFilter.value === 'all') {
+        filterItems = await fetchDataAndRender();
+        console.log(`filtered items All:`);
+        console.log(filterItems);
+    } else {
+        const filter = await fetchDataAndRender();
+        filterItems = filter.filter(item => item.category === categoryFilter.value);
+        console.log(`filtered items`);
+        console.log(filterItems);
+    }
+
+    // Remove all items in screen
+    const productListDiv = document.querySelector('.productList');
+    productListDiv.innerHTML = '';
+
+    filterItems.forEach(item => {
+        // Create component and append to container
+        const productHTML = createProductHTML(item);
+        productListDiv.appendChild(productHTML);
+    });
+}
+
 

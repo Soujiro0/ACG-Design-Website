@@ -544,7 +544,7 @@
         "name": "Non-profit 1",
         "price": 10.99,
         "description": "Description for Non-profit Item 1",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit1.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg1.png"
     },
@@ -553,7 +553,7 @@
         "name": "Non-profit 2",
         "price": 15.99,
         "description": "Description for Non-profit Item 2",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit2.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg2.png"
     },
@@ -562,7 +562,7 @@
         "name": "Non-profit 3",
         "price": 20.99,
         "description": "Description for Non-profit Item 3",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit3.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg3.png"
     },
@@ -571,7 +571,7 @@
         "name": "Non-profit 4",
         "price": 25.99,
         "description": "Description for Non-profit Item 4",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit4.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg4.png"
     },
@@ -580,7 +580,7 @@
         "name": "Non-profit 5",
         "price": 30.99,
         "description": "Description for Non-profit Item 5",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit5.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg5.png"
     },
@@ -589,7 +589,7 @@
         "name": "Non-profit 6",
         "price": 35.99,
         "description": "Description for Non-profit Item 6",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit6.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg6.png"
     },
@@ -598,7 +598,7 @@
         "name": "Non-profit 7",
         "price": 40.99,
         "description": "Description for Non-profit Item 7",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit7.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg7.png"
     },
@@ -607,7 +607,7 @@
         "name": "Non-profit 8",
         "price": 45.99,
         "description": "Description for Non-profit Item 8",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit8.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg8.png"
     },
@@ -616,7 +616,7 @@
         "name": "Non-profit 9",
         "price": 50.99,
         "description": "Description for Non-profit Item 9",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit9.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg9.png"
     },
@@ -625,7 +625,7 @@
         "name": "Non-profit 10",
         "price": 55.99,
         "description": "Description for Non-profit Item 10",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit10.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg10.png"
     },
@@ -634,7 +634,7 @@
         "name": "Non-profit 11",
         "price": 60.99,
         "description": "Description for Non-profit Item 11",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit11.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg11.png"
     },
@@ -643,7 +643,7 @@
         "name": "Non-profit 12",
         "price": 65.99,
         "description": "Description for Non-profit Item 12",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit12.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg12.png"
     },
@@ -652,7 +652,7 @@
         "name": "Non-profit 13",
         "price": 70.99,
         "description": "Description for Non-profit Item 13",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit13.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg13.png"
     },
@@ -661,7 +661,7 @@
         "name": "Non-profit 14",
         "price": 75.99,
         "description": "Description for Non-profit Item 14",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit14.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg14.png"
     },
@@ -670,7 +670,7 @@
         "name": "Non-profit 15",
         "price": 80.99,
         "description": "Description for Non-profit Item 15",
-        "category": "Non-profit",
+        "category": "non-profit",
         "image": "/assets/images/products/Non-profit/Non-profit15.png",
         "thumbnail": "/assets/images/products/Non-profit/Non-profittimg15.png"
     },

@@ -1,9 +1,14 @@
 :root {
     --text-color-black: #050505;
     --text-color-white: #f5f5f5;
-    --accent-color: #142D4C;
+    /* old accent color #142D4C */
+    /* --accent-color: #142D4C; */
+    --accent-color: #13192B;
+    --second-accent-color: #FF4918;
     --bg-color-light: #dddddd;
+    --bg-color-mid-light: #afafaf;
     --bg-color-dark: #727272;
+    --bg-color-darker:#444444;
     --bg-color-light-accent: #002d64;
     --bg-color-lighter-accent: #01418f;
     --navigation-bar-height: 75px;
@@ -27,7 +32,7 @@ a {
 
 /* Navigation Container CSS */
 .navbar {
-    background-color: #142D4C;
+    background-color: var(--accent-color);
     height: var(--navigation-bar-height);
     width: 100%;
     display: flex;
@@ -41,7 +46,10 @@ a {
     font-size: 2rem;
     font-weight: bold;
     font-family: Arial;
-    color: #f5f5f5;
+    color: var(--text-color-white);
+}
+.navbar .logo h1 span {
+    color: var(--second-accent-color);
 }
 .navbar ul {
     list-style: none;
@@ -61,7 +69,7 @@ a {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: white; /* Or your desired color */
+    background-color: var(--second-accent-color); /* Or your desired color */
 }
 .navbar ul li a {
     color: white;
@@ -106,7 +114,7 @@ a {
 .navbar ul .shopLink > .dropDownShop {
     height: 0;
     width: 250px;
-    background-color: #142D4C;
+    background-color: var(--accent-color);
     position: absolute;
     transition: 1s ease;
     overflow-y: hidden;
@@ -131,6 +139,7 @@ a {
 }
 .navbar ul .shopLink > .dropDownShop ul li:hover {
     background-color: #01418f;
+    transition: 0.5s ease;
 }
 
 /* Content Container for Main Content */
@@ -169,7 +178,7 @@ footer .footerContent .copyright {
     align-items: center;
     padding-inline: 100px;
     border-top: 3px white solid;
-    background-color: #142D4C;
+    background-color: var(--accent-color);
     color: #F5F5F5;
 }
 
@@ -183,13 +192,12 @@ footer .footerContent .copyright {
 .heroSection .heroBg {
     height: 100%;
     width: 100%;
-    background-image: url(/assets/images/about_hero.png);
+    background-image: url(/assets/images/hero-banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: brightness(.8);
-    opacity: .8;
+    filter: brightness(.5);
     z-index: -1;
 }
 .heroSection h1 {
@@ -200,8 +208,9 @@ footer .footerContent .copyright {
     font-size: 7rem;
     font-weight: bold;
     font-family: 'Arial Black', 'Times New Roman';
-    color: var(--accent-color);
+    color: var(--text-color-white);
     z-index: 3;
+    text-align: center;
 }
 
 /* Product Section Component CSS */
@@ -230,7 +239,15 @@ footer .footerContent .copyright {
     height: 500px;
     width: 80%;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+.productsSection .productList > .product:hover {
+    background-color: var(--bg-color-dark);
+    transition: 0.5 ease;
+    box-shadow: 5px 5px 10px var(--bg-color-darker);
+    transform: translate(-5px, -5px);
+    color: var(--text-color-white);
 }
 .productsSection .productList > .product img {
     height: 80%;
@@ -310,6 +327,11 @@ footer .footerContent .copyright {
     padding: 10px; 
     border: none;
     border-radius: 50px;
+    transition: 0.5s ease;
+}
+.productsSection > .filter select:hover {
+    background-color: var(--text-color-white);
+    transition: 0.5s ease;
 }
 /* Contact Card Design */
 .contactCard {
@@ -367,54 +389,51 @@ footer .footerContent .copyright {
 
 /* Home page CSS */
 
-/* Hero Section Home */
-.homeHeroSection {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    padding-top: var(--navigation-bar-height);
+/* Home Hero Section */
+#home {
+    height: 110vh;
 }
-.homeHeroSection .left {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 100px;
-}
-.homeHeroSection .left h1 {
-    height: fit-content;
-    width: 70%;
+
+#home h1#homeIntro {
     font-size: 4rem;
-    font-weight: bold;
-    font-family: Arial, 'Times New Roman';
-    color: var(--accent-color);
+    color: var(--text-color-white);
+    width: 100%;
+    top: 40%;
+    transform: translate(-50%, -50%);
 }
-.homeHeroSection .left button {
-    background-color: var(--bg-color-light-accent);
-    font-size: 1.8rem;
+#home #homeDescription {
+    position: absolute;
+    font-size: 1.2rem;
+    font-family: Arial, 'Times New Roman';
+    color: var(--text-color-white);
+    top: 52%;
+    left: var(--offset);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+#home .wave {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+#home button {
+    position: absolute;
+    top: 60%;
+    left: var(--offset);
+    transform: translate(-50%, -50%);
+    background-color: var(--second-accent-color);
+    font-size: 1.6rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     padding: 20px 40px;
-    border: none;
+    border: var(--second-accent-color) solid 10px;
     border-radius: 100px;
     margin-top: 20px;
     transition: 0.5s ease;
+    z-index: 4;
 }
-.homeHeroSection .left button:hover {
-    background-color: var(--bg-color-lighter-accent);
-}
-.homeHeroSection .right {
-    height: 100%;
-    width: 50%;
-    display: grid;
-    place-items: center;
-    padding-inline: 50px;
-}
-.homeHeroSection .right img {
-    height: 600px;
-    width: 100%;
+#home button:hover {
+    background-color: transparent;
 }
 
 /* Home Main Content */
@@ -438,23 +457,26 @@ footer .footerContent .copyright {
 }
 .home .categoriesSection > .category {
     background-color: var(--bg-color-light-accent);
-    height: 200px;
+    border: var(--bg-color-light-accent) solid 5px;
+    height: 100px;
     width: 100%;
     border-radius: 50px;
     display: grid;
     place-items: center;
+    transition: 0.5s ease;
 }
 /* Hover a category */
 .home .categoriesSection > .category:hover {
     /* Scale the container */
     transition: 0.5s ease;
-    background-color: var(--bg-color-lighter-accent);
     cursor: pointer;
+    background-color: transparent;
+    border: var(--bg-color-light-accent) solid 5px;
 
     /* Scale the word */
     span {
         transition: 0.5s ease;
-        font-size: 1.7rem;
+        color: var(--bg-color-light-accent);
     }
 }
 .home .categoriesSection > .category > span {
