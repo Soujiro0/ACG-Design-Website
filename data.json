@@ -680,8 +680,8 @@
         "price": 10.99,
         "description": "Description for Personal Item 1",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal1.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg1.png"
+        "image": "../assets/images/products/Personal/personal1.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg1.png"
     },
     {
         "id": "77",
@@ -689,8 +689,8 @@
         "price": 15.99,
         "description": "Description for Personal Item 2",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal2.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg2.png"
+        "image": "../assets/images/products/Personal/personal2.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg2.png"
     },
     {
         "id": "78",
@@ -698,8 +698,8 @@
         "price": 20.99,
         "description": "Description for Personal Item 3",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal3.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg3.png"
+        "image": "../assets/images/products/Personal/personal3.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg3.png"
     },
     {
         "id": "79",
@@ -707,8 +707,8 @@
         "price": 25.99,
         "description": "Description for Personal Item 4",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal4.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg4.png"
+        "image": "../assets/images/products/Personal/personal4.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg4.png"
     },
     {
         "id": "80",
@@ -716,8 +716,8 @@
         "price": 30.99,
         "description": "Description for Personal Item 5",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal5.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg5.png"
+        "image": "../assets/images/products/Personal/personal5.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg5.png"
     },
     {
         "id": "81",
@@ -725,8 +725,8 @@
         "price": 35.99,
         "description": "Description for Personal Item 6",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal6.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg6.png"
+        "image": "../assets/images/products/Personal/personal6.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg6.png"
     },
     {
         "id": "82",
@@ -734,8 +734,8 @@
         "price": 40.99,
         "description": "Description for Personal Item 7",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal7.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg7.png"
+        "image": "../assets/images/products/Personal/personal7.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg7.png"
     },
     {
         "id": "83",
@@ -743,8 +743,8 @@
         "price": 45.99,
         "description": "Description for Personal Item 8",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal8.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg8.png"
+        "image": "../assets/images/products/Personal/personal8.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg8.png"
     },
     {
         "id": "84",
@@ -752,8 +752,8 @@
         "price": 50.99,
         "description": "Description for Personal Item 9",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal9.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg9.png"
+        "image": "../assets/images/products/Personal/personal9.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg9.png"
     },
     {
         "id": "85",
@@ -761,8 +761,8 @@
         "price": 55.99,
         "description": "Description for Personal Item 10",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal10.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg10.png"
+        "image": "../assets/images/products/Personal/personal10.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg10.png"
     },
     {
         "id": "86",
@@ -770,8 +770,8 @@
         "price": 60.99,
         "description": "Description for Personal Item 11",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal11.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg11.png"
+        "image": "../assets/images/products/Personal/personal11.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg11.png"
     },
     {
         "id": "87",
@@ -779,8 +779,8 @@
         "price": 65.99,
         "description": "Description for Personal Item 12",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal12.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg12.png"
+        "image": "../assets/images/products/Personal/personal12.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg12.png"
     },
     {
         "id": "88",
@@ -788,8 +788,8 @@
         "price": 70.99,
         "description": "Description for Personal Item 13",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal13.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg13.png"
+        "image": "../assets/images/products/Personal/personal13.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg13.png"
     },
     {
         "id": "89",
@@ -797,8 +797,8 @@
         "price": 75.99,
         "description": "Description for Personal Item 14",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal14.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg14.png"
+        "image": "../assets/images/products/Personal/personal14.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg14.png"
     },
     {
         "id": "90",
@@ -806,7 +806,7 @@
         "price": 80.99,
         "description": "Description for Personal Item 15",
         "category": "personal",
-        "image": "..../assets/images/products/Personal/personal15.png",
-        "thumbnail": "..../assets/images/products/Personal/personaltimg15.png"
+        "image": "../assets/images/products/Personal/personal15.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg15.png"
     }
 ]
