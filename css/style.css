@@ -40,7 +40,7 @@ a {
     align-items: center;
     padding-inline: 100px;
     position: fixed;
-    z-index: 999;
+    z-index: 4;
 }
 .navbar .logo h1 {
     font-size: 2rem;
@@ -157,6 +157,7 @@ a {
 /* Footer Content CSS */
 footer {
     width: 100%;
+    z-index: 3;
 }
 footer .footerContent .footerContact > h5{
     display: flex;
@@ -235,7 +236,7 @@ footer .footerContent .copyright {
 }
 /* Product Card Design */
 .productsSection .productList > .product {
-    background-color: var(--bg-color-light);
+    background-color: #fafafa;
     height: 500px;
     width: 80%;
     padding: 20px;
@@ -243,7 +244,7 @@ footer .footerContent .copyright {
     transition: 0.5s ease;
 }
 .productsSection .productList > .product:hover {
-    background-color: var(--bg-color-dark);
+    background-color: #afafaf;
     transition: 0.5 ease;
     box-shadow: 5px 5px 10px var(--bg-color-darker);
     transform: translate(-5px, -5px);
@@ -252,7 +253,7 @@ footer .footerContent .copyright {
 .productsSection .productList > .product img {
     height: 80%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .productsSection .productList > .product .productInfo {
     height: 20%;
@@ -392,6 +393,7 @@ footer .footerContent .copyright {
 /* Home Hero Section */
 #home {
     height: 110vh;
+    z-index: -1;
 }
 
 #home h1#homeIntro {
