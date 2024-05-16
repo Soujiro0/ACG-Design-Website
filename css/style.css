@@ -432,8 +432,12 @@ footer .footerContent .copyright {
     transition: 0.5s ease;
     z-index: 4;
 }
+#home button {
+    color: var(--text-color-white);
+}
 #home button:hover {
     background-color: transparent;
+    cursor: pointer;
 }
 
 /* Home Main Content */
@@ -672,13 +676,16 @@ footer .footerContent .copyright {
     font-family: Arial, 'Times New Roman';
     color: var(--text-color-white);
     padding: 20px 30px;
-    border: none;
+    border: var(--accent-color) solid 5px;
     border-radius: 50px;
     width: fit-content;
     margin: auto;
+    transition: 0.5s ease;
 }
 .contact form button:hover {
-    background-color: var(--bg-color-lighter-accent);
+    background-color: transparent;
+    color: var(--accent-color);
+    transition: 0.5s ease;
 }
 
 
