@@ -40,7 +40,7 @@ a {
     align-items: center;
     padding-inline: 100px;
     position: fixed;
-    z-index: 4;
+    z-index: 50;
 }
 .navbar .logo h1 {
     font-size: 2rem;
@@ -157,7 +157,6 @@ a {
 /* Footer Content CSS */
 footer {
     width: 100%;
-    z-index: 3;
 }
 footer .footerContent .footerContact > h5{
     display: flex;
@@ -210,8 +209,8 @@ footer .footerContent .copyright {
     font-weight: bold;
     font-family: 'Arial Black', 'Times New Roman';
     color: var(--text-color-white);
-    z-index: 3;
     text-align: center;
+    z-index: 10;
 }
 
 /* Product Section Component CSS */
@@ -393,7 +392,6 @@ footer .footerContent .copyright {
 /* Home Hero Section */
 #home {
     height: 110vh;
-    z-index: -1;
 }
 
 #home h1#homeIntro {
@@ -411,12 +409,12 @@ footer .footerContent .copyright {
     top: 52%;
     left: var(--offset);
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 10;
 }
 #home .wave {
     position: absolute;
     bottom: 0;
-    z-index: 3;
+    z-index: 10;
 }
 #home button {
     position: absolute;
@@ -432,7 +430,7 @@ footer .footerContent .copyright {
     border-radius: 100px;
     margin-top: 20px;
     transition: 0.5s ease;
-    z-index: 4;
+    z-index: 20;
 }
 #home button {
     color: var(--text-color-white);
