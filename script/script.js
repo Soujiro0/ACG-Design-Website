@@ -74,7 +74,7 @@ function itemSelect(item) {
     // Store selected item in session storage
     sessionStorage.setItem('selectedProduct', JSON.stringify(item));    
     // Redirect to the item details page
-    window.location.href = '/pages/item-details.html';
+    window.location.href = 'pages/item-details.html';
 
 }
 
