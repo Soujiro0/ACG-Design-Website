@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', fetchData);
 async function fetchData() {
 
     try {
-        const response = await fetch('data/data.json');
+        const response = await fetch('../data/data.json');
         const data = await response.json();
 
         // const productListDiv = document.querySelector('.productList');
