@@ -5,8 +5,8 @@
         "price": 10.99,
         "description": "Description for Item 1",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce1.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg1.png"
+        "image": "/assets/images/products/E-commerce/ecommerce1.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg1.png"
     },
     {
         "id": "2",
@@ -14,8 +14,8 @@
         "price": 15.99,
         "description": "Description for Item 2",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce2.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg2.png"
+        "image": "/assets/images/products/E-commerce/ecommerce2.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg2.png"
     },
     {
         "id": "3",
@@ -23,8 +23,8 @@
         "price": 20.99,
         "description": "Description for Item 3",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce3.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg3.png"
+        "image": "/assets/images/products/E-commerce/ecommerce3.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg3.png"
     },
     {
         "id": "4",
@@ -32,8 +32,8 @@
         "price": 25.99,
         "description": "Description for Item 4",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce4.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg4.png"
+        "image": "/assets/images/products/E-commerce/ecommerce4.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg4.png"
     },
     {
         "id": "5",
@@ -41,8 +41,8 @@
         "price": 30.99,
         "description": "Description for Item 5",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce5.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg5.png"
+        "image": "/assets/images/products/E-commerce/ecommerce5.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg5.png"
     },
     {
         "id": "6",
@@ -50,8 +50,8 @@
         "price": 35.99,
         "description": "Description for Item 6",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce6.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg6.png"
+        "image": "/assets/images/products/E-commerce/ecommerce6.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg6.png"
     },
     {
         "id": "7",
@@ -59,8 +59,8 @@
         "price": 40.99,
         "description": "Description for Item 7",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce7.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg7.png"
+        "image": "/assets/images/products/E-commerce/ecommerce7.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg7.png"
     },
     {
         "id": "8",
@@ -68,8 +68,8 @@
         "price": 45.99,
         "description": "Description for Item 8",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce8.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg8.png"
+        "image": "/assets/images/products/E-commerce/ecommerce8.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg8.png"
     },
     {
         "id": "9",
@@ -77,8 +77,8 @@
         "price": 50.99,
         "description": "Description for Item 9",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce9.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg9.png"
+        "image": "/assets/images/products/E-commerce/ecommerce9.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg9.png"
     },
     {
         "id": "10",
@@ -86,8 +86,8 @@
         "price": 55.99,
         "description": "Description for Item 10",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce10.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg10.png"
+        "image": "/assets/images/products/E-commerce/ecommerce10.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg10.png"
     },
     {
         "id": "11",
@@ -95,8 +95,8 @@
         "price": 60.99,
         "description": "Description for Item 11",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce11.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg11.png"
+        "image": "/assets/images/products/E-commerce/ecommerce11.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg11.png"
     },
     {
         "id": "12",
@@ -104,8 +104,8 @@
         "price": 65.99,
         "description": "Description for Item 12",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce12.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg12.png"
+        "image": "/assets/images/products/E-commerce/ecommerce12.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg12.png"
     },
     {
         "id": "13",
@@ -113,8 +113,8 @@
         "price": 70.99,
         "description": "Description for Item 13",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce13.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg13.png"
+        "image": "/assets/images/products/E-commerce/ecommerce13.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg13.png"
     },
     {
         "id": "14",
@@ -122,8 +122,8 @@
         "price": 75.99,
         "description": "Description for Item 14",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce14.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg14.png"
+        "image": "/assets/images/products/E-commerce/ecommerce14.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg14.png"
     },
     {
         "id": "15",
@@ -131,8 +131,8 @@
         "price": 80.99,
         "description": "Description for Item 15",
         "category": "e-commerce",
-        "image": "../assets/images/products/E-commerce/ecommerce15.png",
-        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg15.png"
+        "image": "/assets/images/products/E-commerce/ecommerce15.png",
+        "thumbnail": "/assets/images/products/E-commerce/ecommercetimg15.png"
     },
     {
         "id": "16",
@@ -140,8 +140,8 @@
         "price": 10.99,
         "description": "Description for Blog Item 1",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog1.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg1.png"
+        "image": "/assets/images/products/Blog/blog1.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg1.png"
     },
     {
         "id": "17",
@@ -149,8 +149,8 @@
         "price": 15.99,
         "description": "Description for Blog Item 2",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog2.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg2.png"
+        "image": "/assets/images/products/Blog/blog2.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg2.png"
     },
     {
         "id": "18",
@@ -158,8 +158,8 @@
         "price": 20.99,
         "description": "Description for Blog Item 3",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog3.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg3.png"
+        "image": "/assets/images/products/Blog/blog3.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg3.png"
     },
     {
         "id": "19",
@@ -167,8 +167,8 @@
         "price": 25.99,
         "description": "Description for Blog Item 4",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog4.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg4.png"
+        "image": "/assets/images/products/Blog/blog4.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg4.png"
     },
     {
         "id": "20",
@@ -176,8 +176,8 @@
         "price": 30.99,
         "description": "Description for Blog Item 5",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog5.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg5.png"
+        "image": "/assets/images/products/Blog/blog5.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg5.png"
     },
     {
         "id": "21",
@@ -185,8 +185,8 @@
         "price": 35.99,
         "description": "Description for Blog Item 6",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog6.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg6.png"
+        "image": "/assets/images/products/Blog/blog6.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg6.png"
     },
     {
         "id": "22",
@@ -194,8 +194,8 @@
         "price": 40.99,
         "description": "Description for Blog Item 7",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog7.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg7.png"
+        "image": "/assets/images/products/Blog/blog7.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg7.png"
     },
     {
         "id": "23",
@@ -203,8 +203,8 @@
         "price": 45.99,
         "description": "Description for Blog Item 8",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog8.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg8.png"
+        "image": "/assets/images/products/Blog/blog8.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg8.png"
     },
     {
         "id": "24",
@@ -212,8 +212,8 @@
         "price": 50.99,
         "description": "Description for Blog Item 9",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog9.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg9.png"
+        "image": "/assets/images/products/Blog/blog9.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg9.png"
     },
     {
         "id": "25",
@@ -221,8 +221,8 @@
         "price": 55.99,
         "description": "Description for Blog Item 10",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog10.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg10.png"
+        "image": "/assets/images/products/Blog/blog10.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg10.png"
     },
     {
         "id": "26",
@@ -230,8 +230,8 @@
         "price": 60.99,
         "description": "Description for Blog Item 11",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog11.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg11.png"
+        "image": "/assets/images/products/Blog/blog11.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg11.png"
     },
     {
         "id": "27",
@@ -239,8 +239,8 @@
         "price": 65.99,
         "description": "Description for Blog Item 12",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog12.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg12.png"
+        "image": "/assets/images/products/Blog/blog12.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg12.png"
     },
     {
         "id": "28",
@@ -248,8 +248,8 @@
         "price": 70.99,
         "description": "Description for Blog Item 13",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog13.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg13.png"
+        "image": "/assets/images/products/Blog/blog13.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg13.png"
     },
     {
         "id": "29",
@@ -257,8 +257,8 @@
         "price": 75.99,
         "description": "Description for Blog Item 14",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog14.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg14.png"
+        "image": "/assets/images/products/Blog/blog14.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg14.png"
     },
     {
         "id": "30",
@@ -266,8 +266,8 @@
         "price": 80.99,
         "description": "Description for Blog Item 15",
         "category": "blog",
-        "image": "../assets/images/products/Blog/blog15.png",
-        "thumbnail": "../assets/images/products/Blog/blogtimg15.png"
+        "image": "/assets/images/products/Blog/blog15.png",
+        "thumbnail": "/assets/images/products/Blog/blogtimg15.png"
     },
     {
         "id": "31",
@@ -275,8 +275,8 @@
         "price": 10.99,
         "description": "Description for Business Item 1",
         "category": "business",
-        "image": "../assets/images/products/Business/business1.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg1.png"
+        "image": "/assets/images/products/Business/business1.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg1.png"
     },
     {
         "id": "32",
@@ -284,8 +284,8 @@
         "price": 15.99,
         "description": "Description for Business Item 2",
         "category": "business",
-        "image": "../assets/images/products/Business/business2.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg2.png"
+        "image": "/assets/images/products/Business/business2.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg2.png"
     },
     {
         "id": "33",
@@ -293,8 +293,8 @@
         "price": 20.99,
         "description": "Description for Business Item 3",
         "category": "business",
-        "image": "../assets/images/products/Business/business3.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg3.png"
+        "image": "/assets/images/products/Business/business3.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg3.png"
     },
     {
         "id": "34",
@@ -302,8 +302,8 @@
         "price": 25.99,
         "description": "Description for Business Item 4",
         "category": "business",
-        "image": "../assets/images/products/Business/business4.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg4.png"
+        "image": "/assets/images/products/Business/business4.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg4.png"
     },
     {
         "id": "35",
@@ -311,8 +311,8 @@
         "price": 30.99,
         "description": "Description for Business Item 5",
         "category": "business",
-        "image": "../assets/images/products/Business/business5.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg5.png"
+        "image": "/assets/images/products/Business/business5.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg5.png"
     },
     {
         "id": "36",
@@ -320,8 +320,8 @@
         "price": 35.99,
         "description": "Description for Business Item 6",
         "category": "business",
-        "image": "../assets/images/products/Business/business6.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg6.png"
+        "image": "/assets/images/products/Business/business6.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg6.png"
     },
     {
         "id": "37",
@@ -329,8 +329,8 @@
         "price": 40.99,
         "description": "Description for Business Item 7",
         "category": "business",
-        "image": "../assets/images/products/Business/business7.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg7.png"
+        "image": "/assets/images/products/Business/business7.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg7.png"
     },
     {
         "id": "38",
@@ -338,8 +338,8 @@
         "price": 45.99,
         "description": "Description for Business Item 8",
         "category": "business",
-        "image": "../assets/images/products/Business/business8.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg8.png"
+        "image": "/assets/images/products/Business/business8.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg8.png"
     },
     {
         "id": "39",
@@ -347,8 +347,8 @@
         "price": 50.99,
         "description": "Description for Business Item 9",
         "category": "business",
-        "image": "../assets/images/products/Business/business9.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg9.png"
+        "image": "/assets/images/products/Business/business9.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg9.png"
     },
     {
         "id": "40",
@@ -356,8 +356,8 @@
         "price": 55.99,
         "description": "Description for Business Item 10",
         "category": "business",
-        "image": "../assets/images/products/Business/business10.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg10.png"
+        "image": "/assets/images/products/Business/business10.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg10.png"
     },
     {
         "id": "41",
@@ -365,8 +365,8 @@
         "price": 60.99,
         "description": "Description for Business Item 11",
         "category": "business",
-        "image": "../assets/images/products/Business/business11.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg11.png"
+        "image": "/assets/images/products/Business/business11.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg11.png"
     },
     {
         "id": "42",
@@ -374,8 +374,8 @@
         "price": 65.99,
         "description": "Description for Business Item 12",
         "category": "business",
-        "image": "../assets/images/products/Business/business12.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg12.png"
+        "image": "/assets/images/products/Business/business12.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg12.png"
     },
     {
         "id": "43",
@@ -383,8 +383,8 @@
         "price": 70.99,
         "description": "Description for Business Item 13",
         "category": "business",
-        "image": "../assets/images/products/Business/business13.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg13.png"
+        "image": "/assets/images/products/Business/business13.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg13.png"
     },
     {
         "id": "44",
@@ -392,8 +392,8 @@
         "price": 75.99,
         "description": "Description for Business Item 14",
         "category": "business",
-        "image": "../assets/images/products/Business/business14.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg14.png"
+        "image": "/assets/images/products/Business/business14.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg14.png"
     },
     {
         "id": "45",
@@ -401,8 +401,8 @@
         "price": 80.99,
         "description": "Description for Business Item 15",
         "category": "business",
-        "image": "../assets/images/products/Business/business15.png",
-        "thumbnail": "../assets/images/products/Business/businesstimg15.png"
+        "image": "/assets/images/products/Business/business15.png",
+        "thumbnail": "/assets/images/products/Business/businesstimg15.png"
     },
     {
         "id": "46",
@@ -410,8 +410,8 @@
         "price": 10.99,
         "description": "Description for News Item 1",
         "category": "news",
-        "image": "../assets/images/products/News/news1.png",
-        "thumbnail": "../assets/images/products/News/newstimg1.png"
+        "image": "/assets/images/products/News/news1.png",
+        "thumbnail": "/assets/images/products/News/newstimg1.png"
     },
     {
         "id": "47",
@@ -419,8 +419,8 @@
         "price": 15.99,
         "description": "Description for News Item 2",
         "category": "news",
-        "image": "../assets/images/products/News/news2.png",
-        "thumbnail": "../assets/images/products/News/newstimg2.png"
+        "image": "/assets/images/products/News/news2.png",
+        "thumbnail": "/assets/images/products/News/newstimg2.png"
     },
     {
         "id": "48",
@@ -428,8 +428,8 @@
         "price": 20.99,
         "description": "Description for News Item 3",
         "category": "news",
-        "image": "../assets/images/products/News/news3.png",
-        "thumbnail": "../assets/images/products/News/newstimg3.png"
+        "image": "/assets/images/products/News/news3.png",
+        "thumbnail": "/assets/images/products/News/newstimg3.png"
     },
     {
         "id": "49",
@@ -437,8 +437,8 @@
         "price": 25.99,
         "description": "Description for News Item 4",
         "category": "news",
-        "image": "../assets/images/products/News/news4.png",
-        "thumbnail": "../assets/images/products/News/newstimg4.png"
+        "image": "/assets/images/products/News/news4.png",
+        "thumbnail": "/assets/images/products/News/newstimg4.png"
     },
     {
         "id": "50",
@@ -446,8 +446,8 @@
         "price": 30.99,
         "description": "Description for News Item 5",
         "category": "news",
-        "image": "../assets/images/products/News/news5.png",
-        "thumbnail": "../assets/images/products/News/newstimg5.png"
+        "image": "/assets/images/products/News/news5.png",
+        "thumbnail": "/assets/images/products/News/newstimg5.png"
     },
     {
         "id": "51",
@@ -455,8 +455,8 @@
         "price": 35.99,
         "description": "Description for News Item 6",
         "category": "news",
-        "image": "../assets/images/products/News/news6.png",
-        "thumbnail": "../assets/images/products/News/newstimg6.png"
+        "image": "/assets/images/products/News/news6.png",
+        "thumbnail": "/assets/images/products/News/newstimg6.png"
     },
     {
         "id": "52",
@@ -464,8 +464,8 @@
         "price": 40.99,
         "description": "Description for News Item 7",
         "category": "news",
-        "image": "../assets/images/products/News/news7.png",
-        "thumbnail": "../assets/images/products/News/newstimg7.png"
+        "image": "/assets/images/products/News/news7.png",
+        "thumbnail": "/assets/images/products/News/newstimg7.png"
     },
     {
         "id": "53",
@@ -473,8 +473,8 @@
         "price": 45.99,
         "description": "Description for News Item 8",
         "category": "news",
-        "image": "../assets/images/products/News/news8.png",
-        "thumbnail": "../assets/images/products/News/newstimg8.png"
+        "image": "/assets/images/products/News/news8.png",
+        "thumbnail": "/assets/images/products/News/newstimg8.png"
     },
     {
         "id": "54",
@@ -482,8 +482,8 @@
         "price": 50.99,
         "description": "Description for News Item 9",
         "category": "news",
-        "image": "../assets/images/products/News/news9.png",
-        "thumbnail": "../assets/images/products/News/newstimg9.png"
+        "image": "/assets/images/products/News/news9.png",
+        "thumbnail": "/assets/images/products/News/newstimg9.png"
     },
     {
         "id": "55",
@@ -491,8 +491,8 @@
         "price": 55.99,
         "description": "Description for News Item 10",
         "category": "news",
-        "image": "../assets/images/products/News/news10.png",
-        "thumbnail": "../assets/images/products/News/newstimg10.png"
+        "image": "/assets/images/products/News/news10.png",
+        "thumbnail": "/assets/images/products/News/newstimg10.png"
     },
     {
         "id": "56",
@@ -500,8 +500,8 @@
         "price": 60.99,
         "description": "Description for News Item 11",
         "category": "news",
-        "image": "../assets/images/products/News/news11.png",
-        "thumbnail": "../assets/images/products/News/newstimg11.png"
+        "image": "/assets/images/products/News/news11.png",
+        "thumbnail": "/assets/images/products/News/newstimg11.png"
     },
     {
         "id": "57",
@@ -509,8 +509,8 @@
         "price": 65.99,
         "description": "Description for News Item 12",
         "category": "news",
-        "image": "../assets/images/products/News/news12.png",
-        "thumbnail": "../assets/images/products/News/newstimg12.png"
+        "image": "/assets/images/products/News/news12.png",
+        "thumbnail": "/assets/images/products/News/newstimg12.png"
     },
     {
         "id": "58",
@@ -518,8 +518,8 @@
         "price": 70.99,
         "description": "Description for News Item 13",
         "category": "news",
-        "image": "../assets/images/products/News/news13.png",
-        "thumbnail": "../assets/images/products/News/newstimg13.png"
+        "image": "/assets/images/products/News/news13.png",
+        "thumbnail": "/assets/images/products/News/newstimg13.png"
     },
     {
         "id": "59",
@@ -527,8 +527,8 @@
         "price": 75.99,
         "description": "Description for News Item 14",
         "category": "news",
-        "image": "../assets/images/products/News/news14.png",
-        "thumbnail": "../assets/images/products/News/newstimg14.png"
+        "image": "/assets/images/products/News/news14.png",
+        "thumbnail": "/assets/images/products/News/newstimg14.png"
     },
     {
         "id": "60",
@@ -536,8 +536,8 @@
         "price": 80.99,
         "description": "Description for News Item 15",
         "category": "news",
-        "image": "../assets/images/products/News/news15.png",
-        "thumbnail": "../assets/images/products/News/newstimg15.png"
+        "image": "/assets/images/products/News/news15.png",
+        "thumbnail": "/assets/images/products/News/newstimg15.png"
     },
     {
         "id": "61",
@@ -545,8 +545,8 @@
         "price": 10.99,
         "description": "Description for Non-profit Item 1",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit1.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg1.png"
+        "image": "/assets/images/products/Non-profit/Non-profit1.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg1.png"
     },
     {
         "id": "62",
@@ -554,8 +554,8 @@
         "price": 15.99,
         "description": "Description for Non-profit Item 2",
         "category": "non-profit",
-        "image": "../../assets/images/products/Non-profit/Non-profit2.png",
-        "thumbnail": "../../assets/images/products/Non-profit/Non-profittimg2.png"
+        "image": "/assets/images/products/Non-profit/Non-profit2.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg2.png"
     },
     {
         "id": "63",
@@ -563,8 +563,8 @@
         "price": 20.99,
         "description": "Description for Non-profit Item 3",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit3.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg3.png"
+        "image": "/assets/images/products/Non-profit/Non-profit3.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg3.png"
     },
     {
         "id": "64",
@@ -572,8 +572,8 @@
         "price": 25.99,
         "description": "Description for Non-profit Item 4",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit4.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg4.png"
+        "image": "/assets/images/products/Non-profit/Non-profit4.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg4.png"
     },
     {
         "id": "65",
@@ -581,8 +581,8 @@
         "price": 30.99,
         "description": "Description for Non-profit Item 5",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit5.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg5.png"
+        "image": "/assets/images/products/Non-profit/Non-profit5.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg5.png"
     },
     {
         "id": "66",
@@ -590,8 +590,8 @@
         "price": 35.99,
         "description": "Description for Non-profit Item 6",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit6.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg6.png"
+        "image": "/assets/images/products/Non-profit/Non-profit6.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg6.png"
     },
     {
         "id": "67",
@@ -599,8 +599,8 @@
         "price": 40.99,
         "description": "Description for Non-profit Item 7",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit7.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg7.png"
+        "image": "/assets/images/products/Non-profit/Non-profit7.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg7.png"
     },
     {
         "id": "68",
@@ -608,8 +608,8 @@
         "price": 45.99,
         "description": "Description for Non-profit Item 8",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit8.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg8.png"
+        "image": "/assets/images/products/Non-profit/Non-profit8.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg8.png"
     },
     {
         "id": "69",
@@ -617,8 +617,8 @@
         "price": 50.99,
         "description": "Description for Non-profit Item 9",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit9.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg9.png"
+        "image": "/assets/images/products/Non-profit/Non-profit9.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg9.png"
     },
     {
         "id": "70",
@@ -626,8 +626,8 @@
         "price": 55.99,
         "description": "Description for Non-profit Item 10",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit10.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg10.png"
+        "image": "/assets/images/products/Non-profit/Non-profit10.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg10.png"
     },
     {
         "id": "71",
@@ -635,8 +635,8 @@
         "price": 60.99,
         "description": "Description for Non-profit Item 11",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit11.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg11.png"
+        "image": "/assets/images/products/Non-profit/Non-profit11.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg11.png"
     },
     {
         "id": "72",
@@ -644,8 +644,8 @@
         "price": 65.99,
         "description": "Description for Non-profit Item 12",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit12.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg12.png"
+        "image": "/assets/images/products/Non-profit/Non-profit12.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg12.png"
     },
     {
         "id": "73",
@@ -653,8 +653,8 @@
         "price": 70.99,
         "description": "Description for Non-profit Item 13",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit13.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg13.png"
+        "image": "/assets/images/products/Non-profit/Non-profit13.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg13.png"
     },
     {
         "id": "74",
@@ -662,8 +662,8 @@
         "price": 75.99,
         "description": "Description for Non-profit Item 14",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit14.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg14.png"
+        "image": "/assets/images/products/Non-profit/Non-profit14.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg14.png"
     },
     {
         "id": "75",
@@ -671,8 +671,8 @@
         "price": 80.99,
         "description": "Description for Non-profit Item 15",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit15.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg15.png"
+        "image": "/assets/images/products/Non-profit/Non-profit15.png",
+        "thumbnail": "/assets/images/products/Non-profit/Non-profittimg15.png"
     },
     {
         "id": "76",
@@ -680,8 +680,8 @@
         "price": 10.99,
         "description": "Description for Personal Item 1",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal1.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg1.png"
+        "image": "/assets/images/products/Personal/personal1.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg1.png"
     },
     {
         "id": "77",
@@ -689,8 +689,8 @@
         "price": 15.99,
         "description": "Description for Personal Item 2",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal2.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg2.png"
+        "image": "/assets/images/products/Personal/personal2.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg2.png"
     },
     {
         "id": "78",
@@ -698,8 +698,8 @@
         "price": 20.99,
         "description": "Description for Personal Item 3",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal3.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg3.png"
+        "image": "/assets/images/products/Personal/personal3.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg3.png"
     },
     {
         "id": "79",
@@ -707,8 +707,8 @@
         "price": 25.99,
         "description": "Description for Personal Item 4",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal4.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg4.png"
+        "image": "/assets/images/products/Personal/personal4.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg4.png"
     },
     {
         "id": "80",
@@ -716,8 +716,8 @@
         "price": 30.99,
         "description": "Description for Personal Item 5",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal5.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg5.png"
+        "image": "/assets/images/products/Personal/personal5.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg5.png"
     },
     {
         "id": "81",
@@ -725,8 +725,8 @@
         "price": 35.99,
         "description": "Description for Personal Item 6",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal6.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg6.png"
+        "image": "/assets/images/products/Personal/personal6.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg6.png"
     },
     {
         "id": "82",
@@ -734,8 +734,8 @@
         "price": 40.99,
         "description": "Description for Personal Item 7",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal7.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg7.png"
+        "image": "/assets/images/products/Personal/personal7.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg7.png"
     },
     {
         "id": "83",
@@ -743,8 +743,8 @@
         "price": 45.99,
         "description": "Description for Personal Item 8",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal8.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg8.png"
+        "image": "/assets/images/products/Personal/personal8.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg8.png"
     },
     {
         "id": "84",
@@ -752,8 +752,8 @@
         "price": 50.99,
         "description": "Description for Personal Item 9",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal9.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg9.png"
+        "image": "/assets/images/products/Personal/personal9.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg9.png"
     },
     {
         "id": "85",
@@ -761,8 +761,8 @@
         "price": 55.99,
         "description": "Description for Personal Item 10",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal10.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg10.png"
+        "image": "/assets/images/products/Personal/personal10.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg10.png"
     },
     {
         "id": "86",
@@ -770,8 +770,8 @@
         "price": 60.99,
         "description": "Description for Personal Item 11",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal11.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg11.png"
+        "image": "/assets/images/products/Personal/personal11.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg11.png"
     },
     {
         "id": "87",
@@ -779,8 +779,8 @@
         "price": 65.99,
         "description": "Description for Personal Item 12",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal12.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg12.png"
+        "image": "/assets/images/products/Personal/personal12.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg12.png"
     },
     {
         "id": "88",
@@ -788,8 +788,8 @@
         "price": 70.99,
         "description": "Description for Personal Item 13",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal13.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg13.png"
+        "image": "/assets/images/products/Personal/personal13.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg13.png"
     },
     {
         "id": "89",
@@ -797,8 +797,8 @@
         "price": 75.99,
         "description": "Description for Personal Item 14",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal14.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg14.png"
+        "image": "/assets/images/products/Personal/personal14.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg14.png"
     },
     {
         "id": "90",
@@ -806,7 +806,7 @@
         "price": 80.99,
         "description": "Description for Personal Item 15",
         "category": "personal",
-        "image": "../assets/images/products/Personal/personal15.png",
-        "thumbnail": "../assets/images/products/Personal/personaltimg15.png"
+        "image": "/assets/images/products/Personal/personal15.png",
+        "thumbnail": "/assets/images/products/Personal/personaltimg15.png"
     }
 ]
