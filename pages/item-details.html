@@ -54,16 +54,47 @@
                 <button id="back">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALNJREFUSEvllM0JhjAQREdySRl+nWgpVqad2ErKCAwBEYxojD9hN6fPkwd9z9ms06Dy1VTm408E1to2hNCRnEpH+jqiDT4C6AAMpZJHQQJ3JH9qCTTg68dkE2jBswJN+EWgDT8JEnjpWZ6eJ7mPfr/ZBDOAVkQHkBWs0ETijDG9995JhJct0pY8rWkclyjJ7Z+sleRLVYiSfC27KNEtu7g9VetasqK3ZSeFHt9/PQOprLpgAUk6gRmOe6LOAAAAAElFTkSuQmCC"/>
                 </button>
-                <div class="productImage">
-                    <img src="../sample.jpg" alt="product image">
+                <div>
+                    <div class="productImage">
+                        <img src="../sample.jpg" alt="product image">
+                    </div>
+
+                    <div class="fullDetails">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, recusandae hic. Obcaecati odio est nostrum quod delectus molestiae tenetur atque error sint, culpa sed ratione ullam, sunt, ea temporibus quaerat!</p>
+                    </div>
                 </div>
                 <div class="productDetails">
                     <h1>Website Name Template</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, recusandae hic. Obcaecati odio est nostrum quod delectus molestiae tenetur atque error sint, culpa sed ratione ullam, sunt, ea temporibus quaerat!</p>
                     <h2>$100</h2>
+                    <!--Drop down checkbox-->
+
+                    <!--Logo Link Input-->
+                    <div class="logoInput">
+                        <label for="logoLink">Logo:</label>
+                        <input type="text" id="logoLink" placeholder="Paste the Google Drive link to your logo (ensure the file access is set to 'Anyone with the link').">
+                    </div>
+
+                    <!--Social Media Input-->
+                    <div class="socialsInput textAreaContainer">
+                        <label for="socials">Social Media:</label>
+                        <textarea name="" id="socials"></textarea>
+                    </div>
+
+                    <!--Contact Info Input-->
+                    <div class="contactInput textAreaContainer">
+                        <label for="contactInfo">Contact Information:</label>
+                        <textarea name="" id="contactInfo"></textarea>
+                    </div>
+
+                    <!--Additional Instruction Input-->
+                    <div class="additionalInput textAreaContainer">
+                        <label for="contactInfo">Additional Instructions:</label>
+                        <textarea name="" id="contactInfo" placeholder="You can provide Google Drive links for your custom photos (make sure access is 'Anyone with the link'), text contents, and other instructions/guidelines here."></textarea>
+                    </div>
+
                     <div class="actionButtons">
-                        <button>Buy Now</button>
-                        <button>Add to Cart</button>
+                        <button class="buy">Buy Now</button>
+                        <button class="addToCart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -104,5 +135,29 @@
     </footer>
     <script src="../script/script-design.js"></script>
     <script src="../script/item-detail-script.js"></script>
+    <script>
+
+
+        // Zoom Image of product when hover
+        const imgContainer = document.querySelector('.productImage');
+        const img = document.querySelector('.productImage > img');
+
+        imgContainer.addEventListener('mousemove', (e) => {
+            const x = e.clientX - e.target.offsetLeft;
+            const y = e.clientY - e.target.offsetTop;
+
+            img.style.transformOrigin = `${x}px ${y}px`;
+            img.style.transform = 'scale(1.5)';
+            img.style.transition = '0.5s ease';
+        });
+
+        imgContainer.addEventListener('mouseleave', () => {
+            img.style.transformOrigin = 'center';
+            img.style.transform = 'scale(1)';
+        });
+
+
+        // Toggle Dropdown checklist
+    </script>
 </body>
 </html>

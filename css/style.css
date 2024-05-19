@@ -851,6 +851,7 @@ footer .footerContent .copyright {
 .itemDetails .product .productImage {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .itemDetails .product .productImage img {
     height: 100vh;
@@ -865,9 +866,8 @@ footer .footerContent .copyright {
 }
 .itemDetails .product .productDetails h1 {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 100;
     font-family: Arial, 'Times New Roman';
-    margin-block: 20px;
 }
 .itemDetails .product .productDetails p {
     font-size: 1.2rem;
@@ -880,22 +880,91 @@ footer .footerContent .copyright {
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     text-align: left;
-    margin-block: 50px;
+    margin-top: 20px;
 }
-.itemDetails .product .productDetails .actionButtons {
-    height: fit-content;
-    width: 100%;
-    margin: auto;
+.itemDetails .product .productDetails label {
+    font-size: 1.5rem;
+    font-family: Arial, 'Times New Roman';
+    font-weight: 500;
+}
+
+/* Logo Input Design */
+.itemDetails .product .productDetails .logoInput {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+    border-bottom: var(--text-color-black) solid 2px;
+    padding-block: 5px;
+    margin-bottom: 20px;
 }
-.itemDetails .product .productDetails .actionButtons button {
+.itemDetails .product .productDetails .logoInput input {
+    height: auto;
+    width: 100%;
+    margin-left: 10px;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 5px;
+}
+
+/* Text Area Container */
+.itemDetails .product .productDetails .textAreaContainer {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+}
+/* Social Media and Contact Info Input Design */
+.itemDetails .product .productDetails div > textarea {
+    resize: none;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: Arial, 'Times New Roman';
+    margin-block: 10px;
+    border: var(--text-color-black) solid 2px;
+    border-radius: 5px;
+}
+
+/* Additional Instruction Input Design */
+.itemDetails .product .productDetails .additionalInput textarea {
+    height: 200px;
+    width: 100%;
+}
+
+/* Action Buttons Design */
+.itemDetails .product .productDetails .actionButtons {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    margin-top: 20px;
+}
+.itemDetails .product .productDetails .actionButtons .buy {
     background-color: var(--bg-color-light);
     padding: 20px 40px;
     font-size: 1.5rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
-    border: none;
-    border-radius: 50px;
+    border: var(--text-color-black) solid 2px;
+    margin-right: 20px;
+    transition: 0.5s ease;
+}
+.itemDetails .product .productDetails .actionButtons .buy:hover {
+    background-color: var(--bg-color-dark);
+}
+.itemDetails .product .productDetails .actionButtons .addToCart {
+    background-color: var(--second-accent-color);
+    color: var(--text-color-white);
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, 'Times New Roman';
+    border: var(--second-accent-color) solid 2px;
+    margin-right: 20px;
+    transition: 0.5s ease;
+}
+.itemDetails .product .productDetails .actionButtons .addToCart:hover {
+    background-color: transparent;
+    color: var(--second-accent-color);
 }

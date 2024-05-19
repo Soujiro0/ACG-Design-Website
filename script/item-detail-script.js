@@ -12,12 +12,12 @@ function loadSelectedItem() {
 
     const prodImage = document.querySelector('.productImage img');
     const prodName = document.querySelector('.productDetails > h1');
-    const prodDescript = document.querySelector('.productDetails > p');
+    const prodDescript = document.querySelector('.fullDetails > p');
     const prodPrice = document.querySelector('.productDetails > h2');
 
     const selectedProduct = sessionStorage.getItem('selectedProduct');
     // Get data from session storage
-    const { id, image, name, description, price } = JSON.parse(selectedProduct);
+    const { image, name, description, price } = JSON.parse(selectedProduct);
 
     if (!selectedProduct) {
         console.error('No selected product found.');
@@ -34,7 +34,7 @@ function loadSelectedItem() {
     const backButton = document.getElementById('back');
     backButton.addEventListener('click', () => {
         // Redirect to the product list page with the hash of the selected item ID
-        window.location.href = '/pages/shop.html#item' + id;
+        window.location.href = '../pages/shop.html';
     });
 
     // Clear session storage
