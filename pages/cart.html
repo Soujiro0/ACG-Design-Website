@@ -222,8 +222,62 @@
                     <h1>$300</h1>
                     <button onclick="moveToNextStep()">Checkout</button>
                 </div>
-                <button onclick="moveToPreviousStep()">Previous Step</button>
             </div>
+
+            <!--Checkout Component-->
+            <div class="checkOutComponent" hidden>
+                <div class="customerDetails">
+                    <h1>Customer Details</h1>
+                    <span>
+                        Edit
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.7825 3.03L11.0275 4.7775L8.215 1.965L9.97 0.217498C10.2625 -0.0750018 10.75 -0.0750018 11.0275 0.217498L12.7825 1.9725C13.075 2.25 13.075 2.7375 12.7825 3.03ZM0.25 9.9375L7.795 2.385L10.6075 5.1975L3.0625 12.75H0.25V9.9375ZM10.465 0.779998L9.31 1.935L11.065 3.69L12.22 2.535L10.465 0.779998ZM9.52 5.25L7.75 3.48L1 10.245V12H2.755L9.52 5.25Z" fill="black"/>
+                        </svg>    
+                    </span>
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+
+                </div>
+                <div class="orderSummary">
+                    <h1>Order Summary</h1>
+                    <div class="item">
+                        <img src="/Kana Arima.jpg" alt="" height="50" width="50">
+                        <h1 class="itemName">Item Name</h1>
+                        <p>color 1, color 2, color 3</p>
+                        <h2 class="price">Price</h2>
+                        <div class="totalBox">
+                            <span>Total: </span>
+                            <h5>$90</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="paymentMethod">
+                    <h1>Choose Payment Method</h1>
+                    <div class="methods">
+                        <div class="method">
+                            <input type="radio" name="paymentMethod">
+                            <h1>Gcash</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        </div>
+                        <div class="method">
+                            <input type="radio" name="paymentMethod">
+                            <h1>Paypal</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        </div>
+                        <div class="method">
+                            <input type="radio" name="paymentMethod">
+                            <h1>Credit Card</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            <label for="creditCardInput">Credit Card Number</label>
+                            <input type="text" id="creditCardInput">
+                        </div>
+                    </div>
+                </div>
+                <button class="back">Back</button>
+                <button class="placeOrder">Place Order</button>
+            </div>
+
         </div>
     </main>
 

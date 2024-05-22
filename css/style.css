@@ -237,18 +237,15 @@ footer .footerContent .copyright {
 /* Product Card Design */
 .productsSection .productList > .product {
     background-color: #fafafa;
-    height: 550px;
-    width: 90%;
+    height: 400px;
+    width: 440px;
     padding: 20px;
-    border-radius: 20px;
     transition: 0.5s ease;
 }
 .productsSection .productList > .product:hover {
-    background-color: #afafaf;
     transition: 0.5 ease;
     box-shadow: 5px 5px 10px var(--bg-color-darker);
     transform: translate(-5px, -5px);
-    color: var(--text-color-white);
 }
 .productsSection .productList > .product img {
     height: 80%;
@@ -450,7 +447,8 @@ footer .footerContent .copyright {
     color: var(--text-color-white);
 }
 #home button:hover {
-    background-color: transparent;
+    background-color: #ae2600;
+    border-color: #ae2600;
     cursor: pointer;
 }
 
@@ -1260,8 +1258,8 @@ footer .footerContent .copyright {
     width: 20px;
 }
 .cart .addedToCartItems .cart-container .cartList .cart-item img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     grid-row-start: span 5;
 }
 .cart .addedToCartItems .cart-container .cartList .cart-item h1 {
