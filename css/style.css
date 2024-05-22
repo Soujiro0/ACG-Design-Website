@@ -447,8 +447,8 @@ footer .footerContent .copyright {
     color: var(--text-color-white);
 }
 #home button:hover {
-    background-color: #ae2600;
-    border-color: #ae2600;
+    background-color: #FF2E00;
+    border-color: #FF2E00;
     cursor: pointer;
 }
 
@@ -1104,6 +1104,9 @@ footer .footerContent .copyright {
 
 
 /* Cart Page Design */
+.cart .hide {
+    display: none;
+}
 
 /* Progress Bar Design */
 .cart  #back {
@@ -1188,6 +1191,7 @@ footer .footerContent .copyright {
     font-weight: bold;
 }
 
+/* Added to Cart Component Design */
 .cart .addedToCartItems .cart-container {
     height: fit-content;
     width: 100%;
@@ -1341,4 +1345,228 @@ footer .footerContent .copyright {
     background-color: transparent;
     color: var(--second-accent-color);
 }
+/* End Added to Cart Component Design */
 
+.cart .checkOutComponent .checkOutContainer {
+    height: fit-content;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    margin-top: 30px;
+    margin-inline: auto;
+}
+/* Customer Details Design */
+.cart .checkOutComponent .checkOutContainer .customerDetails {
+    height: fit-content;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+.cart .checkOutComponent .checkOutContainer .customerDetails h1 {
+    font-size: 1.25rem;
+    font-family: var(--default-font);
+    font-weight: 500;
+}
+.cart .checkOutComponent .checkOutContainer .customerDetails span {
+    grid-row-start: span 4;
+    place-self: end;
+    align-self: start;
+    font-size: 0.75rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.cart .checkOutComponent .checkOutContainer .customerDetails span svg {
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+}
+.cart .checkOutComponent .checkOutContainer .customerDetails input {
+    border: none;
+    padding: 10px 0px;
+    font-size: 0.75rem;
+    font-family: var(--default-font);
+    font-weight: normal;
+    color: var(--text-color-black);
+}
+/* Order Summary Design */
+.cart .checkOutComponent .checkOutContainer .orderSummary {
+    grid-row-start: span 2;
+    border: var(--text-color-black) solid 2px;
+    display: flex;
+    flex-direction: column;
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary > h1 {
+    font-size: 1.25rem;
+    font-family: var(--default-font);
+    font-weight: 500;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .itemList {
+    height: 90%;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item img {
+    height: 50px;
+    width: 50px;
+    place-self: center;
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item > div {
+    align-self: center;
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item > div > h1 {
+    font-size: 0.75rem;
+    font-family: var(--default-font);
+    font-weight: 500;
+    color: var(--text-color-black);
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item > div > p {
+    font-size: 0.625rem;
+    font-family: var(--default-font);
+    font-weight: 500;
+    color: var(--bg-color-dark);
+    text-align: left;
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item > h2 {
+    font-size: 1rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    color: var(--text-color-black);
+    text-align: left;
+    place-self: center;
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .totalBox {
+    height: fit-content;
+    width: 100%;
+    margin-top: auto;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .totalBox > span {
+    font-size: 1rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    color: var(--text-color-black);
+}
+.cart .checkOutComponent .checkOutContainer .orderSummary .totalBox > h5 {
+    font-size: 1rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    color: var(--text-color-black);
+}
+/* Payment Method Design */
+.cart .checkOutComponent .checkOutContainer .paymentMethod > h1 {
+    font-size: 1.25rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    color: var(--text-color-black);
+    margin-bottom: 20px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods {
+    height: fit-content;
+    width: 90%;
+    border: var(--text-color-black) solid 2px;
+    padding: 20px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > input {
+    margin: 20px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div {
+    display: block;
+    flex-direction: column;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div > h1 {
+    font-size: 1rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    color: var(--text-color-black);
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div > p {
+    font-size: 0.625rem;
+    font-family: var(--default-font);
+    font-weight: normal;
+    color: var(--bg-color-dark);
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div {
+    font-size: 0.75rem;
+    font-family: var(--default-font);
+    font-weight: normal;
+    color: var(--bg-color-dark);
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method svg {
+    margin-left: auto;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .creditCardInput {
+    display: flex;
+    flex-direction: column;
+    margin: 53px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .creditCardInput label {
+    font-size: 0.875rem;
+    font-family: var(--default-font);
+    font-weight: normal;
+    color: var(--text-color-black);
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .creditCardInput input {
+    font-size: 0.875rem;
+    font-family: var(--default-font);
+    font-weight: normal;
+    color: var(--text-color-black);
+    padding: 5px 0px;
+    border: var(--text-color-black) solid 2px;
+}
+.cart .checkOutComponent .checkOutContainer .back {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.125rem;
+    font-family: var(--default-font);
+    font-weight: normal;
+    color: var(--text-color-black);
+    background-color: transparent;
+    border: var(--text-color-black) solid 3px;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    transition: 0.5s ease;
+}
+.cart .checkOutComponent .checkOutContainer .placeOrder {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.125rem;
+    font-family: var(--default-font);
+    font-weight: normal;
+    color: var(--text-color-white);
+    background-color: var(--second-accent-color);
+    border: var(--second-accent-color) solid 3px;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    place-self: end;
+    transition: 0.5s ease;
+}
+.cart .checkOutComponent .checkOutContainer .back:hover {
+    background-color: var(--bg-color-mid-light);
+}
+.cart .checkOutComponent .checkOutContainer .placeOrder:hover {
+    background-color: transparent;
+    color: var(--second-accent-color);
+}
