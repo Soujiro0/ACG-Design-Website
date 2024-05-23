@@ -6,12 +6,14 @@
     --accent-color: #13192B;
     --second-accent-color: #FF4918;
     --bg-color-light: #dddddd;
+    --bg-color-lighter: #f1f1f1;
     --bg-color-mid-light: #afafaf;
+    --bg-product-card: #fafafa;
     --bg-color-dark: #727272;
     --bg-color-darker:#444444;
     --bg-color-light-accent: #002d64;
     --bg-color-lighter-accent: #01418f;
-    --navigation-bar-height: 75px;
+    --navigation-bar-height: 82px;
     --offset: 50%;
     --default-font: Arial, 'Times New Roman';
 }
@@ -61,7 +63,7 @@ a {
     padding: 20px 30px;
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial;
 }
 .navbar ul a:hover .underline::after{
@@ -71,16 +73,21 @@ a {
     width: 100%;
     height: 3px;
     background-color: var(--second-accent-color); /* Or your desired color */
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 .navbar ul li a {
     color: white;
     display: flex;
     align-items: center;
 }
-.navbar ul li img {
+.navbar ul li svg {
     /* Set the size of icons */
-    height: 30px;
-    width: 30px;
+    height: 27px;
+    width: 27px;
+}
+.navbar ul li svg:hover {
+    cursor: pointer;
 }
 /* div for input */
 .navbar ul li > .searchBarContainer {
@@ -93,11 +100,14 @@ a {
 }
 .navbar ul li > .searchBarContainer input {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial;
     padding: 10px 20px;
     border: none;
     border-radius: 50px;
+}
+.navbar ul li > .searchBarContainer input:focus {
+    outline: none;
 }
 .navbar ul li > .active {
     /* Active State of search bar*/
@@ -121,7 +131,7 @@ a {
     overflow-y: hidden;
 }
 .navbar ul .shopLink:hover .dropDownShop {
-    height: 420px;
+    height: 350px;
     width: 250px;
     justify-content: space-between;
     backdrop-filter: rgba(255, 192, 203, 0.39);
@@ -159,16 +169,41 @@ a {
 footer {
     width: 100%;
 }
+footer .footerContent nav {
+    height: calc(var(--navigation-bar-height) + 30px);
+}
+footer .footerContent nav > .footerLogo a h1 {
+    font-size: 2.5rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    text-align: center;
+    color: var(--second-accent-color);
+}
+footer .footerContent nav > .footerLogo a span {
+    display: block;
+    font-size: 1.25rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color-white);
+}
+footer .footerContent .footerContact {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 footer .footerContent .footerContact > h5{
     display: flex;
     align-items: center;
     color: #f5f5f5;
-    font-size: 1rem; 
-    font-family: Arial;
+    font-size: 0.875rem; 
+    font-family: var(--default-font);
     padding: 5px;
-    font-weight: normal;
+    font-weight: 500;
 }
-footer .footerContent .footerContact h5 img {
+footer .footerContent .footerContact h5 svg {
     margin-right: 10px;
 }
 footer .footerContent .copyright {
@@ -181,6 +216,12 @@ footer .footerContent .copyright {
     border-top: 3px white solid;
     background-color: var(--accent-color);
     color: #F5F5F5;
+}
+footer .footerContent .copyright span {
+    font-size: 0.75rem;
+    font-family: var(--default-font);
+    font-weight: normal;
+    color: var(--text-color-white);
 }
 
 /* Hero Banner Component CSS */
@@ -206,9 +247,9 @@ footer .footerContent .copyright {
     top: var(--offset);
     left: var(--offset);
     transform: translate(-50%, -50%);
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: bold;
-    font-family: 'Arial Black', 'Times New Roman';
+    font-family: var(--default-font);
     color: var(--text-color-white);
     text-align: center;
     z-index: 10;
@@ -236,10 +277,9 @@ footer .footerContent .copyright {
 }
 /* Product Card Design */
 .productsSection .productList > .product {
-    background-color: #fafafa;
-    height: 400px;
-    width: 440px;
-    padding: 20px;
+    background-color: var(--bg-product-card);
+    height: 422px;
+    width: 400px;
     transition: 0.5s ease;
 }
 .productsSection .productList > .product:hover {
@@ -251,12 +291,14 @@ footer .footerContent .copyright {
     height: 80%;
     width: 100%;
     object-fit: cover;
+    box-shadow: 0px 3px 5px var(--bg-color-darker);
 }
 .productsSection .productList > .product .productInfo {
     height: 20%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     place-items: start;
     align-content: center;
 }
@@ -264,21 +306,28 @@ footer .footerContent .copyright {
     font-family: Arial, 'Times New Roman';
 }
 .productsSection .productList > .product .productInfo > h1 {
-    font-size: 1.2rem;
+    grid-column-start: span 2;
+    font-size: 1rem;
     font-weight: normal;
-    padding: 10px;
+    margin: 5px;
+    margin-inline: 10px;
 }
 .productsSection .productList > .product .productInfo > h2 {
-    justify-self: end;
+    place-self: start;
     align-self: center;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: bold;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    margin-inline: 10px;
 }
 .productsSection .productList > .product .productInfo > h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px;
+    font-size: 1rem;
+    font-weight: normal;
+    place-self: start;
+    margin: 5px;
+    margin-inline: 10px;
 }
 
 /* Home product section CSS */
@@ -305,9 +354,9 @@ footer .footerContent .copyright {
     grid-column-start: 2 span;
     background-color: var(--second-accent-color);
     border: none;
-    padding: 20px 40px;
+    padding: 15px 40px;
     place-self: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     color: var(--text-color-white);
@@ -347,10 +396,10 @@ footer .footerContent .copyright {
 /* Contact Card Design */
 .contactCard {
     height: 300px;
-    width: 70%;
+    width: 60%;
     padding: 20px;
     padding-block: 50px;
-    border: var(--bg-color-light-accent) solid 5px;
+    border: var(--accent-color) solid 5px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -358,17 +407,22 @@ footer .footerContent .copyright {
     transition: 0.5s ease;
 }
 .contactCard:hover {
-    background-color: var(--bg-color-lighter-accent);
+    background-color: var(--bg-color-light-accent);
     color: var(--text-color-white);
+    transform: scale(110%);
+
+    h2 {
+        color: var(--text-color-white);
+    }
 }
 .contactCard .iconContainer {
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background-color: var(--accent-color);
     display: grid;
     place-items: center;
-    padding: 20px;
+    padding: 15px;
     margin-inline: auto;
 }
 .contactCard .iconContainer img {
@@ -377,16 +431,17 @@ footer .footerContent .copyright {
     object-fit: contain;
 }
 .contactCard > h1, h2 {
-    font-family: Arial, 'Times New Roman';
+    font-family: var(--default-font);
     text-align: center;
 }
 .contactCard > h1 {
-    margin-top: auto;
-    font-size: 1.7rem;
+    margin-top: 50px;
+    font-size: 1.5rem;
 }
 .contactCard > h2 {
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    transition: 0.5s ease;
 }
 
 
@@ -414,7 +469,7 @@ footer .footerContent .copyright {
 }
 #home #homeDescription {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial, 'Times New Roman';
     color: var(--text-color-white);
     top: 52%;
@@ -433,10 +488,10 @@ footer .footerContent .copyright {
     left: var(--offset);
     transform: translate(-50%, -50%);
     background-color: var(--second-accent-color);
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
-    padding: 20px 40px;
+    padding: 15px 40px;
     border: var(--second-accent-color) solid 5px;
     border-radius: 100px;
     margin-top: 20px;
@@ -485,9 +540,20 @@ footer .footerContent .copyright {
 .home .categoriesSection > .category:hover {
     cursor: pointer;
     scale: 110%;
+
+    svg path {
+        fill: var(--second-accent-color);
+    }
+    svg .news {
+        fill: var(--text-color-white);
+        stroke: var(--second-accent-color);
+    }
+    span {
+        color: var(--second-accent-color);
+    }
 }
 .home .categoriesSection > .category > span {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     color: var(--text-color-black);
@@ -502,7 +568,7 @@ footer .footerContent .copyright {
 .testimonial span {
     display: block;
     margin-inline: auto;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-family: Arial, 'Times New Roman';
     font-weight: 500;
     color: #ffffff28;
@@ -549,13 +615,13 @@ footer .footerContent .copyright {
     font-family: 'Arial Black', 'Times New Roman';
 }
 .about .intro > div {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .about .intro > div span {
     color: var(--accent-color);
 }
 .about .intro p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: Arial, 'Times New Roman';
 }
 /* mission div */
@@ -568,7 +634,7 @@ footer .footerContent .copyright {
     margin-block: 200px;
 }
 .about .mission p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: Arial, 'Times New Roman';
     padding-inline: 10%;
 }
@@ -588,7 +654,7 @@ footer .footerContent .copyright {
 }
 .about .info > h1 {
     place-self: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
 }
@@ -596,7 +662,7 @@ footer .footerContent .copyright {
     height: auto;
     width: 50%;
     place-self: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: Arial, 'Times New Roman';
     text-align: center;
 }
@@ -645,15 +711,15 @@ footer .footerContent .copyright {
     margin-block: 100px;
 }
 .contact .contacts > h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    font-family: Arial, 'Times New Roman';
+    font-family: var(--default-font);
     grid-column-start: 3 span;
     place-self: center;
 }
 .contact .contacts > p {
-    font-size: 1.5rem;
-    font-family: Arial, 'Times New Roman';
+    font-size: 1.25rem;
+    font-family: var(--default-font);
     grid-column-start: 3 span;
     place-self: center;
 }
@@ -669,27 +735,26 @@ footer .footerContent .copyright {
 }
 .contact form h1, p {
     text-align: center;
-    font-family: Arial, 'Times New Roman';
+    font-family: var(--default-font);
 }
 .contact form h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 10px;
 }
 .contact form p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: normal;
 }
 .contact form label {
-    font-size: 1.1rem;
-    font-family: Arial, 'Times New Roman';
-    padding-inline-start: 15px;
+    font-size: 1rem;
+    font-family: var(--default-font);
 }
 .contact form input {
     background-color: var(--text-color-white);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: normal;
-    font-family: Arial, 'Times New Roman';
+    font-family: var(--default-font);
     padding: 10px 15px;
     border: var(--bg-color-light-accent) solid 2px;
     border-radius: 50px;
@@ -697,20 +762,20 @@ footer .footerContent .copyright {
 .contact form  textarea {
     height: 250px;
     resize: none;
-    font-size: 1.2rem;
-    font-family: Arial, 'Times New Roman';
+    font-size: 1rem;
+    font-family: var(--default-font);
     padding: 20px;
     border: var(--bg-color-light-accent) solid 2px;
     border-radius: 30px;
 }
 .contact form button {
     background-color: var(--accent-color);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     color: var(--text-color-white);
-    padding: 20px 30px;
-    border: var(--accent-color) solid 5px;
+    padding: 15px 30px;
+    border: var(--accent-color) solid 3px;
     border-radius: 50px;
     width: fit-content;
     margin: auto;
@@ -739,7 +804,7 @@ footer .footerContent .copyright {
     margin-block: 100px;
 }
 .questions > h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     text-align: center;
@@ -760,8 +825,9 @@ footer .footerContent .copyright {
 }
 .questions .questionsContainer .question button {
     background-color: var(--bg-color-light);
-    font-size: 1.5rem;
-    font-family: Arial, 'Times New Roman';
+    font-size: 1.25rem;
+    font-family: var(--default-font);
+    font-weight: bold;
     padding: 20px;
     text-align: left;
     display: flex;
@@ -782,7 +848,7 @@ footer .footerContent .copyright {
     width: 100%;
     overflow-y: hidden;
     transition: 0.5s ease;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-family: Arial, 'Times New Roman';
     text-align: left;
     padding: 0;
@@ -790,27 +856,28 @@ footer .footerContent .copyright {
 }
 .questions .questionsContainer .question > .active {
     height: 100px;
-    padding: 10px;
+    padding: 20px;
 }
 /* reach us div */
 .faqs .reachUs {
     height: fit-content;
-    width: 100%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     place-items: center;
     margin-block: 100px;
+    margin-inline: auto;
 }
-.faqs .reachUs h1 {
-    font-size: 2.5rem;
+.faqs .reachUs > h1 {
+    font-size: 2rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     text-align: center;
     grid-column-start: 2 span;
 }
-.faqs .reachUs p {
-    font-size: 1.2rem;
+.faqs .reachUs > p {
+    font-size: 1rem;
     font-family: Arial, 'Times New Roman';
     text-align: center;
     grid-column-start: 2 span;
@@ -834,6 +901,7 @@ footer .footerContent .copyright {
     gap: 20px;
     place-items: center;
     justify-items: stretch;
+    margin-bottom: 100px;
 }
 .itemDetails .product #back {
     grid-column-start: 2 span;
@@ -855,7 +923,7 @@ footer .footerContent .copyright {
     overflow: hidden;
 }
 .itemDetails .product .productDetails .productImage img {
-    height: 700px;
+    height: 550px;
     width: 100%;
     object-fit: contain;
 }
@@ -872,11 +940,11 @@ footer .footerContent .copyright {
     padding: 10px 20px;
     border: none;
     border-bottom: 5px var(--bg-color-dark) solid;
-    background-color: #fff;
+    background-color: var(--bg-color-lighter);
     color: var(--bg-color-darker);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--default-font);
     font-weight: 500;
 
@@ -891,16 +959,18 @@ footer .footerContent .copyright {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--bg-color-light);
     border-radius: 5px;
     background-color: #f9f9f9;
-}
-.itemDetails .product .productDetails .segment-panel p {
-    font-size: 1.1rem;
+    font-size: 0.875rem;
     font-family: var(--default-font);
     font-weight: normal;
     color: var(--text-color-black);
     text-align: left;
+}
+.itemDetails .product .productDetails .segment-panel p {
+    text-align: left;
+    margin-bottom: 20px;
 }
 .itemDetails .product .productDetails .segment-panel {
     display: none;
@@ -919,15 +989,17 @@ footer .footerContent .copyright {
     flex-direction: column;
 }
 .itemDetails .product .productAction h1 {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     font-weight: 100;
-    font-family: Arial, 'Times New Roman';
+    font-family: var(--default-font);
 }
 .itemDetails .product .productAction h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
-    font-family: Arial, 'Times New Roman';
+    font-family: var(--default-font);
     text-align: left;
+    margin: 0;
+    padding: 0;
     margin-block: 20px;
 }
 
@@ -949,7 +1021,7 @@ footer .footerContent .copyright {
     cursor: pointer;
     border-radius: 4px;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     display: flex;
     justify-content: space-between;
 }
@@ -960,8 +1032,8 @@ footer .footerContent .copyright {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--bg-color-lighter);
+    border: 1px solid var(--bg-color-light);
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     z-index: 1;
     margin-top: 5px;
@@ -975,13 +1047,13 @@ footer .footerContent .copyright {
     align-items: center;
 }
 .itemDetails .product .productAction .dropdown-menu .dropdown-item:hover {
-    background-color: #f1f1f1;
+    background-color: var(--bg-color-lighter);
 }
 .itemDetails .product .productAction .dropdown-menu input {
     margin-right: 10px;
 }
 .itemDetails .product .productAction .dropdown-menu .dropdown-item:hover {
-    background-color: #f1f1f1;
+    background-color: var(--bg-color-lighter);
 }
 .itemDetails .product .productAction .dropdown-menu input[type="checkbox"] {
     margin-right: 10px;
@@ -989,13 +1061,13 @@ footer .footerContent .copyright {
 .itemDetails .product .productAction .dropdown-menu .dropdown-item .input-text {
     margin-left: 10px;
     flex-grow: 1;
-    font-size: 1.2rem;
+    font-size: 0.875rem;
     padding: 5px;
 }
 
 .itemDetails .product .productAction label {
-    font-size: 1.2rem;
-    font-family: Arial, 'Times New Roman';
+    font-size: 1.25rem;
+    font-family: var(--default-font);
     font-weight: 500;
 }
 
@@ -1014,7 +1086,7 @@ footer .footerContent .copyright {
     width: 100%;
     margin-left: 10px;
     border: none;
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding: 10px 5px;
 }
 .itemDetails .product .productAction .logoInput input:focus {
@@ -1034,7 +1106,7 @@ footer .footerContent .copyright {
     height: 100px;
     width: 100%;
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 0.875rem;
     font-family: Arial, 'Times New Roman';
     margin-block: 10px;
     border: var(--text-color-black) solid 2px;
@@ -1056,8 +1128,8 @@ footer .footerContent .copyright {
 }
 .itemDetails .product .productAction .actionButtons .buy {
     background-color: var(--bg-color-light);
-    padding: 20px 40px;
-    font-size: 1.5rem;
+    padding: 15px 40px;
+    font-size: 1.25rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     border: var(--text-color-black) solid 2px;
@@ -1070,8 +1142,8 @@ footer .footerContent .copyright {
 .itemDetails .product .productAction .actionButtons .addToCart {
     background-color: var(--second-accent-color);
     color: var(--text-color-white);
-    padding: 20px 40px;
-    font-size: 1.5rem;
+    padding: 15px 40px;
+    font-size: 1.25rem;
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     border: var(--second-accent-color) solid 2px;
@@ -1111,10 +1183,15 @@ footer .footerContent .copyright {
 /* Progress Bar Design */
 .cart  #back {
     border: none;
+    background-color: transparent;
+}
+.cart  #back:hover {
+    cursor: pointer;
 }
 .cart  #back img {
     height: 30px;
     width: 30px;
+    background-color: transparent;
 }
 .cart .progress-container {
     display: flex;
@@ -1208,13 +1285,15 @@ footer .footerContent .copyright {
     place-items: center;
     margin-block: 20px;
     padding-block: 20px;
-    border-bottom: var(--bg-color-mid-light) solid 3px;
+    border-bottom: var(--bg-color-mid-light) solid 1px;
 }
 .cart .addedToCartItems .cart-container .cartLabel label {
     place-self: start;
-    font-size: 1.2rem;
+    align-self: center;
+    font-size: 1rem;
     font-family: var(--default-font);
-    font-weight: 500;
+    font-weight: bold;
+    color: var(--bg-color-dark);
     display: flex;
     align-items: center;
     
@@ -1225,15 +1304,19 @@ footer .footerContent .copyright {
     margin-right: 10px;
 }
 .cart .addedToCartItems .cart-container .cartLabel h1 {
-    font-size: 1.5rem;
+    place-self: start;
+    align-self: center;
+    font-size: 1rem;
     font-family: var(--default-font);
     font-weight: bold;
+    color: var(--bg-color-dark);
     grid-column-start: span 4;
 }
 .cart .addedToCartItems .cart-container .cartLabel h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--default-font);
     font-weight: bold;
+    color: var(--bg-color-dark);
     place-self: center;
     grid-column-start: span 2;
 }
@@ -1248,7 +1331,7 @@ footer .footerContent .copyright {
 /* Card Item Design */
 .cart .addedToCartItems .cart-container .cartList .cart-item {
     display: grid;
-    grid-template-columns: repeat(5, auto) repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto) repeat(5, 1fr);
     place-items: center;
     margin-bottom: 10px;
     column-gap: 50px;
@@ -1258,19 +1341,20 @@ footer .footerContent .copyright {
 .cart .addedToCartItems .cart-container .cartList .cart-item .item-checkbox {
     grid-row-start: span 5;
     margin: 0;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
 }
 .cart .addedToCartItems .cart-container .cartList .cart-item img {
     height: 100px;
     width: 100px;
+    object-fit: cover;
     grid-row-start: span 5;
 }
 .cart .addedToCartItems .cart-container .cartList .cart-item h1 {
     grid-column-start: span 3;
     place-self: start;
     text-align: start;
-    font-size: 1.5rem;
+    font-size: 0.875rem;
     font-family: var(--default-font);
     padding-block: 10px;
 }
@@ -1278,20 +1362,23 @@ footer .footerContent .copyright {
     grid-column-start: span 3;
     place-self: start;
     text-align: start;
-    font-size: 1.2rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    padding-block: 10px;
+    color: var(--bg-color-dark);
+    margin: 0;
+    padding: 0;
 }
 .cart .addedToCartItems .cart-container .cartList .cart-item p {
     grid-column-start: span 3;
     place-self: start;
     text-align: start;
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 200;
+    color: var(--bg-color-dark);
     padding-block: 10px;
 }
 .cart .addedToCartItems .cart-container .cartList .cart-item h3 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-family: var(--default-font);
     font-weight: bold;
     align-self: start;
@@ -1299,19 +1386,19 @@ footer .footerContent .copyright {
     margin-left: 50px;
 }
 .cart .addedToCartItems .cart-container .cartList .cart-item svg {
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
     align-self: start;
     margin-inline: 50px;
 }
 /* Summary Cart Design */
 .cart .addedToCartItems .summary {
     height: fit-content;
-    width: 100%;
+    width: 50%;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    margin-inline: auto;
-    margin-top: 50px;
+    grid-template-columns: repeat(7, auto);
+    margin-left: auto;
+    margin-top: 20px;
     margin-bottom: 100px;
 }
 .cart .addedToCartItems .summary span {
@@ -1324,7 +1411,7 @@ footer .footerContent .copyright {
 }
 .cart .addedToCartItems .summary h1 {
     place-self: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: var(--default-font);
     font-weight: bold;
 }
@@ -1332,9 +1419,9 @@ footer .footerContent .copyright {
     place-self: end;
     align-self: center;
     background-color: var(--second-accent-color);
-    border: var(--second-accent-color) solid 5px;
+    border: var(--second-accent-color) solid 3px;
     border-radius: 50px;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-family: var(--default-font);
     font-weight: bold;
     color: var(--text-color-white);
@@ -1347,9 +1434,10 @@ footer .footerContent .copyright {
 }
 /* End Added to Cart Component Design */
 
+/* Check out Component Design */
 .cart .checkOutComponent .checkOutContainer {
     height: fit-content;
-    width: 80%;
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
@@ -1414,6 +1502,8 @@ footer .footerContent .copyright {
     overflow-y: auto;
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item {
+    width: 100%;
+    margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -1505,6 +1595,7 @@ footer .footerContent .copyright {
     font-family: var(--default-font);
     font-weight: normal;
     color: var(--bg-color-dark);
+    text-align: left;
 }
 .cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div {
     font-size: 0.75rem;
@@ -1512,8 +1603,10 @@ footer .footerContent .copyright {
     font-weight: normal;
     color: var(--bg-color-dark);
 }
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method svg {
-    margin-left: auto;
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
 }
 .cart .checkOutComponent .checkOutContainer .paymentMethod .methods .creditCardInput {
     display: flex;
@@ -1570,3 +1663,104 @@ footer .footerContent .copyright {
     background-color: transparent;
     color: var(--second-accent-color);
 }
+
+/* End of Check out Component Design */
+
+/* Confirmation Component Design */
+.cart .confirmationComponent {
+    height: 600px;
+    width: 50%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-inline: auto;
+    position: relative;
+}
+.cart .confirmationComponent svg {
+    height: 100px;
+    width: 100px;
+    margin-inline: auto;
+    display: block;
+}
+.cart .confirmationComponent > h1, h2 {
+    margin-inline: auto;
+    font-size: 1.5rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: var(--text-color-black);
+}
+.cart .confirmationComponent > p {
+    margin-inline: auto;
+    font-size: 0.875rem;
+    font-family: var(--default-font);
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: var(--text-color-black);
+}
+.cart .confirmationComponent .purchases .cart-item {
+    height: fit-content;
+    width: 50%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+}
+.cart .confirmationComponent .purchases .cart-item img {
+    height: 50px;
+    width: 50px;
+    grid-row-start: span 2;
+}
+.cart .confirmationComponent .purchases .cart-item h1 {
+    place-self: start;
+    align-self: center;
+    font-size: 0.75rem;
+    font-family: var(--default-font);
+    font-weight: 600;
+    color: var(--text-color-black);
+}
+.cart .confirmationComponent .purchases .cart-item h3 {
+    grid-row-start: span 2;
+    place-self: center;
+    font-size: 1rem;
+    font-family: var(--default-font);
+    font-weight: 600;
+    color: var(--text-color-black);
+}
+.cart .confirmationComponent .purchases .cart-item h2 {
+    grid-row-start: span 2;
+    place-self: start;
+    align-self: center;
+    font-size: 0.625rem;
+    font-family: var(--default-font);
+    font-weight: 600;
+    color: var(--bg-color-dark);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.cart .confirmationComponent button {
+    background-color: var(--second-accent-color);
+    border: var(--second-accent-color) solid 3px;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    color: var(--text-color-white);
+    padding: 10px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+.cart .confirmationComponent button:hover {
+    background-color: transparent;
+    color: var(--second-accent-color);
+}
+

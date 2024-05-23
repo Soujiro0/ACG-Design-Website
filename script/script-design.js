@@ -15,7 +15,7 @@ toggleDropdownChecklist();
 // Toggle search bar (Design script) 
 function toggleSearchBar(){
 
-    const searchBarBtn = document.querySelector('.search > img');
+    const searchBarBtn = document.querySelector('.search > svg');
     searchBarBtn.addEventListener('click', () => {
         const searchBar = document.querySelector('.search > .searchBarContainer');
         searchBar.classList.toggle('active');
