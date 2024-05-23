@@ -6,6 +6,7 @@
 
 // Entry Point
 document.addEventListener('DOMContentLoaded', fetchData);
+addEventListenerSearchBar();
 
 // Fetching data from JSON file
 async function fetchData() {
@@ -160,10 +161,28 @@ async function filterItems() {
 }
 
 function selectedCategoryNavigation(element) {
-    const categoryText = element.textContent;
+    let categoryText = element.textContent;
     console.log(categoryText);
-    sessionStorage.setItem('filter', categoryText.toLowerCase());
+    sessionStorage.setItem('filter', categoryText.toLowerCase().trim());
     navigateToShop();
+}
+
+function searchByName(searchBar) {
+    let search = searchBar.value.toLowerCase().trim();
+    console.log(search);
+    sessionStorage.setItem('searchItem', search);
+    navigateToShop();
+}
+
+// Add event listener for search bars
+function addEventListenerSearchBar() {
+    console.log('This method is runned');
+    const searchBar = document.querySelector('.searchBarContainer #searchBar');
+    searchBar.addEventListener('keydown', function (e) {
+        if (e.keyCode === 13) {
+            searchByName(searchBar);
+        }
+    });
 }
 
 // Navigate Shop Page

@@ -273,7 +273,10 @@ footer .footerContent .copyright span {
     grid-template-rows: repeat(auto, aut);
     grid-column-start: 2 span;
     gap: 20px;
-    place-items: center;
+    place-items: start;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--default-font);
 }
 /* Product Card Design */
 .productsSection .productList > .product {
@@ -281,6 +284,7 @@ footer .footerContent .copyright span {
     height: 422px;
     width: 400px;
     transition: 0.5s ease;
+    place-self: center;
 }
 .productsSection .productList > .product:hover {
     transition: 0.5 ease;
@@ -588,6 +592,28 @@ footer .footerContent .copyright span {
 .testimonial .wave {
     position: absolute;
     bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Shop Page Design */
+.shop .searchResult {
+    font-size: 1.25rem;
+    font-family: var(--default-font);
+    font-weight: 500;
+    color: var(--text-color-black);
+    display: none;
+}
+.shop .searchedComplete {
+    display: block;
 }
 
 
