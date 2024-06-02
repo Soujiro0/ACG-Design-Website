@@ -63,8 +63,9 @@ a {
     padding: 20px 30px;
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: Arial;
+    font-weight: 600;
 }
 .navbar ul a:hover .underline::after{
     /* Underline in navigation links */
@@ -92,7 +93,7 @@ a {
 /* div for input */
 .navbar ul li > .searchBarContainer {
     height: auto;
-    width: 0;
+    width: 450px;
     margin-right: 10px;
     overflow-x: hidden;
     transition: 500ms ease;
@@ -102,7 +103,7 @@ a {
     width: 100%;
     font-size: 1rem;
     font-family: Arial;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     border-radius: 50px;
 }
@@ -112,7 +113,7 @@ a {
 .navbar ul li > .active {
     /* Active State of search bar*/
     width: 450px;
-    padding: 10px;
+    padding: 10px 20px;
     transition: 500ms ease;
 }
 .navbar ul .search {
@@ -368,7 +369,7 @@ footer .footerContent .copyright span {
     transition: 0.5s ease;
 }
 .productsSection button:hover {
-    background-color: var(--bg-color-mid-light);
+    background-color: #ff1100;
 }
 
 /* Shop product section CSS */
@@ -465,7 +466,7 @@ footer .footerContent .copyright span {
 }
 
 #home h1#homeIntro {
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--text-color-white);
     width: 100%;
     top: 40%;
@@ -473,7 +474,9 @@ footer .footerContent .copyright span {
 }
 #home #homeDescription {
     position: absolute;
-    font-size: 1rem;
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
     font-family: Arial, 'Times New Roman';
     color: var(--text-color-white);
     top: 52%;
@@ -506,8 +509,8 @@ footer .footerContent .copyright span {
     color: var(--text-color-white);
 }
 #home button:hover {
-    background-color: #FF2E00;
-    border-color: #FF2E00;
+    background-color: #ff1100;
+    border-color: #ff1100;
     cursor: pointer;
 }
 
@@ -930,6 +933,7 @@ footer .footerContent .copyright span {
     margin-bottom: 100px;
 }
 .itemDetails .product #back {
+    background-color: transparent;
     grid-column-start: 2 span;
     place-self: start;
     width: fit-content;
@@ -1040,6 +1044,7 @@ footer .footerContent .copyright span {
     margin-bottom: 20px;
 }
 .itemDetails .product .productAction .dropdown-toggle {
+    background-color: transparent;
     height: fit-content;
     width: 100%;
     color: var(--text-color-black);

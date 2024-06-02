@@ -6,26 +6,26 @@
 
 //Entry point
 // Toggle menu
-toggleSearchBar();
+// toggleSearchBar();
 toggleAccordionFaqs();
 toggleSegment();
 toggleDropdownChecklist();
 
 
-// Toggle search bar (Design script) 
-function toggleSearchBar(){
+// // Toggle search bar (Design script) 
+// function toggleSearchBar(){
+//     console.log("design is loaded");
+//     const searchBarBtn = document.querySelector('.search > svg');
+//     searchBarBtn.addEventListener('click', () => {
+//         const searchBar = document.querySelector('.search > .searchBarContainer');
+//         searchBar.classList.toggle('active');
+//     });
 
-    const searchBarBtn = document.querySelector('.search > svg');
-    searchBarBtn.addEventListener('click', () => {
-        const searchBar = document.querySelector('.search > .searchBarContainer');
-        searchBar.classList.toggle('active');
-    });
-
-}
+// }
 
 // Toggle Accordion in FAQS page
 function toggleAccordionFaqs(){
-
+    console.log("design is loaded");
     const accordionBtns = document.querySelectorAll('.question > button');
     
     accordionBtns.forEach(btn => {
@@ -45,7 +45,7 @@ function toggleAccordionFaqs(){
 
 // Toggle Segment in Item Details
 function toggleSegment(){
-
+    console.log("design is loaded");
     const buttons = document.querySelectorAll('.segment-button');
     const panels = document.querySelectorAll('.segment-panel');
 
@@ -68,7 +68,7 @@ function toggleSegment(){
 
 // Toggle Dropdown checklist in Item Details
 function toggleDropdownChecklist(){
-
+    console.log("design is loaded");
     const toggleButton = document.querySelector('.dropdown-toggle');
     const dropdownMenu = document.querySelector('.dropdown-menu');
     const checkboxes = dropdownMenu.querySelectorAll('input[type="checkbox"]');
@@ -79,6 +79,7 @@ function toggleDropdownChecklist(){
     // Toggle dropdown visibility
     toggleButton.addEventListener('click', () => {
         dropdownMenu.style.display = dropdownMenu.style.display === 'flex' ? 'none' : 'flex';
+        console.log('Click');
     });
     
     // Close the dropdown when clicking outside

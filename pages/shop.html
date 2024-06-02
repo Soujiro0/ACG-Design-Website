@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACG Design</title>
-    <link rel="icon" href="../assets/icons/programmer.png" type="image/icon">
+    <link rel="icon" href="../assets/icons/acg design.png" type="image/icon">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <style>
         .navbar ul #shopNav .underline::after{
@@ -23,12 +23,12 @@
         <nav class="navbar">
             <div class="logo"><h1><a href="home.html"><span>ACG</span> Designs</a></h1></div>
             <ul>
-                <li id="homeNav"><a href="home.html"><span class="underline">Home</span></a></li>
-                <li id="aboutNav"><a href="about.html"><span class="underline">About Us</span></a></li>
+                <li id="homeNav"><a href="home.html"><span class="underline">HOME</span></a></li>
+                <li id="aboutNav"><a href="about.html"><span class="underline">ABOUT</span></a></li>
                 <div class="shopLink">
                     <li id="shopNav">
                         <a href="shop.html">
-                            <span class="underline">Shop</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvtk8ENwyAMRY1vCIZIN0lH6STtJs0mXYUlECfjylUjIQqBVIrUSnAE85//Nyg4eKmD9WEAmgmPiH48Iu/9DREXrbUrtRpCmIhottYuNSvVIYs4AFwBwCHiOYe8xe9KqZmZLzVIFSACMcYHAEw5JBWXM2PMabcDuVCCyD4RvTpviUtt8x/kEGZ2veJdgIIT2dqMJY2r6WAtTpzAVub5LLoBq5Pak/1qyM1v2lGwy0GH3kfJADRT+/+InqtfWxlV/MtZAAAAAElFTkSuQmCC"/>
+                            <span class="underline">SHOP</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvtk8ENwyAMRY1vCIZIN0lH6STtJs0mXYUlECfjylUjIQqBVIrUSnAE85//Nyg4eKmD9WEAmgmPiH48Iu/9DREXrbUrtRpCmIhottYuNSvVIYs4AFwBwCHiOYe8xe9KqZmZLzVIFSACMcYHAEw5JBWXM2PMabcDuVCCyD4RvTpviUtt8x/kEGZ2veJdgIIT2dqMJY2r6WAtTpzAVub5LLoBq5Pak/1qyM1v2lGwy0GH3kfJADRT+/+InqtfWxlV/MtZAAAAAElFTkSuQmCC"/>
                         </a>
                     </li>
                     <div class="dropDownShop">
@@ -42,7 +42,8 @@
                         </ul>
                     </div>
                 </div>
-                <li id="contactNav"><a href="contact.html"><span class="underline">Contacts</span></a></li>
+                
+                <li id="contactNav"><a href="contact.html"><span class="underline">CONTACTS</span></a></li>
                 <li id="faqsNav"><a href="faqs.html"><span class="underline">FAQS</span></a></li>
             </ul>
             <ul>
@@ -54,6 +55,7 @@
                     </svg>
                         
                 </li>
+                
                 <!--Cart Icon-->
                 <li>
                     <a href="cart.html">
@@ -102,14 +104,14 @@
                         <option value="personal">Personal</option>
                     </select>
                 </div>
-                <div class="filter" style="place-self: end;">
+                <!-- <div class="filter" style="place-self: end;">
                     <label for="sorter">Sort By:</label>
                     <select name="sortBy" id="sorter">
                         <option value="default">Default</option>
                         <option value="priceLH">Price(Low - High)</option>
                         <option value="priceHL">Price(High - Low)</option>
                     </select>
-                </div>
+                </div> -->
                 <!--Product List-->
                 <div class="productList"></div>
             </div>
@@ -160,6 +162,7 @@
     <script>
 
         // Invoking Methods
+        // toggleSearchBar();
         loadFilter();
 
         async function fetchAndLoadAllItems() {
@@ -207,6 +210,17 @@
             }
             sessionStorage.removeItem('filter');
         }
+
+        // Toggle search bar (Design script) 
+        // function toggleSearchBar(){
+        //     console.log("design is loaded");
+        //     const searchBarBtn = document.querySelector('.search > svg');
+        //     searchBarBtn.addEventListener('click', () => {
+        //         const searchBar = document.querySelector('.search > .searchBarContainer');
+        //         searchBar.classList.toggle('active');
+        //     });
+
+        // }
     </script>
 </body>
 </html>
