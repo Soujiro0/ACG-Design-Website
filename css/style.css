@@ -132,7 +132,7 @@ a {
     overflow-y: hidden;
 }
 .navbar ul .shopLink:hover .dropDownShop {
-    height: 350px;
+    height: 370px;
     width: 250px;
     justify-content: space-between;
     backdrop-filter: rgba(255, 192, 203, 0.39);

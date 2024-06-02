@@ -97,6 +97,7 @@ function createAddedToCartProductHTML(item) {
 
     // Create the third heading
     let h3 = document.createElement('h3');
+    h3.className = 'price';
     h3.textContent = `$ ${item.price}`;
     cartItem.appendChild(h3);
 
@@ -107,6 +108,7 @@ function createAddedToCartProductHTML(item) {
     svg.setAttribute('viewBox', '0 0 20 20');
     svg.setAttribute('fill', 'none');
     svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svg.classList.add('delete-icon');
 
     let path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     path.setAttribute('fill-rule', 'evenodd');
