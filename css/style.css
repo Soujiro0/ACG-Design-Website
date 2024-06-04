@@ -33,7 +33,7 @@ a {
     padding-top: var(--navigation-bar-height);
 }
 
-/* Navigation Container CSS */
+/*----------Navigation Container CSS----------*/
 .navbar {
     background-color: var(--accent-color);
     height: var(--navigation-bar-height);
@@ -458,7 +458,7 @@ footer .footerContent .copyright span {
 
 
 
-/* Home page CSS */
+/*----------Home page CSS----------*/
 
 /* Home Hero Section */
 #home {
@@ -514,7 +514,7 @@ footer .footerContent .copyright span {
     cursor: pointer;
 }
 
-/* Home Main Content */
+/*----------Home Main Content----------*/
 /* Home Category Choices */
 .home .categoriesSection {
     height: fit-content;
@@ -607,7 +607,7 @@ footer .footerContent .copyright span {
 
 
 
-/* Shop Page Design */
+/*----------Shop Page Design----------*/
 .shop .searchResult {
     font-size: 1.25rem;
     font-family: var(--default-font);
@@ -628,7 +628,7 @@ footer .footerContent .copyright span {
 
 
 
-/* About Us page CSS */
+/*----------About Us page CSS----------*/
 /* intro div */
 .about .intro {
     height: fit-content;
@@ -729,7 +729,7 @@ footer .footerContent .copyright span {
 
 
 
-/* Contact Page CSS */
+/*----------Contact Page CSS----------*/
 .contact .contacts {
     height: fit-content;
     width: 100%;
@@ -825,7 +825,7 @@ footer .footerContent .copyright span {
 
 
 
-/* FAQS Page CSS */
+/*----------FAQS Page Design----------*/
 /* questions div css*/
 .questions {
     height: fit-content;
@@ -921,7 +921,7 @@ footer .footerContent .copyright span {
 
 
 
-/* Item details Page CSS */
+/*----------Item details Page Design----------*/
 .itemDetails .product {
     height: fit-content;
     width: 100%;
@@ -1206,7 +1206,7 @@ footer .footerContent .copyright span {
 
 
 
-/* Cart Page Design */
+/*----------Cart Page Design----------*/
 .cart .hide {
     display: none;
 }
@@ -1794,4 +1794,116 @@ footer .footerContent .copyright span {
     background-color: transparent;
     color: var(--second-accent-color);
 }
+
+
+
+
+
+/*----------Profile Page Design----------*/
+.profile {
+    display: grid;
+    grid-template-columns: 300px repeat(2, auto);
+}
+.profile aside ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.profile aside ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: var(--default-font);
+}
+.profile aside ul li svg {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+.profile aside ul #logout {
+    margin-top: auto;
+}
+.active-nav {
+    color: var(--second-accent-color); /* Change this to your desired color */
+}
+.active-nav svg path {
+    fill: var(--second-accent-color); /* Change this to your desired color */
+}
+.profileContent {
+    display: none;
+}
+.active-content {
+    display: block;
+}
+
+.profile h1 {
+    font-size: 2rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    place-self: start;
+}
+.profile .personalDetails {
+    display: none;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+}
+
+.profile .personalDetails .personDetails {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.profile .personalDetails .personDetails > div {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile .personalDetails .personDetails > div label {
+    font-size: 1.25rem;
+    font-family: var(--default-font);
+}
+.profile .personalDetails .personDetails > div input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: var(--default-font);
+    border: #050505 2px solid;
+    border-radius: 50px;
+}
+.profile .personalDetails .personDetails > button {
+    background-color: var(--second-accent-color);
+    font-size: 1.2rem;
+    font-family: var(--default-font);
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    color: var(--text-color-white);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile .personalDetails .personDetails > button svg {
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+}
+
+.profile .myOrders {
+    display: none;
+}
+
+.profile .changePass {
+    display: none;
+}
+
+.profile .paymentMethodsProfile {
+    display: none;
+}
+
 
