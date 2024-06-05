@@ -46,14 +46,6 @@
                 <li id="faqsNav"><a href="faqs.html"><span class="underline">FAQS</span></a></li>
             </ul>
             <ul>
-                <!--Search Icon-->
-                <!-- <li class="search">
-                    <div class="searchBarContainer"><input type="text" id="searchBar" placeholder="Search Design"></div>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.4688 22.2757L17.0968 15.9037C18.628 14.0654 19.3916 11.7076 19.2286 9.32069C19.0657 6.93378 17.9888 4.70157 16.222 3.08843C14.4552 1.47528 12.1345 0.605403 9.74261 0.65975C7.35076 0.714097 5.07194 1.68849 3.38021 3.38021C1.68849 5.07194 0.714097 7.35076 0.65975 9.74261C0.605403 12.1345 1.47528 14.4552 3.08843 16.222C4.70157 17.9888 6.93378 19.0657 9.32069 19.2286C11.7076 19.3916 14.0654 18.628 15.9037 17.0968L22.2757 23.4688L23.4688 22.2757ZM2.37502 9.96877C2.37502 8.46687 2.82039 6.9987 3.6548 5.74991C4.48921 4.50112 5.67519 3.52781 7.06277 2.95306C8.45035 2.37831 9.9772 2.22793 11.4502 2.52093C12.9233 2.81394 14.2764 3.53717 15.3384 4.59918C16.4004 5.66118 17.1236 7.01426 17.4166 8.4873C17.7096 9.96035 17.5592 11.4872 16.9845 12.8748C16.4097 14.2624 15.4364 15.4483 14.1876 16.2827C12.9388 17.1172 11.4707 17.5625 9.96877 17.5625C7.95547 17.5603 6.02527 16.7595 4.60165 15.3359C3.17803 13.9123 2.37725 11.9821 2.37502 9.96877Z" fill="#F1F1F1"/>
-                    </svg>
-                        
-                </li> -->
                 <!--Cart Icon-->
                 <li>
                     <a href="cart.html">
@@ -65,7 +57,7 @@
                     </a>
                 </li>
                 <!--User Icon-->
-                <li onclick="extra()">
+                <li id="open-signup">
                     <a href="#">
                         <span class="underline">
                             <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +77,15 @@
             </h1>
             <p id="homeDescription">Elevate your online presence and make a lasting impression with our expertly crafted templates.</p>
             <button onclick="navigateToShop()">Shop Now</button>
-            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,192C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            <svg class="wave" width="100%" height="357" viewBox="0 0 1919 357" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect x="-1" width="1920" height="357" fill="url(#pattern0_510_2891)"/>
+                <defs>
+                <pattern id="pattern0_510_2891" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_510_2891" transform="scale(0.000520833 0.00280112)"/>
+                </pattern>
+                <image id="image0_510_2891" width="1920" height="357" xlink:href="data:image/png;base64,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AAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGAiAAAA///s2YEMAAAAwCB/63t8pZEABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMBAAA///s2YEMAAAAwCB/63t8pZEABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMBAAA///s2YEMAAAAwCB/63t8pZEABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGAiAAAA///s2YEMAAAAwCB/63t8pZEABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMBAAA///s2YEMAAAAwCB/63t8pZEABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMCGAAAAAAAACACQEMAAAAAAAAMCGAAQAAAAAAACYEMAAAAAAAAMCEAAYAAAAAAACYEMAAAAAAAAAAEwIYAAAAAAAAYEIAAwAAAAAAAEwIYAAAAAAAAIAJAQwAAAAAAAAwIYABAAAAAAAAJgQwAAAAAAAAwIQABgAAAAAAAJgQwAAAAAAAAAATAhgAAAAAAABgQgADAAAAAAAATAhgAAAAAAAAgAkBDAAAAAAAADAhgAEAAAAAAAAmBDAAAAAAAADAhAAGAAAAAAAAmBDAAAAAAAAAABMCGAAAAAAAAGBCAAMAAAAAAABMBAAA///t2bEJADAMwLAM/R/6cY7oUDDSBd5tAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQIQBDAAAAAAAABBhAAMAAAAAAABEGMAAAAAAAAAAEQYwAAAAAAAAQMSZmfs7AgAAAAAAAIB3C0x9r2ngq8hWAAAAAElFTkSuQmCC"/>
+                </defs>
+            </svg>
             <div class="heroBg">
                 <div style="background-color: #3838ff; height: 100%; width: 100%; z-index: 2; opacity: .2 ;"></div>
             </div>
@@ -144,7 +144,9 @@
             </div>
 
             <!--Banner 1 Home-->
-            <div class="banner1Home" style="height: 250px; width: 100%; background-color: grey; margin-block: 150px; background-image: url(../Kana\ Arima.jpg); background-size: cover; background-position: start; background-repeat: no-repeat; filter: brightness(.5);">This is banner :)</div>
+            <div class="banner1Home" style="height: fit-content; width: 100%; margin-block: 150px;">
+                <img src="../assets/images/banner1.png" alt="" style="width: 100%; height: 100%;">
+            </div>
             
             <!--Featured Product Section-->
             <div class="productsSection">      
@@ -166,7 +168,9 @@
             </div>
 
             <!--Banner 2 Home-->
-            <div class="banner2Home" style="height: 300px; width: 100%; background-color: grey; margin-block: 150px; background-image: url(../Kana\ Arima.jpg); background-size: cover; background-position: start; background-repeat: no-repeat; filter: brightness(.5);">This is Banner :)</div>
+            <div class="banner2Home" style="height: fit-content; width: 100%; margin-block: 150px;">
+                <img src="../assets/images/banner1.png" alt="" style="width: 100%; height: 100%;">
+            </div>
 
             <!--Trending Products Section-->
             <div class="productsSection">      
@@ -277,6 +281,124 @@
             </div>
         </div>
     </footer>
+
+    <!--Sign up Modal-->
+    <div class="signup-overlay overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <span class="close-signup close-btn">&times;</span>
+                <h1>Create an Account</h1>
+            </div>
+            <div class="modal-content">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+
+                    <button type="submit" class="sign-up-btn main-btn">Sign Up</button>
+                </form>
+                <div class="social-login">
+                    <hr class="line"><span>OR</span><hr class="line">
+                    <div class="other-way">
+                        <button class="social-btn facebook-btn">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.5 10C20.5 4.48 16.02 0 10.5 0C4.98 0 0.5 4.48 0.5 10C0.5 14.84 3.94 18.87 8.5 19.8V13H6.5V10H8.5V7.5C8.5 5.57 10.07 4 12 4H14.5V7H12.5C11.95 7 11.5 7.45 11.5 8V10H14.5V13H11.5V19.95C16.55 19.45 20.5 15.19 20.5 10Z" fill="black"/>
+                            </svg>  
+                            <span>Facebook</span>
+                        </button>
+                        <button class="social-btn google-btn">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_432_610)">
+                                <path d="M8.86104 0.789375C6.46307 1.62125 4.39506 3.20019 2.96077 5.29425C1.52649 7.38832 0.801526 9.88715 0.892371 12.4237C0.983217 14.9602 1.88508 17.4008 3.4655 19.3869C5.04591 21.373 7.22158 22.7999 9.67292 23.4581C11.6603 23.9709 13.7424 23.9935 15.7404 23.5238C17.5504 23.1172 19.2238 22.2476 20.5967 21C22.0256 19.6619 23.0627 17.9596 23.5967 16.0763C24.177 14.0281 24.2803 11.8742 23.8985 9.78H12.7385V14.4094H19.2017C19.0725 15.1477 18.7957 15.8524 18.3878 16.4813C17.98 17.1102 17.4494 17.6503 16.8279 18.0694C16.0387 18.5914 15.149 18.9427 14.216 19.1006C13.2803 19.2746 12.3205 19.2746 11.3848 19.1006C10.4364 18.9045 9.53923 18.5131 8.75042 17.9513C7.4832 17.0542 6.53168 15.7799 6.03167 14.31C5.52319 12.8126 5.52319 11.1893 6.03167 9.69188C6.38759 8.64228 6.97598 7.68663 7.75292 6.89625C8.64203 5.97515 9.76766 5.31674 11.0063 4.99327C12.245 4.66979 13.5488 4.69375 14.7748 5.0625C15.7325 5.35648 16.6083 5.87013 17.3323 6.5625C18.061 5.8375 18.7885 5.11063 19.5148 4.38188C19.8898 3.99 20.2985 3.61688 20.6679 3.21563C19.5627 2.18714 18.2654 1.38686 16.8504 0.860625C14.2736 -0.0750188 11.4541 -0.100163 8.86104 0.789375Z" fill="white"/>
+                                <path d="M8.8607 0.789375C11.4536 -0.100768 14.2731 -0.0762858 16.8501 0.85875C18.2654 1.38856 19.562 2.1927 20.6657 3.225C20.2907 3.62625 19.8951 4.00125 19.5126 4.39125C18.7851 5.1175 18.0582 5.84125 17.332 6.5625C16.6079 5.87013 15.7321 5.35648 14.7745 5.0625C13.5489 4.69245 12.2451 4.66711 11.0061 4.98927C9.76712 5.31142 8.64079 5.96862 7.7507 6.88875C6.97377 7.67913 6.38538 8.63478 6.02945 9.68438L2.14258 6.675C3.53384 3.91605 5.94273 1.80567 8.8607 0.789375Z" fill="#E33629"/>
+                                <path d="M1.1114 9.65625C1.32032 8.62086 1.66716 7.61817 2.14265 6.675L6.02953 9.69187C5.52105 11.1893 5.52105 12.8126 6.02953 14.31C4.73453 15.31 3.4389 16.315 2.14265 17.325C0.952308 14.9556 0.589275 12.2559 1.1114 9.65625Z" fill="#F8BD00"/>
+                                <path d="M12.7381 9.77813H23.8981C24.2799 11.8724 24.1766 14.0263 23.5963 16.0744C23.0623 17.9578 22.0252 19.66 20.5963 20.9981C19.3419 20.0194 18.0819 19.0481 16.8275 18.0694C17.4494 17.6499 17.9802 17.1092 18.3881 16.4796C18.796 15.8501 19.0726 15.1446 19.2013 14.4056H12.7381C12.7363 12.8644 12.7381 11.3213 12.7381 9.77813Z" fill="#587DBD"/>
+                                <path d="M2.14062 17.325C3.43687 16.325 4.7325 15.32 6.0275 14.31C6.52851 15.7804 7.48138 17.0548 8.75 17.9513C9.54127 18.5105 10.4404 18.8987 11.39 19.0913C12.3257 19.2652 13.2855 19.2652 14.2213 19.0913C15.1542 18.9333 16.0439 18.5821 16.8331 18.06C18.0875 19.0388 19.3475 20.01 20.6019 20.9888C19.2292 22.237 17.5558 23.1073 15.7456 23.5144C13.7476 23.9841 11.6655 23.9616 9.67813 23.4488C8.10632 23.0291 6.63814 22.2892 5.36563 21.2756C4.01874 20.2063 2.91867 18.8587 2.14062 17.325Z" fill="#319F43"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_432_610">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+
+                            <span>Google</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Have an account? <a href="#" id="login-link">Log In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Sign Up Modal-->
+
+    <!--Sign In Modal-->
+    <div class="signin-overlay overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <span class="close-signin close-btn">&times;</span>
+                <h1>Sign In</h1>
+            </div>
+            <div class="modal-content">
+                <form>
+                    <label for="signInEmail">Email</label>
+                    <input type="email" id="signInEmail" name="signInEmail">
+
+                    <label for="signInPassword">Password</label>
+                    <input type="password" id="signInPassword" name="signInPassword">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+
+                    <button type="button" class="log-in-btn main-btn" onclick="navigateToProfile()">Log In</button>
+                </form>
+                <div class="social-login">
+                    <hr class="line"><span>OR</span><hr class="line">
+                    <div class="other-way">
+                        <button class="social-btn facebook-btn">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.5 10C20.5 4.48 16.02 0 10.5 0C4.98 0 0.5 4.48 0.5 10C0.5 14.84 3.94 18.87 8.5 19.8V13H6.5V10H8.5V7.5C8.5 5.57 10.07 4 12 4H14.5V7H12.5C11.95 7 11.5 7.45 11.5 8V10H14.5V13H11.5V19.95C16.55 19.45 20.5 15.19 20.5 10Z" fill="black"/>
+                            </svg>  
+                            <span>Facebook</span>
+                        </button>
+                        <button class="social-btn google-btn">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_432_610)">
+                                <path d="M8.86104 0.789375C6.46307 1.62125 4.39506 3.20019 2.96077 5.29425C1.52649 7.38832 0.801526 9.88715 0.892371 12.4237C0.983217 14.9602 1.88508 17.4008 3.4655 19.3869C5.04591 21.373 7.22158 22.7999 9.67292 23.4581C11.6603 23.9709 13.7424 23.9935 15.7404 23.5238C17.5504 23.1172 19.2238 22.2476 20.5967 21C22.0256 19.6619 23.0627 17.9596 23.5967 16.0763C24.177 14.0281 24.2803 11.8742 23.8985 9.78H12.7385V14.4094H19.2017C19.0725 15.1477 18.7957 15.8524 18.3878 16.4813C17.98 17.1102 17.4494 17.6503 16.8279 18.0694C16.0387 18.5914 15.149 18.9427 14.216 19.1006C13.2803 19.2746 12.3205 19.2746 11.3848 19.1006C10.4364 18.9045 9.53923 18.5131 8.75042 17.9513C7.4832 17.0542 6.53168 15.7799 6.03167 14.31C5.52319 12.8126 5.52319 11.1893 6.03167 9.69188C6.38759 8.64228 6.97598 7.68663 7.75292 6.89625C8.64203 5.97515 9.76766 5.31674 11.0063 4.99327C12.245 4.66979 13.5488 4.69375 14.7748 5.0625C15.7325 5.35648 16.6083 5.87013 17.3323 6.5625C18.061 5.8375 18.7885 5.11063 19.5148 4.38188C19.8898 3.99 20.2985 3.61688 20.6679 3.21563C19.5627 2.18714 18.2654 1.38686 16.8504 0.860625C14.2736 -0.0750188 11.4541 -0.100163 8.86104 0.789375Z" fill="white"/>
+                                <path d="M8.8607 0.789375C11.4536 -0.100768 14.2731 -0.0762858 16.8501 0.85875C18.2654 1.38856 19.562 2.1927 20.6657 3.225C20.2907 3.62625 19.8951 4.00125 19.5126 4.39125C18.7851 5.1175 18.0582 5.84125 17.332 6.5625C16.6079 5.87013 15.7321 5.35648 14.7745 5.0625C13.5489 4.69245 12.2451 4.66711 11.0061 4.98927C9.76712 5.31142 8.64079 5.96862 7.7507 6.88875C6.97377 7.67913 6.38538 8.63478 6.02945 9.68438L2.14258 6.675C3.53384 3.91605 5.94273 1.80567 8.8607 0.789375Z" fill="#E33629"/>
+                                <path d="M1.1114 9.65625C1.32032 8.62086 1.66716 7.61817 2.14265 6.675L6.02953 9.69187C5.52105 11.1893 5.52105 12.8126 6.02953 14.31C4.73453 15.31 3.4389 16.315 2.14265 17.325C0.952308 14.9556 0.589275 12.2559 1.1114 9.65625Z" fill="#F8BD00"/>
+                                <path d="M12.7381 9.77813H23.8981C24.2799 11.8724 24.1766 14.0263 23.5963 16.0744C23.0623 17.9578 22.0252 19.66 20.5963 20.9981C19.3419 20.0194 18.0819 19.0481 16.8275 18.0694C17.4494 17.6499 17.9802 17.1092 18.3881 16.4796C18.796 15.8501 19.0726 15.1446 19.2013 14.4056H12.7381C12.7363 12.8644 12.7381 11.3213 12.7381 9.77813Z" fill="#587DBD"/>
+                                <path d="M2.14062 17.325C3.43687 16.325 4.7325 15.32 6.0275 14.31C6.52851 15.7804 7.48138 17.0548 8.75 17.9513C9.54127 18.5105 10.4404 18.8987 11.39 19.0913C12.3257 19.2652 13.2855 19.2652 14.2213 19.0913C15.1542 18.9333 16.0439 18.5821 16.8331 18.06C18.0875 19.0388 19.3475 20.01 20.6019 20.9888C19.2292 22.237 17.5558 23.1073 15.7456 23.5144C13.7476 23.9841 11.6655 23.9616 9.67813 23.4488C8.10632 23.0291 6.63814 22.2892 5.36563 21.2756C4.01874 20.2063 2.91867 18.8587 2.14062 17.325Z" fill="#319F43"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_432_610">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+
+                            <span>Google</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Sign In Modal-->
+
+
+
     <script src="../script/script.js"></script>
     <script src="../script/script-design.js"></script>
     <script>
@@ -284,7 +406,42 @@
         // Invoking Methods
         fetchAndLoadFeatured();
         fetchAndLoadTrending();
-        
+
+        const signUpModal = document.querySelector('.signup-overlay');
+        const signInModal = document.querySelector('.signin-overlay');
+        const openSignUp = document.getElementById('open-signup');
+        // const openSignIn = document.getElementById('open-signin');
+        const closeButtonSignUp = document.querySelector('.close-signup');
+        const closeButtonSignIn = document.querySelector('.close-signin')
+        const loginLink = document.getElementById('login-link');
+        const registerLink = document.getElementById('register-link');
+
+        openSignUp.addEventListener('click', () => {
+            signUpModal.style.display = 'flex';
+        });
+        // openSignIn.addEventListener('click', () => {
+        //     signInModal.style.display = 'flex';
+        // });
+    
+        closeButtonSignUp.addEventListener('click', () => {
+            signUpModal.style.display = 'none';
+        });
+        closeButtonSignIn.addEventListener('click', () => {
+            signInModal.style.display = 'none'
+        });
+
+        registerLink.addEventListener('click', () => {
+            signInModal.style.display = 'none';
+            signUpModal.style.display = 'flex';
+        });
+        loginLink.addEventListener('click', () => {
+            signInModal.style.display = 'flex';
+            signUpModal.style.display = 'none';
+        });
+
+        function navigateToProfile() {
+            window.location.href = 'profile.html';
+        }
 
         // Filter and Load Featured Products
         async function fetchAndLoadFeatured(){

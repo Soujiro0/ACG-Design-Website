@@ -13,6 +13,7 @@
     --bg-color-darker:#444444;
     --bg-color-light-accent: #002d64;
     --bg-color-lighter-accent: #01418f;
+    --bg-overlay: #000000ad;
     --navigation-bar-height: 82px;
     --offset: 50%;
     --default-font: Arial, 'Times New Roman';
@@ -404,14 +405,14 @@ footer .footerContent .copyright span {
     width: 60%;
     padding: 20px;
     padding-block: 50px;
-    border: var(--accent-color) solid 5px;
+    border: var(--accent-color) solid 3px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     margin-block: 100px;
     transition: 0.5s ease;
 }
-.contactCard:hover {
+/* .contactCard:hover {
     background-color: var(--bg-color-light-accent);
     color: var(--text-color-white);
     transform: scale(110%);
@@ -419,7 +420,7 @@ footer .footerContent .copyright span {
     h2 {
         color: var(--text-color-white);
     }
-}
+} */
 .contactCard .iconContainer {
     height: 70px;
     width: 70px;
@@ -448,6 +449,124 @@ footer .footerContent .copyright span {
     font-size: 1.25rem;
     transition: 0.5s ease;
 }
+
+/* Sign Up Modal Design */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-overlay);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.overlay .modal {
+    background: var(--text-color-white);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px #0000001a;
+    position: relative;
+}
+.overlay .modal .modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.overlay .modal .modal-header h1 {
+    margin: 0;
+    font: bold 1.5rem var(--default-font);
+}
+.overlay .modal .modal-header .close-btn {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+}
+.overlay .modal .modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+.overlay .modal .modal-content label {
+    font: 1rem var(--default-font);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.overlay .modal .modal-content input {
+    padding: 10px;
+    border: 1px solid var(--bg-color-mid-light);
+    border-radius: 4px;
+}
+.overlay .modal .modal-content .main-btn {
+    height: fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    background: var(--second-accent-color);
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.overlay .modal .modal-content .social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+.overlay .modal .modal-content .social-login .line {
+    display: inline-block;
+    width: 30%;
+    border-top: 1px solid var(--bg-color-mid-light);
+    margin: 0 10px;
+}
+.overlay .modal .modal-content .social-login span {
+    font: 1rem var(--default-font);
+}
+.overlay .modal .modal-content .social-login .social-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.overlay .modal .modal-content .social-login .other-way {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.overlay .modal .modal-content .social-login .other-way button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    border: black solid 2px;
+}
+.overlay .modal .modal-content .social-login .other-way button svg {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+.overlay .modal .modal-content .modal-content .social-login .footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.overlay .modal .modal-content .footer a {
+    color: #ff5722;
+    text-decoration: none;
+}
+.overlay .modal .modal-content .footer a:hover {
+    text-decoration: underline;
+}
+
 
 
 
@@ -486,8 +605,14 @@ footer .footerContent .copyright span {
 }
 #home .wave {
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     z-index: 10;
+    outline: none;
+    border: none;
+}
+#home .wave rect {
+    border: none;
+    outline: none;
 }
 #home button {
     position: absolute;
@@ -1302,7 +1427,7 @@ footer .footerContent .copyright span {
 /* Added to Cart Component Design */
 .cart .addedToCartItems .cart-container {
     height: fit-content;
-    width: 100%;
+    width: 80%;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
@@ -1412,9 +1537,9 @@ footer .footerContent .copyright span {
     font-size: 1.25rem;
     font-family: var(--default-font);
     font-weight: bold;
+    place-self: end;
     align-self: start;
     grid-row-start: span -3;
-    margin-left: 50px;
 }
 .cart .addedToCartItems .cart-container .cartList .cart-item svg {
     height: 24px;
@@ -1468,20 +1593,22 @@ footer .footerContent .copyright span {
 /* Check out Component Design */
 .cart .checkOutComponent .checkOutContainer {
     height: fit-content;
-    width: 60%;
+    width: 70%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto repeat(2, 1fr);
     padding: 20px;
     margin-top: 30px;
     margin-inline: auto;
+    column-gap: 20px;
 }
 /* Customer Details Design */
 .cart .checkOutComponent .checkOutContainer .customerDetails {
     height: fit-content;
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 50px;
+    padding: 10px;
 }
 .cart .checkOutComponent .checkOutContainer .customerDetails h1 {
     font-size: 1.25rem;
@@ -1514,9 +1641,10 @@ footer .footerContent .copyright span {
 /* Order Summary Design */
 .cart .checkOutComponent .checkOutContainer .orderSummary {
     grid-row-start: span 2;
-    border: var(--text-color-black) solid 2px;
+    border: var(--bg-color-mid-light) solid 2px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary > h1 {
     font-size: 1.25rem;
@@ -1527,10 +1655,11 @@ footer .footerContent .copyright span {
     padding: 10px;
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary .itemList {
-    height: 90%;
+    height: 400px;
     width: 100%;
     padding: 20px;
     overflow-y: auto;
+    margin-bottom: auto;
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item {
     width: 100%;
@@ -1539,8 +1668,8 @@ footer .footerContent .copyright span {
     grid-template-columns: repeat(3, 1fr);
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item img {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     place-self: center;
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item > div {
@@ -1553,7 +1682,7 @@ footer .footerContent .copyright span {
     color: var(--text-color-black);
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary .itemList .item > div > p {
-    font-size: 0.625rem;
+    font-size: 0.825rem;
     font-family: var(--default-font);
     font-weight: 500;
     color: var(--bg-color-dark);
@@ -1569,12 +1698,12 @@ footer .footerContent .copyright span {
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary .totalBox {
     height: fit-content;
-    width: 100%;
-    margin-top: auto;
+    width: 90%;
     margin-inline: auto;
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
+    border-top: var(--text-color-black) solid 2px;
 }
 .cart .checkOutComponent .checkOutContainer .orderSummary .totalBox > span {
     font-size: 1rem;
@@ -1589,76 +1718,170 @@ footer .footerContent .copyright span {
     color: var(--text-color-black);
 }
 /* Payment Method Design */
+.cart .checkOutComponent .checkOutContainer .paymentMethod {
+    align-self: start;
+    height: 100%;
+}
 .cart .checkOutComponent .checkOutContainer .paymentMethod > h1 {
     font-size: 1.25rem;
     font-family: var(--default-font);
     font-weight: bold;
     color: var(--text-color-black);
     margin-bottom: 20px;
+    padding: 10px;
 }
 .cart .checkOutComponent .checkOutContainer .paymentMethod .methods {
     height: fit-content;
-    width: 90%;
-    border: var(--text-color-black) solid 2px;
-    padding: 20px;
+    width: 100%;
+    border: var(--bg-color-mid-light) solid 2px;
+    padding-inline-end: 20px;
+    padding-top: 20px;
 }
 .cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method {
     height: fit-content;
     width: 100%;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > input {
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .paymentDropdown {
+    display: none;
+}
+
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #gcashPayment, #paypalPayment {
+    height: fit-content;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment {
+    width: 100%;
+    max-width: 100%;
+    display: none;
+    flex-direction: column;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .cardSelection {
+    width: 100%;
+    display: flex;
+    margin-block: 10px;
+    column-gap: 10px;
+    padding-inline: 50px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .cardSelection .credit-container {
+    position: relative;
+    display: inline-block;
+    border: 2px solid var(--bg-color-mid-light);
+    border-radius: 10px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .cardSelection .credit-container img {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .cardSelection .credit-container .checkmark {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: none;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .creditCardInfo {
+    display: flex;
+    flex-direction: column;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .creditCardInfo .cardInputDetail {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .creditCardInfo .creditExpiration {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    padding-bottom: 10px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .creditCardInfo .creditExpiration #expiryLabel {
+    grid-column-start: span 2;
+    padding-inline: 50px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .creditCardInfo .creditExpiration select {
+    font-size: 1rem;
+    font-family: var(--default-font);
+    padding-inline: 10px;
+    padding-block: 5px;
+    border: var(--text-color-black) solid 2px;
+    border-radius: 5px;
+    width: fit-content;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .creditCardInfo .creditExpiration #expiryMonth {
+    margin-left: 50px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method #creditcardPayment .creditCardInfo .creditExpiration #ccv {
+    width: 50%;
+    padding: 5px;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .paymentDropdown label {
+    font-size: 0.875rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    margin-block: 10px;
+} 
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .paymentDropdown input {
+    font-size: 1rem;
+    font-family: var(--default-font);
+    padding-inline: 10px;
+    padding-block: 5px;
+    border: var(--text-color-black) solid 2px;
+    border-radius: 5px;
+}
+
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .methodInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .methodInfo > input {
     margin: 20px;
 }
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div {
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .methodInfo> div {
     display: block;
     flex-direction: column;
 }
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div > h1 {
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .methodInfo > div > h1 {
     font-size: 1rem;
     font-family: var(--default-font);
     font-weight: bold;
     color: var(--text-color-black);
 }
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div > p {
-    font-size: 0.625rem;
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .methodInfo > div > p {
+    font-size: 0.825rem;
     font-family: var(--default-font);
     font-weight: normal;
     color: var(--bg-color-dark);
     text-align: left;
 }
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method > div {
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .methodInfo > div {
     font-size: 0.75rem;
     font-family: var(--default-font);
     font-weight: normal;
     color: var(--bg-color-dark);
 }
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method img {
+.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .method .methodInfo img {
     height: 40px;
     width: 40px;
     margin-left: 10px;
 }
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .creditCardInput {
-    display: flex;
-    flex-direction: column;
-    margin: 53px;
-}
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .creditCardInput label {
-    font-size: 0.875rem;
-    font-family: var(--default-font);
-    font-weight: normal;
-    color: var(--text-color-black);
-}
-.cart .checkOutComponent .checkOutContainer .paymentMethod .methods .creditCardInput input {
-    font-size: 0.875rem;
-    font-family: var(--default-font);
-    font-weight: normal;
-    color: var(--text-color-black);
-    padding: 5px 0px;
-    border: var(--text-color-black) solid 2px;
-}
+
 .cart .checkOutComponent .checkOutContainer .back {
+    grid-column-start: span 2;
     height: fit-content;
     width: fit-content;
     font-size: 1.125rem;
@@ -1671,6 +1894,7 @@ footer .footerContent .copyright span {
     padding: 15px 30px;
     margin-top: 50px;
     transition: 0.5s ease;
+    margin-left: 70px;
 }
 .cart .checkOutComponent .checkOutContainer .placeOrder {
     height: fit-content;
@@ -1699,7 +1923,7 @@ footer .footerContent .copyright span {
 
 /* Confirmation Component Design */
 .cart .confirmationComponent {
-    height: 600px;
+    height: 700px;
     width: 50%;
     padding: 20px;
     margin-top: 50px;
@@ -1733,24 +1957,29 @@ footer .footerContent .copyright span {
     padding: 10px;
     color: var(--text-color-black);
 }
+.cart .confirmationComponent .purchases {
+    height: 300px;
+    width: fit-content;
+    overflow-y: auto;
+    margin-inline: auto;
+}
 .cart .confirmationComponent .purchases .cart-item {
     height: fit-content;
-    width: 50%;
-    margin-inline: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     place-items: center;
 }
 .cart .confirmationComponent .purchases .cart-item img {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     grid-row-start: span 2;
 }
 .cart .confirmationComponent .purchases .cart-item h1 {
     place-self: start;
     align-self: center;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-family: var(--default-font);
     font-weight: 600;
     color: var(--text-color-black);
@@ -1767,7 +1996,7 @@ footer .footerContent .copyright span {
     grid-row-start: span 2;
     place-self: start;
     align-self: center;
-    font-size: 0.625rem;
+    font-size: 0.825rem;
     font-family: var(--default-font);
     font-weight: 600;
     color: var(--bg-color-dark);
@@ -1800,110 +2029,283 @@ footer .footerContent .copyright span {
 
 
 /*----------Profile Page Design----------*/
-.profile {
+.profile .profileContainer {
+    height: 100%;
+    width: 70%;
     display: grid;
-    grid-template-columns: 300px repeat(2, auto);
+    grid-template-columns: 300px auto;
+    margin-inline: auto;
 }
-.profile aside ul {
+.profile .profileContainer aside ul {
     height: 100%;
     list-style-type: none;
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
-.profile aside ul li {
+.profile .profileContainer aside ul li {
     display: flex;
     align-items: center;
     padding: 10px;
     font-size: 1rem;
     font-family: var(--default-font);
 }
-.profile aside ul li svg {
+.profile .profileContainer aside ul li:hover {
+    cursor: pointer;
+}
+.profile .profileContainer aside ul li svg {
     height: 30px;
     width: 30px;
     margin-right: 20px;
 }
-.profile aside ul #logout {
-    margin-top: auto;
-}
-.active-nav {
+.profile .profileContainer .active-nav {
     color: var(--second-accent-color); /* Change this to your desired color */
 }
-.active-nav svg path {
+.profile .profileContainer .active-nav svg path {
     fill: var(--second-accent-color); /* Change this to your desired color */
 }
-.profileContent {
-    display: none;
-}
-.active-content {
+.profile .profileContainer .active-content {
     display: block;
 }
-
-.profile h1 {
+.profile .profileContainer .editProfile > div {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: fit-content repeat(3, auto);
+}
+.profile .profileContainer .editProfile h1 {
     font-size: 2rem;
     font-family: var(--default-font);
     font-weight: bold;
-    place-self: start;
+    align-self: center;
+    padding-left: 50px;
 }
-.profile .personalDetails {
-    display: none;
-    grid-template-columns: repeat(2, auto);
-    place-items: center;
+.profile .profileContainer .editProfile .profilePicAndName {
+    place-self: center;
+    text-align: center;
+    font: 1rem var(--default-font);
 }
-
-.profile .personalDetails .personDetails {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+.profile .profileContainer .editProfile .profilePicAndName h5,
+.profile .profileContainer .editProfile .profilePicAndName span {
+    font: 1rem var(--default-font);
 }
-.profile .personalDetails .personDetails > div {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-}
-.profile .personalDetails .personDetails > div label {
-    font-size: 1.25rem;
-    font-family: var(--default-font);
-}
-.profile .personalDetails .personDetails > div input {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-family: var(--default-font);
-    border: #050505 2px solid;
-    border-radius: 50px;
-}
-.profile .personalDetails .personDetails > button {
-    background-color: var(--second-accent-color);
-    font-size: 1.2rem;
-    font-family: var(--default-font);
-    font-weight: 600;
-    padding: 15px 30px;
-    border: none;
-    color: var(--text-color-white);
-    border-radius: 50px;
+.profile .profileContainer .editProfile .profilePicAndName h5 {
+    font-weight: bold;
+} 
+.profile .profileContainer .editProfile .profilePicAndName .profile-picture-container {
+    position: relative;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid #fff; /* Optional: Adds a border around the profile picture */
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin-bottom: 10px;
 }
-.profile .personalDetails .personDetails > button svg {
-    height: 20px;
-    width: 20px;
-    margin-left: auto;
+.profile .profileContainer .editProfile .profilePicAndName .profile-picture-container .profile-picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile .profileContainer .editProfile .profilePicAndName .profile-picture-container .camera-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .5); /* Optional: Adds a subtle shadow */
+}
+.profile .profileContainer .editProfile .profilePicAndName .profile-picture-container .camera-icon svg {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+.profile .profileContainer .editProfile .profileDetails form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: auto;
+    border-block: var(--bg-color-dark) solid 1px;
+}
+.profile .profileContainer .editProfile .profileDetails form label {
+    font: bold 1rem var(--default-font);
+    padding-block: 5px;
+}
+.profile .profileContainer .editProfile .profileDetails form input {
+    font: 1rem var(--default-font);
+    padding: 10px;
+    border: var(--bg-color-dark) solid 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.profile .profileContainer .editProfile .profileDetails form input:focus {
+    outline: none;
+}
+.profile .profileContainer .editProfile .profileDetails form > button {
+    background-color: var(--second-accent-color);
+    font: 1.2rem var(--default-font);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    color: var(--text-color-white);
+}
+.profile .profileContainer .editProfile > div > button {
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--bg-color-lighter);
+    font: 1.2rem var(--default-font);
+    margin: auto;
+    padding: 15px 25px;
+    border: var(--second-accent-color) solid 2px;
+    color: var(--second-accent-color);
+}
+.profile .profileContainer .changePass > div {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+.profile .profileContainer .changePass > div h1 {
+    font: bold 2rem var(--default-font);
+    padding-left: 50px;
+    align-self: center;
 }
 
-.profile .myOrders {
-    display: none;
+.profile .profileContainer .changePass > div form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-inline: auto;
+    grid-row-start: span 3;
+    margin-top: 50px;
+}
+.profile .profileContainer .changePass > div form label {
+    font: bold 1rem var(--default-font);
+    padding-block: 5px;
+}
+.profile .profileContainer .changePass > div form input {
+    font: 1rem var(--default-font);
+    padding: 10px;
+    border: var(--bg-color-dark) solid 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.profile .profileContainer .changePass > div form button {
+    background-color: var(--second-accent-color);
+    font: 1.2rem var(--default-font);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    color: var(--text-color-white);
+}
+.profile .profileContainer .myOrders > div {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+.profile .profileContainer .myOrders > div > h1 {
+    font: bold 2rem var(--default-font);
+    padding-left: 50px;
+    align-self: center;
+}
+.profile .profileContainer .myOrders > div .orderList {
+    height: 90%;
+    width: 80%;
+    margin-inline: auto;
+    grid-row-start: span 3;
+    overflow-y: auto;
+}
+.profile .profileContainer .myOrders > div .orderList .item {
+    width: 100%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: var(--bg-color-dark) solid 2px;
+}
+.profile .profileContainer .myOrders > div .orderList .item img {
+    height: 100px;
+    width: 100px;
+    place-self: center;
+}
+.profile .profileContainer .myOrders > div .orderList .item > div {
+    align-self: center;
+}
+.profile .profileContainer .myOrders > div .orderList .item > div > h1 {
+    font-size: 1.1rem;
+    font-family: var(--default-font);
+    font-weight: 500;
+    color: var(--text-color-black);
+}
+.profile .profileContainer .myOrders > div .orderList .item > div > p {
+    font-size: 1rem;
+    font-family: var(--default-font);
+    font-weight: 500;
+    color: var(--bg-color-dark);
+    text-align: left;
+}
+.profile .profileContainer .myOrders > div .orderList .item > h2 {
+    font-size: 1.2rem;
+    font-family: var(--default-font);
+    font-weight: bold;
+    color: var(--text-color-black);
+    text-align: left;
+    place-self: center;
 }
 
-.profile .changePass {
-    display: none;
+.profile .profileContainer .logoutPrompt > div {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.profile .profileContainer .logoutPrompt > div .prompt {
+    height: 50%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: var(--text-color-black) solid 2px;
+}
+.profile .profileContainer .logoutPrompt > div .prompt h1 {
+    font: bold 2rem var(--default-font);
+    align-self: center;
+    text-align: center;
+    grid-column-start: span 2;
 }
 
-.profile .paymentMethodsProfile {
-    display: none;
+.profile .profileContainer .logoutPrompt > div .prompt button {
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--second-accent-color);
+    font: 1.2rem var(--default-font);
+    margin-inline: auto;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 50px;
+    color: var(--text-color-white);
+    place-self: center;
 }
+.profile .profileContainer .logoutPrompt > div .prompt #cancel {
+    background-color: var(--text-color-white);
+    border: var(--text-color-black) solid 2px;
+    color: var(--text-color-black);
+}
+
 
 

@@ -127,12 +127,13 @@
                     <div class="dropdown">
                         <button class="dropdown-toggle">Color Palette (choose 2-3 colors): <span style="display: block; margin-left: auto;">Default</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg></button>
                         <div class="dropdown-menu">
-                            <label class="dropdown-item"><input type="checkbox" value="Color 1"> Color 1</label>
-                            <label class="dropdown-item"><input type="checkbox" value="Color 2"> Color 2</label>
-                            <label class="dropdown-item"><input type="checkbox" value="Color 3"> Color 3</label>
-                            <label class="dropdown-item"><input type="checkbox" value="Color 4"> Color 4</label>
-                            <label class="dropdown-item"><input type="checkbox" value="Color 5"> Color 5</label>
-                            <label class="dropdown-item"><input type="checkbox" value="Color 6"> Color 6</label>
+                            <label class="dropdown-item"><input type="checkbox" value="Red"> Red <div style="height: 25px; width: 25px; border: #050505 solid 2px; margin-left: 10px; background-color: red;"></div></label>
+                            <label class="dropdown-item"><input type="checkbox" value="Orange"> Orange <div style="height: 25px; width: 25px; border: #050505 solid 2px; margin-left: 10px; background-color: orange;"></div></label>
+                            <label class="dropdown-item"><input type="checkbox" value="Yellow"> Yellow <div style="height: 25px; width: 25px; border: #050505 solid 2px; margin-left: 10px; background-color: yellow;"></div></label>
+                            <label class="dropdown-item"><input type="checkbox" value="Green"> Green <div style="height: 25px; width: 25px; border: #050505 solid 2px; margin-left: 10px; background-color: green;"></div></label>
+                            <label class="dropdown-item"><input type="checkbox" value="Blue"> Blue <div style="height: 25px; width: 25px; border: #050505 solid 2px; margin-left: 10px; background-color: blue;"></div></label>
+                            <label class="dropdown-item"><input type="checkbox" value="Indigo"> Indigo <div style="height: 25px; width: 25px; border: #050505 solid 2px; margin-left: 10px; background-color: indigo;"></div></label>
+                            <label class="dropdown-item"><input type="checkbox" value="Violet"> Violet <div style="height: 25px; width: 25px; border: #050505 solid 2px; margin-left: 10px; background-color: violet;"></div></label>
                             <label class="dropdown-item">
                                 <input type="checkbox" class="input-checkbox"> 
                                 <input type="text" class="input-text" placeholder="Enter text" disabled>
@@ -165,7 +166,7 @@
                     </div>
 
                     <div class="actionButtons">
-                        <button class="buy">Buy Now</button>
+                        <button class="buy" onclick="buyNow()">Buy Now</button>
                         <button class="addToCart" onclick="addedToCart()">Add to Cart</button>
                         <div class="toast">Added to Cart!</div>
                     </div>
@@ -269,6 +270,11 @@
         });
         // End of Zoom Image of product when hover
 
+        function buyNow() {
+            addedToCart();
+            window.location.href = 'cart.html';
+        }
+
         // Add to cart Notify toast
         function addedToCart(){
             // Toast Behaviour
@@ -278,6 +284,11 @@
             setTimeout(() => {
                 toast.style.opacity = '0';
             }, 1500);
+
+            if (localStorage.getItem('cartItems') === null) {
+                const cartArray = [];
+                localStorage.setItem('cartItems', JSON.stringify(cartArray));
+            }
 
             let localArray = localStorage.getItem('cartItems');
             localArray = JSON.parse(localArray);
