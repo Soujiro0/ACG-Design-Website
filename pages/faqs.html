@@ -21,7 +21,7 @@
     <header>
         <!--Main Navigation-->
         <nav class="navbar">
-            <div class="logo"><h1><a href="home.html"><span>ACG</span> Designs</a></h1></div>
+            <div class="logo" onclick="navigateToHome()"><img src="../assets/icons/logo-ver1.png" alt=""></div>
             <ul>
                 <li id="homeNav"><a href="home.html"><span class="underline">HOME</span></a></li>
                 <li id="aboutNav"><a href="about.html"><span class="underline">ABOUT</span></a></li>
@@ -46,14 +46,6 @@
                 <li id="faqsNav"><a href="faqs.html"><span class="underline">FAQS</span></a></li>
             </ul>
             <ul>
-                <!--Search Icon-->
-                <!-- <li class="search">
-                    <div class="searchBarContainer"><input type="text" id="searchBar" placeholder="Search Design"></div>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.4688 22.2757L17.0968 15.9037C18.628 14.0654 19.3916 11.7076 19.2286 9.32069C19.0657 6.93378 17.9888 4.70157 16.222 3.08843C14.4552 1.47528 12.1345 0.605403 9.74261 0.65975C7.35076 0.714097 5.07194 1.68849 3.38021 3.38021C1.68849 5.07194 0.714097 7.35076 0.65975 9.74261C0.605403 12.1345 1.47528 14.4552 3.08843 16.222C4.70157 17.9888 6.93378 19.0657 9.32069 19.2286C11.7076 19.3916 14.0654 18.628 15.9037 17.0968L22.2757 23.4688L23.4688 22.2757ZM2.37502 9.96877C2.37502 8.46687 2.82039 6.9987 3.6548 5.74991C4.48921 4.50112 5.67519 3.52781 7.06277 2.95306C8.45035 2.37831 9.9772 2.22793 11.4502 2.52093C12.9233 2.81394 14.2764 3.53717 15.3384 4.59918C16.4004 5.66118 17.1236 7.01426 17.4166 8.4873C17.7096 9.96035 17.5592 11.4872 16.9845 12.8748C16.4097 14.2624 15.4364 15.4483 14.1876 16.2827C12.9388 17.1172 11.4707 17.5625 9.96877 17.5625C7.95547 17.5603 6.02527 16.7595 4.60165 15.3359C3.17803 13.9123 2.37725 11.9821 2.37502 9.96877Z" fill="#F1F1F1"/>
-                    </svg>
-                        
-                </li> -->
                 <!--Cart Icon-->
                 <li>
                     <a href="cart.html">
@@ -65,15 +57,32 @@
                     </a>
                 </li>
                 <!--User Icon-->
-                <li>
-                    <a href="#">
-                        <span class="underline">
-                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.544 24.457C24.506 20.9353 21.3066 18.4642 17.5889 17.4162C19.3964 16.4974 20.8417 14.9966 21.6919 13.1559C22.5421 11.3152 22.7475 9.24178 22.2751 7.27001C21.8027 5.29823 20.68 3.54302 19.0881 2.28738C17.4961 1.03175 15.5276 0.348877 13.5 0.348877C11.4724 0.348877 9.50396 1.03175 7.91197 2.28738C6.31998 3.54302 5.19728 5.29823 4.72489 7.27001C4.2525 9.24178 4.45796 11.3152 5.30813 13.1559C6.15831 14.9966 7.60365 16.4974 9.4111 17.4162C5.69345 18.4629 2.494 20.934 0.455987 24.457C0.400026 24.545 0.36245 24.6435 0.345521 24.7464C0.328591 24.8493 0.332657 24.9546 0.357474 25.0559C0.382291 25.1573 0.427346 25.2525 0.48993 25.336C0.552513 25.4194 0.631331 25.4894 0.721641 25.5416C0.811952 25.5938 0.911889 25.6272 1.01544 25.6397C1.11899 25.6523 1.22402 25.6438 1.3242 25.6147C1.42438 25.5857 1.51765 25.5367 1.59839 25.4706C1.67913 25.4046 1.74568 25.3229 1.79403 25.2304C4.27032 20.952 8.6454 18.3984 13.5 18.3984C18.3546 18.3984 22.7297 20.952 25.206 25.2304C25.2543 25.3229 25.3209 25.4046 25.4016 25.4706C25.4824 25.5367 25.5756 25.5857 25.6758 25.6147C25.776 25.6438 25.881 25.6523 25.9846 25.6397C26.0881 25.6272 26.1881 25.5938 26.2784 25.5416C26.3687 25.4894 26.4475 25.4194 26.5101 25.336C26.5727 25.2525 26.6177 25.1573 26.6425 25.0559C26.6674 24.9546 26.6714 24.8493 26.6545 24.7464C26.6376 24.6435 26.6 24.545 26.544 24.457ZM6.02345 9.37498C6.02345 7.89625 6.46194 6.45074 7.28348 5.22122C8.10501 3.99171 9.27269 3.03342 10.6389 2.46753C12.005 1.90165 13.5083 1.75359 14.9586 2.04207C16.4089 2.33056 17.7411 3.04263 18.7867 4.08825C19.8324 5.13387 20.5444 6.46606 20.8329 7.91637C21.1214 9.36668 20.9733 10.87 20.4075 12.2361C19.8416 13.6023 18.8833 14.77 17.6538 15.5915C16.4243 16.413 14.9787 16.8515 13.5 16.8515C11.5178 16.8492 9.61753 16.0607 8.21592 14.6591C6.81431 13.2575 6.02584 11.3572 6.02345 9.37498Z" fill="#F1F1F1"/>
-                            </svg>
-                        </span>
-                    </a>
-                </li>
+                <div class="userProfileDiv">
+                    <li>
+                        <a href="#">
+                            <span class="underline">
+                                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.544 24.457C24.506 20.9353 21.3066 18.4642 17.5889 17.4162C19.3964 16.4974 20.8417 14.9966 21.6919 13.1559C22.5421 11.3152 22.7475 9.24178 22.2751 7.27001C21.8027 5.29823 20.68 3.54302 19.0881 2.28738C17.4961 1.03175 15.5276 0.348877 13.5 0.348877C11.4724 0.348877 9.50396 1.03175 7.91197 2.28738C6.31998 3.54302 5.19728 5.29823 4.72489 7.27001C4.2525 9.24178 4.45796 11.3152 5.30813 13.1559C6.15831 14.9966 7.60365 16.4974 9.4111 17.4162C5.69345 18.4629 2.494 20.934 0.455987 24.457C0.400026 24.545 0.36245 24.6435 0.345521 24.7464C0.328591 24.8493 0.332657 24.9546 0.357474 25.0559C0.382291 25.1573 0.427346 25.2525 0.48993 25.336C0.552513 25.4194 0.631331 25.4894 0.721641 25.5416C0.811952 25.5938 0.911889 25.6272 1.01544 25.6397C1.11899 25.6523 1.22402 25.6438 1.3242 25.6147C1.42438 25.5857 1.51765 25.5367 1.59839 25.4706C1.67913 25.4046 1.74568 25.3229 1.79403 25.2304C4.27032 20.952 8.6454 18.3984 13.5 18.3984C18.3546 18.3984 22.7297 20.952 25.206 25.2304C25.2543 25.3229 25.3209 25.4046 25.4016 25.4706C25.4824 25.5367 25.5756 25.5857 25.6758 25.6147C25.776 25.6438 25.881 25.6523 25.9846 25.6397C26.0881 25.6272 26.1881 25.5938 26.2784 25.5416C26.3687 25.4894 26.4475 25.4194 26.5101 25.336C26.5727 25.2525 26.6177 25.1573 26.6425 25.0559C26.6674 24.9546 26.6714 24.8493 26.6545 24.7464C26.6376 24.6435 26.6 24.545 26.544 24.457ZM6.02345 9.37498C6.02345 7.89625 6.46194 6.45074 7.28348 5.22122C8.10501 3.99171 9.27269 3.03342 10.6389 2.46753C12.005 1.90165 13.5083 1.75359 14.9586 2.04207C16.4089 2.33056 17.7411 3.04263 18.7867 4.08825C19.8324 5.13387 20.5444 6.46606 20.8329 7.91637C21.1214 9.36668 20.9733 10.87 20.4075 12.2361C19.8416 13.6023 18.8833 14.77 17.6538 15.5915C16.4243 16.413 14.9787 16.8515 13.5 16.8515C11.5178 16.8492 9.61753 16.0607 8.21592 14.6591C6.81431 13.2575 6.02584 11.3572 6.02345 9.37498Z" fill="#F1F1F1"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <div class="dropDownUser">
+                        
+                        <div class="loginProfile">
+                            <img src="../assets/icons/profilePic.png" alt="">
+                            <h5>Lorem Ipsum Dolor</h5>
+                            <span>loremipsum@gmail.com</span>
+                            <button>Log Out</button>
+                        </div>
+
+                        <div class="buttons">
+                            <button id="open-signin">Login</button>
+                            <button id="open-signup">Sign Up</button>
+                        </div>
+
+                    </div>
+                </div>
             </ul>
         </nav>
         <!--Hero Section-->
@@ -91,33 +100,68 @@
                 <h1>Frequently Asked Questions</h1>
                 <div class="questionsContainer">
                     <div class="question">
-                        <button>How do I pay for a Premium plan? <span></span></button>
+                        <button>Q: What customization options are available for the templates?<span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: You can customize colors, fonts, images, social media links, logos (via Google Drive link), and content text to suit your brand.
                         </div>
                     </div>
                     <div class="question">
-                        <button>How do I buy design? <span></span></button>
+                        <button>Q: How do I upload my logo?<span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: Upload your logo to Google Drive, change its access to 'Anyone with the link,' and paste the link in the provided text field during customization.
                         </div>
                     </div>
                     <div class="question">
-                        <button>How do I Contact? <span></span></button>
+                        <button>Q: Can I change the layout of the template?<span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: The layout of the template is fixed to maintain its design integrity, but you can customize colors, fonts, images, and content.
                         </div>
                     </div>
                     <div class="question">
-                        <button>What payment methods do you accept? <span></span></button>
+                        <button>Q: How do I provide custom photos for my template?<span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: Upload your custom photos to Google Drive, change the access to 'Anyone with the link,' and paste the links in the additional instructions field during checkout.
                         </div>
                     </div>
                     <div class="question">
-                        <button>How can I provide feedback or suggestions for improvement? <span></span></button>
+                        <button>Q: How long does it take to receive my <span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: You will receive your customized template via email within [X] business days after placing your order.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: How long does it take to receive my <span></span></button>
+                        <div class="description">
+                            A: You will receive your customized template via email within [X] business days after placing your order.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: How do I download my customized template?<span></span></button>
+                        <div class="description">
+                            A: Once your template is ready, we will send it to the email address you provided during checkout. Follow the instructions in the email to download your template.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: What payment methods do you accept?<span></span></button>
+                        <div class="description">
+                            A: We accept credit/debit cards, PayPal, and other secure payment options listed on the checkout page.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: Do you offer customer support?<span></span></button>
+                        <div class="description">
+                            A: Yes, we offer 24/7 customer support. You can reach us via email or phone for any assistance you need.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: What payment methods do you accept?<span></span></button>
+                        <div class="description">
+                            A: We accept credit/debit cards, PayPal, and other secure payment options listed on the checkout page.
                         </div>
                     </div>
                 </div>
@@ -186,7 +230,148 @@
             </div>
         </div>
     </footer>
-    <script src="../script/script-design.js"></script>
+
+    <!--Sign up Modal-->
+    <div class="signup-overlay overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <span class="close-signup close-btn">&times;</span>
+                <h1>Create an Account</h1>
+            </div>
+            <div class="modal-content">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+
+                    <button type="submit" class="sign-up-btn main-btn">Sign Up</button>
+                </form>
+                <div class="social-login">
+                    <hr class="line"><span>OR</span><hr class="line">
+                    <div class="other-way">
+                        <button class="social-btn facebook-btn">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.5 10C20.5 4.48 16.02 0 10.5 0C4.98 0 0.5 4.48 0.5 10C0.5 14.84 3.94 18.87 8.5 19.8V13H6.5V10H8.5V7.5C8.5 5.57 10.07 4 12 4H14.5V7H12.5C11.95 7 11.5 7.45 11.5 8V10H14.5V13H11.5V19.95C16.55 19.45 20.5 15.19 20.5 10Z" fill="black"/>
+                            </svg>  
+                            <span>Facebook</span>
+                        </button>
+                        <button class="social-btn google-btn">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_432_610)">
+                                <path d="M8.86104 0.789375C6.46307 1.62125 4.39506 3.20019 2.96077 5.29425C1.52649 7.38832 0.801526 9.88715 0.892371 12.4237C0.983217 14.9602 1.88508 17.4008 3.4655 19.3869C5.04591 21.373 7.22158 22.7999 9.67292 23.4581C11.6603 23.9709 13.7424 23.9935 15.7404 23.5238C17.5504 23.1172 19.2238 22.2476 20.5967 21C22.0256 19.6619 23.0627 17.9596 23.5967 16.0763C24.177 14.0281 24.2803 11.8742 23.8985 9.78H12.7385V14.4094H19.2017C19.0725 15.1477 18.7957 15.8524 18.3878 16.4813C17.98 17.1102 17.4494 17.6503 16.8279 18.0694C16.0387 18.5914 15.149 18.9427 14.216 19.1006C13.2803 19.2746 12.3205 19.2746 11.3848 19.1006C10.4364 18.9045 9.53923 18.5131 8.75042 17.9513C7.4832 17.0542 6.53168 15.7799 6.03167 14.31C5.52319 12.8126 5.52319 11.1893 6.03167 9.69188C6.38759 8.64228 6.97598 7.68663 7.75292 6.89625C8.64203 5.97515 9.76766 5.31674 11.0063 4.99327C12.245 4.66979 13.5488 4.69375 14.7748 5.0625C15.7325 5.35648 16.6083 5.87013 17.3323 6.5625C18.061 5.8375 18.7885 5.11063 19.5148 4.38188C19.8898 3.99 20.2985 3.61688 20.6679 3.21563C19.5627 2.18714 18.2654 1.38686 16.8504 0.860625C14.2736 -0.0750188 11.4541 -0.100163 8.86104 0.789375Z" fill="white"/>
+                                <path d="M8.8607 0.789375C11.4536 -0.100768 14.2731 -0.0762858 16.8501 0.85875C18.2654 1.38856 19.562 2.1927 20.6657 3.225C20.2907 3.62625 19.8951 4.00125 19.5126 4.39125C18.7851 5.1175 18.0582 5.84125 17.332 6.5625C16.6079 5.87013 15.7321 5.35648 14.7745 5.0625C13.5489 4.69245 12.2451 4.66711 11.0061 4.98927C9.76712 5.31142 8.64079 5.96862 7.7507 6.88875C6.97377 7.67913 6.38538 8.63478 6.02945 9.68438L2.14258 6.675C3.53384 3.91605 5.94273 1.80567 8.8607 0.789375Z" fill="#E33629"/>
+                                <path d="M1.1114 9.65625C1.32032 8.62086 1.66716 7.61817 2.14265 6.675L6.02953 9.69187C5.52105 11.1893 5.52105 12.8126 6.02953 14.31C4.73453 15.31 3.4389 16.315 2.14265 17.325C0.952308 14.9556 0.589275 12.2559 1.1114 9.65625Z" fill="#F8BD00"/>
+                                <path d="M12.7381 9.77813H23.8981C24.2799 11.8724 24.1766 14.0263 23.5963 16.0744C23.0623 17.9578 22.0252 19.66 20.5963 20.9981C19.3419 20.0194 18.0819 19.0481 16.8275 18.0694C17.4494 17.6499 17.9802 17.1092 18.3881 16.4796C18.796 15.8501 19.0726 15.1446 19.2013 14.4056H12.7381C12.7363 12.8644 12.7381 11.3213 12.7381 9.77813Z" fill="#587DBD"/>
+                                <path d="M2.14062 17.325C3.43687 16.325 4.7325 15.32 6.0275 14.31C6.52851 15.7804 7.48138 17.0548 8.75 17.9513C9.54127 18.5105 10.4404 18.8987 11.39 19.0913C12.3257 19.2652 13.2855 19.2652 14.2213 19.0913C15.1542 18.9333 16.0439 18.5821 16.8331 18.06C18.0875 19.0388 19.3475 20.01 20.6019 20.9888C19.2292 22.237 17.5558 23.1073 15.7456 23.5144C13.7476 23.9841 11.6655 23.9616 9.67813 23.4488C8.10632 23.0291 6.63814 22.2892 5.36563 21.2756C4.01874 20.2063 2.91867 18.8587 2.14062 17.325Z" fill="#319F43"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_432_610">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+
+                            <span>Google</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Have an account? <a href="#" id="login-link">Log In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Sign Up Modal-->
+
+    <!--Sign In Modal-->
+    <div class="signin-overlay overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <span class="close-signin close-btn">&times;</span>
+                <h1>Sign In</h1>
+            </div>
+            <div class="modal-content">
+                <form>
+                    <label for="signInEmail">Email</label>
+                    <input type="email" id="signInEmail" name="signInEmail">
+
+                    <label for="signInPassword">Password</label>
+                    <input type="password" id="signInPassword" name="signInPassword">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+
+                    <button type="button" class="log-in-btn main-btn" onclick="navigateToProfile()">Log In</button>
+                </form>
+                <div class="social-login">
+                    <hr class="line"><span>OR</span><hr class="line">
+                    <div class="other-way">
+                        <button class="social-btn facebook-btn">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.5 10C20.5 4.48 16.02 0 10.5 0C4.98 0 0.5 4.48 0.5 10C0.5 14.84 3.94 18.87 8.5 19.8V13H6.5V10H8.5V7.5C8.5 5.57 10.07 4 12 4H14.5V7H12.5C11.95 7 11.5 7.45 11.5 8V10H14.5V13H11.5V19.95C16.55 19.45 20.5 15.19 20.5 10Z" fill="black"/>
+                            </svg>  
+                            <span>Facebook</span>
+                        </button>
+                        <button class="social-btn google-btn">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_432_610)">
+                                <path d="M8.86104 0.789375C6.46307 1.62125 4.39506 3.20019 2.96077 5.29425C1.52649 7.38832 0.801526 9.88715 0.892371 12.4237C0.983217 14.9602 1.88508 17.4008 3.4655 19.3869C5.04591 21.373 7.22158 22.7999 9.67292 23.4581C11.6603 23.9709 13.7424 23.9935 15.7404 23.5238C17.5504 23.1172 19.2238 22.2476 20.5967 21C22.0256 19.6619 23.0627 17.9596 23.5967 16.0763C24.177 14.0281 24.2803 11.8742 23.8985 9.78H12.7385V14.4094H19.2017C19.0725 15.1477 18.7957 15.8524 18.3878 16.4813C17.98 17.1102 17.4494 17.6503 16.8279 18.0694C16.0387 18.5914 15.149 18.9427 14.216 19.1006C13.2803 19.2746 12.3205 19.2746 11.3848 19.1006C10.4364 18.9045 9.53923 18.5131 8.75042 17.9513C7.4832 17.0542 6.53168 15.7799 6.03167 14.31C5.52319 12.8126 5.52319 11.1893 6.03167 9.69188C6.38759 8.64228 6.97598 7.68663 7.75292 6.89625C8.64203 5.97515 9.76766 5.31674 11.0063 4.99327C12.245 4.66979 13.5488 4.69375 14.7748 5.0625C15.7325 5.35648 16.6083 5.87013 17.3323 6.5625C18.061 5.8375 18.7885 5.11063 19.5148 4.38188C19.8898 3.99 20.2985 3.61688 20.6679 3.21563C19.5627 2.18714 18.2654 1.38686 16.8504 0.860625C14.2736 -0.0750188 11.4541 -0.100163 8.86104 0.789375Z" fill="white"/>
+                                <path d="M8.8607 0.789375C11.4536 -0.100768 14.2731 -0.0762858 16.8501 0.85875C18.2654 1.38856 19.562 2.1927 20.6657 3.225C20.2907 3.62625 19.8951 4.00125 19.5126 4.39125C18.7851 5.1175 18.0582 5.84125 17.332 6.5625C16.6079 5.87013 15.7321 5.35648 14.7745 5.0625C13.5489 4.69245 12.2451 4.66711 11.0061 4.98927C9.76712 5.31142 8.64079 5.96862 7.7507 6.88875C6.97377 7.67913 6.38538 8.63478 6.02945 9.68438L2.14258 6.675C3.53384 3.91605 5.94273 1.80567 8.8607 0.789375Z" fill="#E33629"/>
+                                <path d="M1.1114 9.65625C1.32032 8.62086 1.66716 7.61817 2.14265 6.675L6.02953 9.69187C5.52105 11.1893 5.52105 12.8126 6.02953 14.31C4.73453 15.31 3.4389 16.315 2.14265 17.325C0.952308 14.9556 0.589275 12.2559 1.1114 9.65625Z" fill="#F8BD00"/>
+                                <path d="M12.7381 9.77813H23.8981C24.2799 11.8724 24.1766 14.0263 23.5963 16.0744C23.0623 17.9578 22.0252 19.66 20.5963 20.9981C19.3419 20.0194 18.0819 19.0481 16.8275 18.0694C17.4494 17.6499 17.9802 17.1092 18.3881 16.4796C18.796 15.8501 19.0726 15.1446 19.2013 14.4056H12.7381C12.7363 12.8644 12.7381 11.3213 12.7381 9.77813Z" fill="#587DBD"/>
+                                <path d="M2.14062 17.325C3.43687 16.325 4.7325 15.32 6.0275 14.31C6.52851 15.7804 7.48138 17.0548 8.75 17.9513C9.54127 18.5105 10.4404 18.8987 11.39 19.0913C12.3257 19.2652 13.2855 19.2652 14.2213 19.0913C15.1542 18.9333 16.0439 18.5821 16.8331 18.06C18.0875 19.0388 19.3475 20.01 20.6019 20.9888C19.2292 22.237 17.5558 23.1073 15.7456 23.5144C13.7476 23.9841 11.6655 23.9616 9.67813 23.4488C8.10632 23.0291 6.63814 22.2892 5.36563 21.2756C4.01874 20.2063 2.91867 18.8587 2.14062 17.325Z" fill="#319F43"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_432_610">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+
+                            <span>Google</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Sign In Modal-->
+
     <script src="../script/script.js"></script>
+    <script>
+
+        // Invoking Method
+        toggleAccordionFaqs();
+
+        // Toggle Accordion in FAQS page
+        function toggleAccordionFaqs(){
+
+            console.log("design is loaded");
+            const accordionBtns = document.querySelectorAll('.question > button');
+            
+            accordionBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const accordionItem = btn.nextElementSibling;
+                    accordionItem.classList.toggle('active');
+                    
+                    // Select the span element inside the button
+                    const accordionIcon = btn.querySelector('span');
+                    
+                    // Toggle the 'activeSpan' class on the span element
+                    accordionIcon.classList.toggle('activeSpan');
+                });
+            });
+
+        }
+    </script>
 </body>
 </html>

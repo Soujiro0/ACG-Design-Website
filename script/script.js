@@ -6,7 +6,6 @@
 
 // Entry Point
 document.addEventListener('DOMContentLoaded', fetchData);
-addEventListenerSearchBar();
 
 // Fetching data from JSON file
 async function fetchData() {
@@ -21,6 +20,47 @@ async function fetchData() {
     }
 
 }
+
+const signUpModal = document.querySelector('.signup-overlay');
+const signInModal = document.querySelector('.signin-overlay');
+const openSignUp = document.getElementById('open-signup');
+const openSignIn = document.getElementById('open-signin');
+const closeButtonSignUp = document.querySelector('.close-signup');
+const closeButtonSignIn = document.querySelector('.close-signin')
+const loginLink = document.getElementById('login-link');
+const registerLink = document.getElementById('register-link');
+const userDropDownBtn = document.querySelector('.userProfileDiv');
+const userDropDown = document.querySelector('.dropDownUser');
+
+userDropDownBtn.addEventListener('click', () => {
+    if (userDropDown.classList.contains('active')) {
+        userDropDown.classList.remove('active');
+    } else {
+        userDropDown.classList.add('active');
+    }
+});
+openSignUp.addEventListener('click', () => {
+    signUpModal.style.display = 'flex';
+});
+openSignIn.addEventListener('click', () => {
+    signInModal.style.display = 'flex';
+});
+
+closeButtonSignUp.addEventListener('click', () => {
+    signUpModal.style.display = 'none';
+});
+closeButtonSignIn.addEventListener('click', () => {
+    signInModal.style.display = 'none'
+});
+
+registerLink.addEventListener('click', () => {
+    signInModal.style.display = 'none';
+    signUpModal.style.display = 'flex';
+});
+loginLink.addEventListener('click', () => {
+    signInModal.style.display = 'flex';
+    signUpModal.style.display = 'none';
+});
 
 // Create Component
 function createProductHTML(item) {
@@ -169,25 +209,37 @@ function selectedCategoryNavigation(element) {
     navigateToShop();
 }
 
-function searchByName(searchBar) {
-    let search = searchBar.value.toLowerCase().trim();
-    console.log(search);
-    sessionStorage.setItem('searchItem', search);
-    navigateToShop();
-}
-
-// Add event listener for search bars
-function addEventListenerSearchBar() {
-    console.log('This method is runned');
-    const searchBar = document.querySelector('.searchBarContainer #searchBar');
-    searchBar.addEventListener('keydown', function (e) {
-        if (e.keyCode === 13) {
-            searchByName(searchBar);
-        }
-    });
+// Navigate Home Page
+function navigateToHome() {
+    window.location.href = 'home.html';
 }
 
 // Navigate Shop Page
 function navigateToShop(){  
     window.location.href = 'shop.html';
+}
+
+// Navigate About Us
+function navigateToAbout() {
+    window.location.href = 'about.html';
+}
+
+// Navigate Contact Page
+function navigateToContact() {
+    window.location.href = 'contact.html';
+}
+
+// Navigate FAQS Pages
+function navigateToFaqs() {
+    window.location.href = 'faqs.html';
+}
+
+// Navigate Cart Page
+function navigateToCart() {
+    window.location.href = 'cart.html';
+}
+
+// Navigate Profile Page
+function navigateToProfile() {
+    window.location.href = 'profile.html';
 }

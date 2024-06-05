@@ -21,7 +21,7 @@
     <header>
         <!--Main Navigation-->
         <nav class="navbar">
-            <div class="logo"><h1><a href="home.html"><span>ACG</span> Designs</a></h1></div>
+            <div class="logo" onclick="navigateToHome()"><img src="../assets/icons/logo-ver1.png" alt=""></div>
             <ul>
                 <li id="homeNav"><a href="home.html"><span class="underline">HOME</span></a></li>
                 <li id="aboutNav"><a href="about.html"><span class="underline">ABOUT</span></a></li>
@@ -57,15 +57,32 @@
                     </a>
                 </li>
                 <!--User Icon-->
-                <li id="open-signup">
-                    <a href="#">
-                        <span class="underline">
-                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M26.544 24.457C24.506 20.9353 21.3066 18.4642 17.5889 17.4162C19.3964 16.4974 20.8417 14.9966 21.6919 13.1559C22.5421 11.3152 22.7475 9.24178 22.2751 7.27001C21.8027 5.29823 20.68 3.54302 19.0881 2.28738C17.4961 1.03175 15.5276 0.348877 13.5 0.348877C11.4724 0.348877 9.50396 1.03175 7.91197 2.28738C6.31998 3.54302 5.19728 5.29823 4.72489 7.27001C4.2525 9.24178 4.45796 11.3152 5.30813 13.1559C6.15831 14.9966 7.60365 16.4974 9.4111 17.4162C5.69345 18.4629 2.494 20.934 0.455987 24.457C0.400026 24.545 0.36245 24.6435 0.345521 24.7464C0.328591 24.8493 0.332657 24.9546 0.357474 25.0559C0.382291 25.1573 0.427346 25.2525 0.48993 25.336C0.552513 25.4194 0.631331 25.4894 0.721641 25.5416C0.811952 25.5938 0.911889 25.6272 1.01544 25.6397C1.11899 25.6523 1.22402 25.6438 1.3242 25.6147C1.42438 25.5857 1.51765 25.5367 1.59839 25.4706C1.67913 25.4046 1.74568 25.3229 1.79403 25.2304C4.27032 20.952 8.6454 18.3984 13.5 18.3984C18.3546 18.3984 22.7297 20.952 25.206 25.2304C25.2543 25.3229 25.3209 25.4046 25.4016 25.4706C25.4824 25.5367 25.5756 25.5857 25.6758 25.6147C25.776 25.6438 25.881 25.6523 25.9846 25.6397C26.0881 25.6272 26.1881 25.5938 26.2784 25.5416C26.3687 25.4894 26.4475 25.4194 26.5101 25.336C26.5727 25.2525 26.6177 25.1573 26.6425 25.0559C26.6674 24.9546 26.6714 24.8493 26.6545 24.7464C26.6376 24.6435 26.6 24.545 26.544 24.457ZM6.02345 9.37498C6.02345 7.89625 6.46194 6.45074 7.28348 5.22122C8.10501 3.99171 9.27269 3.03342 10.6389 2.46753C12.005 1.90165 13.5083 1.75359 14.9586 2.04207C16.4089 2.33056 17.7411 3.04263 18.7867 4.08825C19.8324 5.13387 20.5444 6.46606 20.8329 7.91637C21.1214 9.36668 20.9733 10.87 20.4075 12.2361C19.8416 13.6023 18.8833 14.77 17.6538 15.5915C16.4243 16.413 14.9787 16.8515 13.5 16.8515C11.5178 16.8492 9.61753 16.0607 8.21592 14.6591C6.81431 13.2575 6.02584 11.3572 6.02345 9.37498Z" fill="#F1F1F1"/>
-                            </svg>
-                        </span>
-                    </a>
-                </li>
+                <div class="userProfileDiv">
+                    <li>
+                        <a href="#">
+                            <span class="underline">
+                                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.544 24.457C24.506 20.9353 21.3066 18.4642 17.5889 17.4162C19.3964 16.4974 20.8417 14.9966 21.6919 13.1559C22.5421 11.3152 22.7475 9.24178 22.2751 7.27001C21.8027 5.29823 20.68 3.54302 19.0881 2.28738C17.4961 1.03175 15.5276 0.348877 13.5 0.348877C11.4724 0.348877 9.50396 1.03175 7.91197 2.28738C6.31998 3.54302 5.19728 5.29823 4.72489 7.27001C4.2525 9.24178 4.45796 11.3152 5.30813 13.1559C6.15831 14.9966 7.60365 16.4974 9.4111 17.4162C5.69345 18.4629 2.494 20.934 0.455987 24.457C0.400026 24.545 0.36245 24.6435 0.345521 24.7464C0.328591 24.8493 0.332657 24.9546 0.357474 25.0559C0.382291 25.1573 0.427346 25.2525 0.48993 25.336C0.552513 25.4194 0.631331 25.4894 0.721641 25.5416C0.811952 25.5938 0.911889 25.6272 1.01544 25.6397C1.11899 25.6523 1.22402 25.6438 1.3242 25.6147C1.42438 25.5857 1.51765 25.5367 1.59839 25.4706C1.67913 25.4046 1.74568 25.3229 1.79403 25.2304C4.27032 20.952 8.6454 18.3984 13.5 18.3984C18.3546 18.3984 22.7297 20.952 25.206 25.2304C25.2543 25.3229 25.3209 25.4046 25.4016 25.4706C25.4824 25.5367 25.5756 25.5857 25.6758 25.6147C25.776 25.6438 25.881 25.6523 25.9846 25.6397C26.0881 25.6272 26.1881 25.5938 26.2784 25.5416C26.3687 25.4894 26.4475 25.4194 26.5101 25.336C26.5727 25.2525 26.6177 25.1573 26.6425 25.0559C26.6674 24.9546 26.6714 24.8493 26.6545 24.7464C26.6376 24.6435 26.6 24.545 26.544 24.457ZM6.02345 9.37498C6.02345 7.89625 6.46194 6.45074 7.28348 5.22122C8.10501 3.99171 9.27269 3.03342 10.6389 2.46753C12.005 1.90165 13.5083 1.75359 14.9586 2.04207C16.4089 2.33056 17.7411 3.04263 18.7867 4.08825C19.8324 5.13387 20.5444 6.46606 20.8329 7.91637C21.1214 9.36668 20.9733 10.87 20.4075 12.2361C19.8416 13.6023 18.8833 14.77 17.6538 15.5915C16.4243 16.413 14.9787 16.8515 13.5 16.8515C11.5178 16.8492 9.61753 16.0607 8.21592 14.6591C6.81431 13.2575 6.02584 11.3572 6.02345 9.37498Z" fill="#F1F1F1"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <div class="dropDownUser">
+                        
+                        <div class="loginProfile">
+                            <img src="../assets/icons/profilePic.png" alt="">
+                            <h5>Lorem Ipsum Dolor</h5>
+                            <span>loremipsum@gmail.com</span>
+                            <button>Log Out</button>
+                        </div>
+
+                        <div class="buttons">
+                            <button id="open-signin">Login</button>
+                            <button id="open-signup">Sign Up</button>
+                        </div>
+
+                    </div>
+                </div>
             </ul>
         </nav>
         <!--Hero Section-->
@@ -168,8 +185,13 @@
             </div>
 
             <!--Banner 2 Home-->
-            <div class="banner2Home" style="height: fit-content; width: 100%; margin-block: 150px;">
-                <img src="../assets/images/banner1.png" alt="" style="width: 100%; height: 100%;">
+            <div class="banner2HomeSlider">
+                <figure>
+                    <img src="../assets/images/bannerSale1.png" alt="banner 1 sale">
+                    <img src="../assets/images/bannerSale2.png" alt="banner 2 sale">
+                    <img src="../assets/images/bannerSale3.png" alt="banner 3 sale">
+                    <img src="../assets/images/bannerSale1.png" alt="banner 4 sale">
+                </figure>
             </div>
 
             <!--Trending Products Section-->
@@ -208,33 +230,68 @@
                 <h1>Frequently Asked Questions</h1>
                 <div class="questionsContainer">
                     <div class="question">
-                        <button>How do I pay for a Premium plan? <span></span></button>
+                        <button>Q: What customization options are available for the templates?<span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: You can customize colors, fonts, images, social media links, logos (via Google Drive link), and content text to suit your brand.
                         </div>
                     </div>
                     <div class="question">
-                        <button>How do I buy design? <span></span></button>
+                        <button>Q: How do I upload my logo?<span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: Upload your logo to Google Drive, change its access to 'Anyone with the link,' and paste the link in the provided text field during customization.
                         </div>
                     </div>
                     <div class="question">
-                        <button>How do I Contact? <span></span></button>
+                        <button>Q: Can I change the layout of the template?<span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: The layout of the template is fixed to maintain its design integrity, but you can customize colors, fonts, images, and content.
                         </div>
                     </div>
                     <div class="question">
-                        <button>What payment methods do you accept? <span></span></button>
+                        <button>Q: How do I provide custom photos for my template?<span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: Upload your custom photos to Google Drive, change the access to 'Anyone with the link,' and paste the links in the additional instructions field during checkout.
                         </div>
                     </div>
                     <div class="question">
-                        <button>How can I provide feedback or suggestions for improvement? <span></span></button>
+                        <button>Q: How long does it take to receive my <span></span></button>
                         <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            A: You will receive your customized template via email within [X] business days after placing your order.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: How long does it take to receive my <span></span></button>
+                        <div class="description">
+                            A: You will receive your customized template via email within [X] business days after placing your order.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: How do I download my customized template?<span></span></button>
+                        <div class="description">
+                            A: Once your template is ready, we will send it to the email address you provided during checkout. Follow the instructions in the email to download your template.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: What payment methods do you accept?<span></span></button>
+                        <div class="description">
+                            A: We accept credit/debit cards, PayPal, and other secure payment options listed on the checkout page.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: Do you offer customer support?<span></span></button>
+                        <div class="description">
+                            A: Yes, we offer 24/7 customer support. You can reach us via email or phone for any assistance you need.
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <button>Q: What payment methods do you accept?<span></span></button>
+                        <div class="description">
+                            A: We accept credit/debit cards, PayPal, and other secure payment options listed on the checkout page.
                         </div>
                     </div>
                 </div>
@@ -246,10 +303,7 @@
         <div class="footerContent" style="position: relative; bottom: 0;">
             <nav class="navbar" style="position: relative; bottom: 0;">
                 <div class="footerLogo">
-                    <a href="">
-                        <h1>ACG</h1>
-                        <span>Designs</span>
-                    </a>
+                    <img src="../assets/icons/logo-ver2.png" alt="">
                 </div>
                 <ul>
                     <li><a href="home.html"><span class="underline">Home</span></a></li>
@@ -400,48 +454,12 @@
 
 
     <script src="../script/script.js"></script>
-    <script src="../script/script-design.js"></script>
     <script>
 
         // Invoking Methods
         fetchAndLoadFeatured();
         fetchAndLoadTrending();
-
-        const signUpModal = document.querySelector('.signup-overlay');
-        const signInModal = document.querySelector('.signin-overlay');
-        const openSignUp = document.getElementById('open-signup');
-        // const openSignIn = document.getElementById('open-signin');
-        const closeButtonSignUp = document.querySelector('.close-signup');
-        const closeButtonSignIn = document.querySelector('.close-signin')
-        const loginLink = document.getElementById('login-link');
-        const registerLink = document.getElementById('register-link');
-
-        openSignUp.addEventListener('click', () => {
-            signUpModal.style.display = 'flex';
-        });
-        // openSignIn.addEventListener('click', () => {
-        //     signInModal.style.display = 'flex';
-        // });
-    
-        closeButtonSignUp.addEventListener('click', () => {
-            signUpModal.style.display = 'none';
-        });
-        closeButtonSignIn.addEventListener('click', () => {
-            signInModal.style.display = 'none'
-        });
-
-        registerLink.addEventListener('click', () => {
-            signInModal.style.display = 'none';
-            signUpModal.style.display = 'flex';
-        });
-        loginLink.addEventListener('click', () => {
-            signInModal.style.display = 'flex';
-            signUpModal.style.display = 'none';
-        });
-
-        function navigateToProfile() {
-            window.location.href = 'profile.html';
-        }
+        toggleAccordionFaqs();
 
         // Filter and Load Featured Products
         async function fetchAndLoadFeatured(){
@@ -479,6 +497,25 @@
             console.log(trendingProducts);
         }
         
+        // Toggle Accordion in FAQS page
+        function toggleAccordionFaqs(){
+            console.log("design is loaded");
+            const accordionBtns = document.querySelectorAll('.question > button');
+            
+            accordionBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const accordionItem = btn.nextElementSibling;
+                    accordionItem.classList.toggle('active');
+                    
+                    // Select the span element inside the button
+                    const accordionIcon = btn.querySelector('span');
+                    
+                    // Toggle the 'activeSpan' class on the span element
+                    accordionIcon.classList.toggle('activeSpan');
+                });
+            });
+
+        }
     </script>
 </body>
 </html>
