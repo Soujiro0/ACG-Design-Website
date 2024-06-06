@@ -73,7 +73,7 @@
                             <img src="../assets/icons/profilePic.png" alt="">
                             <h5>Lorem Ipsum Dolor</h5>
                             <span>loremipsum@gmail.com</span>
-                            <button>Log Out</button>
+                            <button onclick="logout()">Log Out</button>
                         </div>
 
                         <div class="buttons">
@@ -142,10 +142,7 @@
         <div class="footerContent" style="position: relative; bottom: 0;">
             <nav class="navbar" style="position: relative; bottom: 0;">
                 <div class="footerLogo">
-                    <a href="">
-                        <h1>ACG</h1>
-                        <span>Designs</span>
-                    </a>
+                    <img src="../assets/icons/logo-ver2.png" alt="">
                 </div>
                 <ul>
                     <li><a href="home.html"><span class="underline">Home</span></a></li>
@@ -186,20 +183,20 @@
                 <h1>Create an Account</h1>
             </div>
             <div class="modal-content">
-                <form>
+                <form class="signUpForm">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" min="11" max="11" required>
 
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required min="8" max="16">
 
-                    <button type="submit" class="sign-up-btn main-btn">Sign Up</button>
+                    <button type="button" onclick="getSignUpForm(name)" class="sign-up-btn main-btn">Sign Up</button>
                 </form>
                 <div class="social-login">
                     <hr class="line"><span>OR</span><hr class="line">
@@ -254,7 +251,7 @@
                     <input type="password" id="signInPassword" name="signInPassword">
                     <a href="#" class="forgot-password">Forgot Password?</a>
 
-                    <button type="button" class="log-in-btn main-btn" onclick="navigateToProfile()">Log In</button>
+                    <button type="button" class="log-in-btn main-btn" onclick="login()">Log In</button>
                 </form>
                 <div class="social-login">
                     <hr class="line"><span>OR</span><hr class="line">

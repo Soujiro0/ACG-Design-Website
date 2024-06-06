@@ -5,6 +5,7 @@
     /* --accent-color: #142D4C; */
     --accent-color: #13192B;
     --second-accent-color: #FF4918;
+    --second-accent-dark: #ff1100;
     --bg-color-light: #dddddd;
     --bg-color-lighter: #f1f1f1;
     --bg-color-mid-light: #afafaf;
@@ -162,10 +163,10 @@ a {
 .navbar ul .userProfileDiv .dropDownUser {
     display: none;
     background-color: var(--accent-color);
-    margin-left: -50px;
+    margin-left: -80px;
     position: absolute;
     height: 250px;
-    width: 200px;
+    width: 250px;
     border-radius: 0 0 20px 20px;
 } 
 .navbar ul .userProfileDiv .active {
@@ -174,7 +175,7 @@ a {
 .navbar ul .userProfileDiv .dropDownUser .buttons {
     height: 100%;
     width: 80%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     margin-inline: auto;
@@ -183,9 +184,13 @@ a {
     font: bold 1rem var(--default-font);
     color: var(--text-color-white);
     background-color: var(--second-accent-color);
-    padding: 10px 20px;
+    padding: 20px 30px;
     border: none;
     border-radius: 50px;
+    transition: 0.5s ease;
+}
+.navbar ul .userProfileDiv .dropDownUser .buttons button:hover {
+    background-color: var(--second-accent-dark);
 }
 
 .navbar ul .userProfileDiv .dropDownUser .loginProfile {
@@ -196,6 +201,7 @@ a {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    cursor: pointer;
 }
 .navbar ul .userProfileDiv .dropDownUser .loginProfile img {
     height: 70px;
@@ -214,9 +220,17 @@ a {
     font: bold 1rem var(--default-font);
     color: var(--text-color-white);
     background-color: var(--second-accent-color);
-    padding: 10px 20px;
+    padding: 20px 30px;
     border: none;
     border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.navbar ul .userProfileDiv .dropDownUser .loginProfile button:hover {
+    background-color: var(--second-accent-dark);
+}
+.navbar ul .userProfileDiv .active .isLogin {
+    display: flex;
 }
 
 /* Content Container for Main Content */
@@ -663,7 +677,7 @@ footer .footerContent .copyright span {
 }
 #home .wave {
     position: absolute;
-    bottom: -50px;
+    bottom: -100px;
     z-index: 10;
     outline: none;
     border: none;
@@ -716,6 +730,7 @@ footer .footerContent .copyright span {
     font-weight: bold;
     font-family: Arial, 'Times New Roman';
     margin-bottom: 50px;
+    z-index: 10;
 }
 .home .categoriesSection > .category {
     background-color: transparent;
@@ -883,16 +898,20 @@ footer .footerContent .copyright span {
 /* mission div */
 .about .mission {
     height: fit-content;
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     margin-block: 200px;
+    margin-inline: auto;
 }
 .about .mission p {
     font-size: 1.25rem;
     font-family: Arial, 'Times New Roman';
-    padding-inline: 10%;
+    align-self: start;
+    place-self: start;
+    text-align: start;
+    width: 80%;
 }
 .about .mission .imgReplace {
     background-color: #727272;
@@ -922,6 +941,7 @@ footer .footerContent .copyright span {
     font-family: Arial, 'Times New Roman';
     text-align: center;
 }
+
 .about .info .imgContainer {
     height: fit-content;
     width: 100%;
@@ -931,6 +951,20 @@ footer .footerContent .copyright span {
     padding: 50px;
     gap: 20px;
 }
+
+.about .info .chooseUsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-inline: auto;
+}
+
+
 /* choose us image size */
 .about .chooseUs .imgContainer .imgReplace {
     background-color: #727272;
@@ -945,6 +979,82 @@ footer .footerContent .copyright span {
     background-color: #727272;
     height: 500px;
     width: 100%;
+}
+
+.about .info .chooseUsCard {
+    height: 200px;
+    max-width: 500px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    border: var(--text-color-black) solid 2px;
+    gap: 20px;
+}
+
+.about .info .chooseUsCard .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff5733;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.about .info .chooseUsCard .icon i {
+    font-size: 24px;
+}
+
+.about .info .chooseUsCard > div {
+    padding: 10px;
+}
+
+.about .info .chooseUsCard h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.about .info .chooseUsCard p {
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: left;
+    place-self: start;
+    text-align: left;
+}
+
+.ourTeam .profileImageContainer {
+    margin-block: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.ourTeam .profileImageContainer .person {
+    display: flex;
+    flex-direction: column;
+}
+
+.ourTeam .profileImageContainer .person img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.ourTeam .profileImageContainer .person h1 {
+    font: bold 1.5rem var(--default-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ourTeam .profileImageContainer .person span {
+    font: 1.2rem var(--default-font);
+    text-align: center;
 }
 
 

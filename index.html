@@ -8,8 +8,18 @@
 <body>
     <script>
         window.location.href = 'pages/home.html';
-        const cartArray = [];
-        localStorage.setItem('cartItems', JSON.stringify(cartArray));
+        if (localStorage.getItem('cartItems') === null) {
+            let cartArray = [];
+            localStorage.setItem('cartItems', JSON.stringify(cartArray));
+        }        
+        if (sessionStorage.getItem('isLogin') === null) {
+            let isLogin = false;
+            sessionStorage.setItem('isLogin', JSON.stringify(isLogin));
+        }
+        if (localStorage.getItem('accounts') === null) {
+            let accounts = [];
+            localStorage.setItem('accounts', JSON.stringify(accounts));
+        }
     </script>
 </body>
 </html>

@@ -31,11 +31,21 @@ const loginLink = document.getElementById('login-link');
 const registerLink = document.getElementById('register-link');
 const userDropDownBtn = document.querySelector('.userProfileDiv');
 const userDropDown = document.querySelector('.dropDownUser');
+const loginProfileDiv = document.querySelector('.dropDownUser > .loginProfile');
+const buttonsDiv = document.querySelector('.dropDownUser > .buttons');
+
 
 userDropDownBtn.addEventListener('click', () => {
     if (userDropDown.classList.contains('active')) {
         userDropDown.classList.remove('active');
+        loginProfileDiv.classList.remove('isLogin');
+        buttonsDiv.classList.remove('isLogin');
     } else {
+        if (JSON.parse(sessionStorage.getItem('isLogin')) === true) {
+            loginProfileDiv.classList.toggle('isLogin');
+        } else {
+            buttonsDiv.classList.toggle('isLogin');
+        }
         userDropDown.classList.add('active');
     }
 });
@@ -61,6 +71,22 @@ loginLink.addEventListener('click', () => {
     signInModal.style.display = 'flex';
     signUpModal.style.display = 'none';
 });
+
+function toggleSignUpModal() {
+    if (signUpModal.style.display == 'flex') {
+        signUpModal.style.display = 'none';
+    } else {
+        signUpModal.style.display = 'flex';
+    }
+}
+
+function toggleSignInModal() {
+    if (signInModal.style.display == 'flex') {
+        signInModal.style.display = 'none';
+    } else {
+        signInModal.style.display = 'flex';
+    }
+}
 
 // Create Component
 function createProductHTML(item) {
@@ -209,6 +235,150 @@ function selectedCategoryNavigation(element) {
     navigateToShop();
 }
 
+// Get Values for Sign up
+function getSignUpForm() {
+    let nameElement = document.querySelector('.signUpForm > #name');
+    let emailElement = document.querySelector('.signUpForm > #email');
+    let phoneElement = document.querySelector('.signUpForm > #phone');
+    let passwordElement = document.querySelector('.signUpForm > #password');
+    let name = nameElement.value;
+    let email = emailElement.value;
+    let phone = phoneElement.value;
+    let password = passwordElement.value;
+
+
+
+    // Regular expression for email validation
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // Regular expression for phone number validation
+    let phonePattern = /^[0-9]{10,15}$/;
+    // Password minimum length
+    let minPasswordLength = 8;
+    // Password maximum length
+    let maxPasswordLength = 16;
+
+    // Validation checks
+    if (name === '' || email === '' || phone === '' || password === '') {
+        alert("Please fill all the fields");
+    } else if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+    } else if (!phonePattern.test(phone)) {
+        alert("Please enter a valid phone number");
+    } else if (password.length < minPasswordLength) {
+        alert(`Password should be at least ${minPasswordLength} characters long`);
+    } else if (password.length > maxPasswordLength) {
+        alert(`Password should not exceed greater than ${maxPasswordLength} characters long`);
+    } else {
+
+        let isEmailExist = false;
+        let isPhoneExist = false;
+        // Retrieve the accounts from localStorage and parse them
+        let accounts = localStorage.getItem('accounts');
+        accounts = accounts ? JSON.parse(accounts) : [];
+
+        accounts.forEach((account) => {
+            // Check if the email already exists
+            if (account.email === email) {
+                isEmailExist = true;
+            }
+        });
+
+        accounts.forEach((account) => {
+            // Check if the email already exists
+            if (account.phone === phone) {
+                isPhoneExist = true;
+            }
+        });
+
+        if (isEmailExist || isPhoneExist) {
+            if (isEmailExist) {
+                alert('You have already registered with this email');
+            }
+            if (isPhoneExist) {
+                alert('You have already registered with this number');
+            }
+        } else {
+            // Add a new account to the array
+            accounts.push({
+                id: accounts.length + 1,
+                name: name,
+                email: email,
+                phone: phone,
+                password: password,
+                addedToCartItems: [],
+                orders: []
+            });
+
+            // Store the updated accounts back to localStorage
+            localStorage.setItem('accounts', JSON.stringify(accounts));
+
+            alert("Account created successfully!");
+
+            nameElement.value = '';
+            emailElement.value = '';
+            phoneElement.value = '';
+            passwordElement.value = '';
+            
+            toggleSignUpModal();
+            toggleSignInModal();
+        }
+
+
+    }
+}
+
+function login() {
+    let emailElement = document.getElementById('signInEmail');
+    let passwordElement = document.getElementById('signInPassword');
+    let email = emailElement.value;
+    let password = passwordElement.value;
+
+    // Regular expression for email validation
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    // Validation checks
+    if (email === '' || password === '') {
+        alert("Please fill all the fields");
+        return;
+    } else if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return;
+    }
+
+    // Retrieve the accounts from localStorage and parse them
+    let accounts = localStorage.getItem('accounts');
+    accounts = accounts ? JSON.parse(accounts) : [];
+
+    // Find the account matching the email and password
+    let currentUser = accounts.find((account) => account.email === email && account.password === password);
+
+    if (!currentUser) {
+        alert('No existing account with this email and password! Register first.');
+    } else {
+        let isLogin = true;
+        sessionStorage.setItem('isLogin', JSON.stringify(isLogin));
+        sessionStorage.setItem('currentUserLogin', JSON.stringify(currentUser));
+        console.log(email);
+
+        // Reset the email and password fields
+        emailElement.value = '';
+        passwordElement.value = '';
+
+        console.log(email);
+        toggleSignInModal();
+        alert('Login Successfully');
+    }
+}
+
+
+function logout() {
+    let isLogin = false;
+    let currentUser = {};
+    sessionStorage.setItem('isLogin', JSON.stringify(isLogin));
+    sessionStorage.setItem('currentUserLogin', JSON.stringify(currentUser));
+    alert('Successfully Logout!');
+}
+
 // Navigate Home Page
 function navigateToHome() {
     window.location.href = 'home.html';
@@ -242,4 +412,17 @@ function navigateToCart() {
 // Navigate Profile Page
 function navigateToProfile() {
     window.location.href = 'profile.html';
+}
+
+if (localStorage.getItem('cartItems') === null) {
+    let cartArray = [];
+    localStorage.setItem('cartItems', JSON.stringify(cartArray));
+}        
+if (sessionStorage.getItem('isLogin') === null) {
+    let isLogin = false;
+    sessionStorage.setItem('isLogin', JSON.stringify(isLogin));
+}
+if (localStorage.getItem('accounts') === null) {
+    let accounts = [];
+    localStorage.setItem('accounts', JSON.stringify(accounts));
 }
