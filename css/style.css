@@ -838,6 +838,36 @@ footer .footerContent .copyright span {
     position: absolute;
     bottom: 0;
 }
+.testimonial .testimonialSection .testimonial {
+    background-color: var(--bg-color-light);
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    color: var(--text-color-black);
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.testimonial .testimonialSection .testimonial img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.testimonial .testimonialSection .testimonial h1 {
+    margin-top: 120px;
+    padding-bottom: 20px;
+    font: bold 2rem var(--default-font);
+    color: var(--text-color-black);
+}
+.testimonial .testimonialSection .testimonial p {
+    font:  1.1rem var(--default-font);
+}
 
 
 
