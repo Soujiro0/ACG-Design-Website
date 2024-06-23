@@ -545,8 +545,8 @@
         "price": 10.99,
         "description": "Dinosaurs roamed the Earth during the Mesozoic Era.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit1.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg1.png"
+        "image": "../assets/images/products/E-commerce/ecommerce1.png",
+        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg1.png"
     },
     {
         "id": "62",
@@ -554,8 +554,8 @@
         "price": 15.99,
         "description": "The French Revolution began in 1789 and led to significant changes in France and the world.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit2.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg2.png"
+        "image": "../assets/images/products/E-commerce/ecommerce10.png",
+        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg10.png"
     },
     {
         "id": "63",
@@ -563,8 +563,8 @@
         "price": 20.99,
         "description": "The element carbon is essential to all known life forms.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit3.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg3.png"
+        "image": "../assets/images/products/E-commerce/ecommerce11.png",
+        "thumbnail": "../assets/images/products/E-commerce/ecommercetimg11.png"
     },
     {
         "id": "64",
@@ -572,8 +572,8 @@
         "price": 25.99,
         "description": "The Sistine Chapel's ceiling was painted by Michelangelo.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit4.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg4.png"
+        "image": "../assets/images/products/Blog/blog5.png",
+        "thumbnail": "../assets/images/products/Blog/blogtimg5.png"
     },
     {
         "id": "65",
@@ -581,8 +581,8 @@
         "price": 30.99,
         "description": "The Taj Mahal in India is an iconic example of Mughal architecture.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit5.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg5.png"
+        "image": "../assets/images/products/Blog/blog6.png",
+        "thumbnail": "../assets/images/products/Blog/blogtimg6.png"
     },
     {
         "id": "66",
@@ -590,8 +590,8 @@
         "price": 35.99,
         "description": "Jazz is a musical genre that originated in the African-American communities of New Orleans.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit6.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg6.png"
+        "image": "../assets/images/products/Blog/blog15.png",
+        "thumbnail": "../assets/images/products/Blog/blogtimg15.png"
     },
     {
         "id": "67",
@@ -599,8 +599,8 @@
         "price": 40.99,
         "description": "The Milky Way is the galaxy that contains our solar system.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit7.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg7.png"
+        "image": "../assets/images/products/Business/business1.png",
+        "thumbnail": "../assets/images/products/Business/businesstimg1.png"
     },
     {
         "id": "68",
@@ -608,8 +608,8 @@
         "price": 45.99,
         "description": "Water freezes at 0 degrees Celsius.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit8.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg8.png"
+        "image": "../assets/images/products/Business/business10.png",
+        "thumbnail": "../assets/images/products/Business/businesstimg10.png"
     },
     {
         "id": "69",
@@ -617,8 +617,8 @@
         "price": 50.99,
         "description": "The quick brown fox jumps over the lazy dog.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit9.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg9.png"
+        "image": "../assets/images/products/Business/business11.png",
+        "thumbnail": "../assets/images/products/Business/businesstimg11.png"
     },
     {
         "id": "70",
@@ -626,8 +626,8 @@
         "price": 55.99,
         "description": "Elephants are the largest land animals on Earth.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit10.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg10.png"
+        "image": "../assets/images/products/News/news5.png",
+        "thumbnail": "../assets/images/products/News/newstimg5.png"
     },
     {
         "id": "71",
@@ -635,8 +635,8 @@
         "price": 60.99,
         "description": "The human body is composed of approximately 60% water.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit11.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg11.png"
+        "image": "../assets/images/products/News/news6.png",
+        "thumbnail": "../assets/images/products/News/newstimg6.png"
     },
     {
         "id": "72",
@@ -644,8 +644,8 @@
         "price": 65.99,
         "description": "Birds are the only animals with feathers.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit12.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg12.png"
+        "image": "../assets/images/products/News/news15.png",
+        "thumbnail": "../assets/images/products/News/newstimg15.png"
     },
     {
         "id": "73",
@@ -653,8 +653,8 @@
         "price": 70.99,
         "description": "Penguins are flightless birds that are excellent swimmers.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit13.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg13.png"
+        "image": "../assets/images/products/Personal/personal1.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg1.png"
     },
     {
         "id": "74",
@@ -662,8 +662,8 @@
         "price": 75.99,
         "description": "The Pyramids of Giza were built during Egypt's Old Kingdom period.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit14.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg14.png"
+        "image": "../assets/images/products/Personal/personal5.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg5.png"
     },
     {
         "id": "75",
@@ -671,8 +671,8 @@
         "price": 80.99,
         "description": "A symphony is a lengthy musical composition typically for an orchestra.",
         "category": "non-profit",
-        "image": "../assets/images/products/Non-profit/Non-profit15.png",
-        "thumbnail": "../assets/images/products/Non-profit/Non-profittimg15.png"
+        "image": "../assets/images/products/Personal/personal15.png",
+        "thumbnail": "../assets/images/products/Personal/personaltimg15.png"
     },
     {
         "id": "76",
